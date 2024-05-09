@@ -1,91 +1,109 @@
 {
     "categories": {
         "reklamefilm": {
+            "id": 1,
             "title": "Reklamefilm",
             "description": "Reklamefilm er en film som har som hensikt å markedsføre et produkt eller en tjeneste. Reklamefilmer kan være alt fra korte, enkle animasjoner til store, påkostede produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "fiksjonsfilm": {
+            "id": 2,
             "title": "Fiksjonsfilm",
             "description": "Fiksjonsfilm er en film som er oppdiktet, og som ikke er basert på virkelige hendelser. Fiksjonsfilmer kan være alt fra korte, enkle fortellinger til store, komplekse produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "musikkvideo": {
+            "id": 3,
             "title": "Musikkvideo",
             "description": "Musikkvideo er en film som er laget for å illustrere en sang eller et musikkstykke. Musikkvideoer kan være alt fra enkle, statiske opptak til store, påkostede produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "musikkproduksjon": {
+            "id": 4,
             "title": "Musikkproduksjon",
             "description": "Musikkproduksjon er prosessen med å lage musikk. Dette kan være alt fra å skrive en sang til å spille inn og mikse en plate.",
             "image": "https://placehold.co/600x400"
         },
         "radiospot": {
+            "id": 5,
             "title": "Radiospot",
             "description": "Radiospot er en kort, reklamefilm som sendes på radio. Radiospotter kan være alt fra enkle, korte meldinger til store, påkostede produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "kunstfoto": {
+            "id": 6,
             "title": "Kunstfoto",
             "description": "Kunstfoto er en form for fotografi som er laget for å være kunstnerisk. Kunstfoto kan være alt fra enkle, dokumentariske bilder til store, komplekse produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "dokumentarfoto": {
+            "id": 7,
             "title": "Dokumentarfoto",
             "description": "Dokumentarfoto er en form for fotografi som er laget for å dokumentere virkeligheten. Dokumentarfoto kan være alt fra enkle, dokumentariske bilder til store, komplekse produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "portrettfoto": {
+            "id": 8,
             "title": "Portrettfoto",
             "description": "Portrettfoto er en form for fotografi som er laget for å vise et menneske eller en gruppe mennesker. Portrettfoto kan være alt fra enkle, dokumentariske bilder til store, komplekse produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "journalistikk": {
+            "id": 9,
             "title": "Journalistikk",
             "description": "Journalistikk er en form for medieproduksjon som er laget for å informere og underholde. Journalistikk kan være alt fra enkle, korte nyhetsmeldinger til store, komplekse produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "reklamedesign": {
+            "id": 10,
             "title": "Reklamedesign",
             "description": "Reklamedesign er en form for design som er laget for å markedsføre et produkt eller en tjeneste. Reklamedesign kan være alt fra enkle, statiske annonser til store, komplekse produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "animasjon": {
+            "id": 11,
             "title": "Animasjon",
             "description": "Animasjon er en form for filmproduksjon som er laget ved å sette sammen en rekke bilder. Animasjon kan være alt fra enkle, statiske bilder til store, komplekse produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "tegneserie": {
+            "id": 12,
             "title": "Tegneserie",
             "description": "Tegneserie er en form for filmproduksjon som er laget ved å tegne en rekke bilder. Tegneserier kan være alt fra enkle, statiske tegninger til store, komplekse produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "3d-design": {
+            "id": 13,
             "title": "3D-design",
             "description": "3D-design er en form for design som er laget ved å bruke datamaskiner til å lage tredimensjonale bilder. 3D-design kan være alt fra enkle, statiske modeller til store, komplekse produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "illustrasjon-og-magasin": {
+            "id": 14,
             "title": "Illustrasjon og magasin",
             "description": "Illustrasjon og magasin er en form for design som er laget for å illustrere en historie eller et tema. Illustrasjon og magasin kan være alt fra enkle, statiske tegninger til store, komplekse produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "visuell-identitet": {
+            "id": 15,
             "title": "Visuell identitet",
             "description": "Visuell identitet er en form for design som er laget for å representere en bedrift eller en organisasjon. Visuell identitet kan være alt fra enkle, statiske logoer til store, komplekse produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "spillutvikling": {
+            "id": 16,
             "title": "Spillutvikling",
             "description": "Spillutvikling er prosessen med å lage dataspill. Dette kan være alt fra å skrive en historie til å programmere et spill.",
             "image": "https://placehold.co/600x400"
         },
         "interaktiv-historie": {
+            "id": 17,
             "title": "Interaktiv historie",
             "description": "Interaktiv historie er en form for medieproduksjon som lar publikum delta i historien. Interaktiv historie kan være alt fra enkle, statiske fortellinger til store, komplekse produksjoner.",
             "image": "https://placehold.co/600x400"
         },
         "webutvikling": {
+            "id": 18,
             "title": "Webutvikling",
             "description": "Webutvikling er prosessen med å lage nettsider. Dette kan være alt fra å designe en nettside til å programmere en nettside.",
             "image": "https://placehold.co/600x400"

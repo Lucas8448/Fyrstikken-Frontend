@@ -6,6 +6,7 @@ import { promises as fs } from 'fs';
 
 interface Data {
   categories: {
+    id: number;
     title: string;
     description: string;
     image: string;
@@ -18,23 +19,6 @@ export default async function Component() {
 
   return (
     <main className="flex flex-col">
-      <header className="px-4 lg:px-6 h-14 flex items-center bg-gray-900 text-gray-50">
-        <Link className="flex items-center justify-center" href="#">
-          <FilmIcon className="h-6 w-6" />
-          <span className="sr-only">Movie Project</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-            Hjem
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-            Kategorier
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-            Om
-          </Link>
-        </nav>
-      </header>
       <section className="relative h-[80vh] w-full overflow-hidden">
         <img
           alt="Hero Image"
@@ -62,55 +46,28 @@ export default async function Component() {
       <section className="bg-gray-100 py-12 dark:bg-gray-800 sm:py-16 md:py-20">
         <div className="container">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {Object.values(data.categories).map((category) => (
-              <Card key={category.title} className="group h-full w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-lg">
-                <CardContent>
-                  <img
-                    alt={category.title}
-                    className="aspect-w-16 aspect-h-9 w-full object-cover object-center transition-all group-hover:scale-105"
-                    height={360}
-                    src={category.image}
-                    width={640}
-                  />
-                  <div className="mt-4 space-y-2">
-                    <h3 className="text-xl font-semibold">{category.title}</h3>
-                    <p className="text-gray-500 dark:text-gray-400">{category.description}</p>
-                    <Link className="text-primary-500 hover:underline" href="#">
-                      Explore {category.title}
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
+            {Object.values(data.categories).sort(() => Math.random() - 0.5).map((category) => (
+              <Link className="text-primary-500" href={`/category/${category.id}`} key={category.id}>
+                <Card key={category.title} className="group h-full w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-lg">
+                  <CardContent>
+                    <img
+                      alt={category.title}
+                      className="aspect-w-16 aspect-h-9 w-full object-cover object-center transition-all group-hover:scale-105"
+                      height={360}
+                      src={category.image}
+                      width={640}
+                    />
+                    <div className="mt-4 space-y-2">
+                      <h3 className="text-xl font-semibold">{category.title}</h3>
+                      <p className="text-gray-500 dark:text-gray-400">{category.description}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
       </section>
     </main>
-  )
-}
-
-function FilmIcon(props: React.ComponentProps<"svg">) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect width="18" height="18" x="3" y="3" rx="2" />
-      <path d="M7 3v18" />
-      <path d="M3 7.5h4" />
-      <path d="M3 12h18" />
-      <path d="M3 16.5h4" />
-      <path d="M17 3v18" />
-      <path d="M17 7.5h4" />
-      <path d="M17 16.5h4" />
-    </svg>
   )
 }
