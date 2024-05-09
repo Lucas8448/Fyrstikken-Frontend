@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Navbar() {
     return (
-        <div className="px-4 lg:px-6 h-14 flex items-center bg-gray-900 text-gray-50">
+        <div className="sticky top-0 px-4 lg:px-6 h-14 flex items-center bg-gray-900 text-gray-50 z-50">
             <Link className="flex items-center justify-center" href="#">
                 <FilmIcon className="h-6 w-6" />
                 <span className="sr-only">Fyrstikken</span>
