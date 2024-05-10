@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { CardContent, Card } from "@/components/ui/card";
+import RandomCategory from "@/components/randomCategory";
 import { promises as fs } from 'fs';
 
 interface Data {
@@ -14,7 +15,7 @@ interface Data {
 }
 
 export default async function Component() {
-  const file = await fs.readFile(process.cwd() + '/public/data.json', 'utf8');
+  const file = await fs.readFile(process.cwd() + '/public/data/categories.json', 'utf8');
   const data: Data = JSON.parse(file);
 
   return (
@@ -35,11 +36,11 @@ export default async function Component() {
         <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-6 px-4 text-center text-gray-50 sm:px-6 md:px-8">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">Fyrstikken</h1>
           <p className="max-w-[600px] text-lg md:text-xl">
-            Her kan du stemme for publikumsprisen, se forskjellige prosjekter og lære mer om de.
+            Her kan du stemme for publikumsprisen, se forskjellige elev prosjekter og lære mer om de.
           </p>
           <div className="flex flex-col gap-2 sm:flex-row">
             <Button variant="default">Utforsk kategorier</Button>
-            <Button variant="secondary">Gå til en tilfeldig</Button>
+            <RandomCategory />
           </div>
         </div>
       </section>
