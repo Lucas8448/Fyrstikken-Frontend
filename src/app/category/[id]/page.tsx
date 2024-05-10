@@ -1,8 +1,6 @@
 import React from 'react';
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { CardContent, Card } from "@/components/ui/card";
-import RandomCategory from "@/components/randomCategory";
 import { promises as fs } from 'fs';
 
 interface Data {
