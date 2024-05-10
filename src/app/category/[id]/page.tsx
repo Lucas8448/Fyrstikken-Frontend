@@ -44,20 +44,20 @@ export default async function Page({ params }: { params: { id: number } }) {
             <section className="bg-gray-100 py-12 dark:bg-gray-800 sm:py-16 md:py-20">
                 <div className="container">
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                        {Object.values(data.projects).sort(() => Math.random() - 0.5).map((category) => (
-                            <Link className="text-primary-500" href={`/category/${category.id}`} key={category.id}>
-                                <Card key={category.name} className="group h-full w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-lg">
+                        {Object.values(data.projects).sort(() => Math.random() - 0.5).map((project) => (
+                            <Link className="text-primary-500" href={`/project/${project.id}`} key={project.id}>
+                                <Card key={project.name} className="group h-full w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-lg">
                                     <CardContent>
                                         <img
-                                            alt={category.name}
+                                            alt={project.name}
                                             className="aspect-w-16 aspect-h-9 w-full object-cover object-center transition-all group-hover:scale-105"
                                             height={360}
-                                            src={category.image}
+                                            src={project.image}
                                             width={640}
                                         />
                                         <div className="mt-4 space-y-2">
-                                            <h3 className="text-xl font-semibold">{category.name}</h3>
-                                            <p className="text-gray-500 dark:text-gray-400">{category.description}</p>
+                                            <h3 className="text-xl font-semibold">{project.name}</h3>
+                                            <p className="text-gray-500 dark:text-gray-400">{project.description}</p>
                                         </div>
                                     </CardContent>
                                 </Card>
