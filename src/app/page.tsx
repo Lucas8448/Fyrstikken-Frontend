@@ -39,12 +39,14 @@ export default async function Component() {
             Her kan du stemme for publikumsprisen, se forskjellige elev prosjekter og lære mer om de.
           </p>
           <div className="flex flex-col gap-2 sm:flex-row">
-            <Button variant="default">Utforsk kategorier</Button>
+            <Link href="/#categories">
+              <Button variant="default">Utforsk kategorier</Button>
+            </Link>
             <RandomCategory />
           </div>
         </div>
       </section>
-      <section className="bg-gray-100 py-12 dark:bg-gray-800 sm:py-16 md:py-20">
+      <section className="bg-gray-100 py-12 dark:bg-gray-800 sm:py-16 md:py-20" id="categories">
         <div className="container">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {Object.values(data.categories).sort(() => Math.random() - 0.5).map((category) => (
