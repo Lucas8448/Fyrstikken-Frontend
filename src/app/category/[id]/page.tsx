@@ -26,7 +26,7 @@ export default async function Page({ params }: { params: { id: number } }) {
     const data: Data = await loader({ params });
     return (
         <main className="flex flex-col">
-            <section className="relative h-[80vh] w-full overflow-hidden">
+            <section className="relative h-[95vh] w-full overflow-hidden">
                 <img
                     alt="Hero Image"
                     className="absolute inset-0 h-full w-full object-cover object-center"
