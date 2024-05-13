@@ -1,25 +1,31 @@
-import React from 'react';
+import React from "react";
 import Link from "next/link";
 import { CardContent, Card } from "@/components/ui/card";
-import { promises as fs } from 'fs';
-import path from 'path';
+import { promises as fs } from "fs";
+import path from "path";
 
 interface Data {
-    title: string;
-    projects: {
-        id: number;
-        name: string;
-        description: string;
-        image: string;
-    }[];
+  title: string;
+  projects: {
+    id: number;
+    name: string;
+    description: string;
+    image: string;
+  }[];
 }
 
 async function loader({ params }: { params: { id: number } }) {
-    const id = params.id;
-    const filePath = path.join(process.cwd(), 'public', 'data', 'categories', `${id}.json`);
+  const id = params.id;
+  const filePath = path.join(
+    process.cwd(),
+    "public",
+    "data",
+    "categories",
+    `${id}.json`
+  );
 
-    const data = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(data) as Data;
+  const data = await fs.readFile(filePath, "utf8");
+  return JSON.parse(data) as Data;
 }
 
 export default async function Page({ params }: { params: { id: number } }) {
