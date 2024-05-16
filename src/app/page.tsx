@@ -53,7 +53,7 @@ export default async function Component() {
         </div>
       </section>
       <section
-        className="bg-gray-100 py-12 dark:bg-gray-800 sm:py-16 md:py-20"
+        className="py-12 sm:py-16 md:py-20"
         id="categories"
       >
         <div className="container">
