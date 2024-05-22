@@ -1,32 +1,38 @@
-import React from 'react';
+import React from "react";
 import Link from "next/link";
 import { CardContent, Card } from "@/components/ui/card";
-import { promises as fs } from 'fs';
-import path from 'path';
+import { promises as fs } from "fs";
+import path from "path";
 
 interface Data {
-    title: string;
-    projects: {
-        id: number;
-        name: string;
-        description: string;
-        image: string;
-    }[];
+  title: string;
+  projects: {
+    id: number;
+    name: string;
+    description: string;
+    image: string;
+  }[];
 }
 
-async function loader({ params }: { params: { id: number } }) {
-    const id = params.id;
-    const filePath = path.join(process.cwd(), 'public', 'data', 'categories', `${id}.json`);
+async function loader({ params }: { params: { categoryId: number } }) {
+  const categoryId = params.categoryId;
+  const filePath = path.join(
+    process.cwd(),
+    "public",
+    "data",
+    "categories",
+    `${categoryId}.json`
+  );
 
-    const data = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(data) as Data;
+  const data = await fs.readFile(filePath, "utf8");
+  return JSON.parse(data) as Data;
 }
 
 export default async function Page({ params }: { params: { id: number } }) {
     const data: Data = await loader({ params });
     return (
         <main className="flex flex-col">
-            <section className="relative h-[80vh] w-full overflow-hidden">
+            <section className="relative h-[95vh] w-full overflow-hidden">
                 <img
                     alt="Hero Image"
                     className="absolute inset-0 h-full w-full object-cover object-center"
@@ -47,8 +53,8 @@ export default async function Page({ params }: { params: { id: number } }) {
             <section className="bg-gray-100 py-12 dark:bg-gray-800 sm:py-16 md:py-20">
                 <div className="container">
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                        {Object.values(data.projects).sort(() => Math.random() - 0.5).map((project) => (
-                            <Link href={`/project/${project.id}`} key={project.id}>
+                        {data.projects.map((project) => (
+                            <Link href={`/category/${params.categoryId}/project/${project.id}`} key={`${params.id}-${project.id}`}>
                                 <div className="text-primary-500">
                                     <Card className="group h-full w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-lg">
                                         <CardContent>
@@ -72,3 +78,4 @@ export default async function Page({ params }: { params: { id: number } }) {
         </main>
     );
 }
+
