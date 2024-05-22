@@ -1,5 +1,6 @@
 "use client";
 
+import axios from "axios"
 import React from 'react';
 import Link from "next/link";
 
@@ -19,11 +20,15 @@ export default function Navbar() {
                 </Link>
                 <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
                     Om
-                </Link>
+                </Link>   
+                
+                
             </nav>
         </div>
     );
 }
+
+
 
 function FilmIcon(props: React.ComponentProps<"svg">) {
     return (
