@@ -6,6 +6,15 @@ html {
   scroll-behavior: smooth;
 }
 
+#categories {
+  background-image: url('/wallpaper.svg');
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-position: center 80%;
+}
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -75,6 +84,6 @@ html {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
   }
 }
