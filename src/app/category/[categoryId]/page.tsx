@@ -28,8 +28,17 @@ async function loader({ params }: { params: { categoryId: number } }) {
   return JSON.parse(data) as Data;
 }
 
+function shuffleArray(array: any[]) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 export default async function Page({ params }: { params: { id: number } }) {
     const data: Data = await loader({ params });
+    shuffleArray(data.projects); // Shuffle the projects array
+
     return (
         <main className="flex flex-col">
             <section className="relative h-[95vh] w-full overflow-hidden">
@@ -78,4 +87,3 @@ export default async function Page({ params }: { params: { id: number } }) {
         </main>
     );
 }
-
