@@ -2,38 +2,25 @@
 import React from 'react';
 import { promises as fs } from 'fs';
 import path from 'path';
+import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/card';
+
+interface ProjectSection {
+    type: 'image' | 'video' | 'audio' | 'text';
+    content: string;
+}
 
 interface ProjectData {
     id: number;
     name: string;
     description: string;
-    image: string;
+    sections: ProjectSection[];
 }
 
 async function loader({ params }: { params: { categoryId: string, projectId: string } }): Promise<ProjectData | null> {
-    console.log("loader called with params:", params); // Log the received params
-
     const { categoryId, projectId } = params;
-    const filePath = path.join(process.cwd(), 'public', 'data', 'categories', `${categoryId}.json`);
-
-    console.log("Constructed file path:", filePath); // Log the constructed file path
-
-    // Read the entire contents of the.json file
+    const filePath = path.join(process.cwd(), 'public', 'data', 'projects', `${categoryId}`, `${projectId}.json`);
     const data = await fs.readFile(filePath, 'utf8');
-
-    console.log("File data read:", data); // Log the raw file data
-
-    // Parse the JSON data into a JavaScript object
-    const jsonData = JSON.parse(data);
-
-    console.log("Parsed JSON data:", jsonData); // Log the parsed JSON data
-
-    // Use explicit type coercion in the find operation
-    const projectData = jsonData.projects.find((project: ProjectData) => Number(project.id) === Number(projectId));
-
-    console.log("Found project data:", projectData); // Log the found project data
-
-    // Return the project data or null if not found
+    const projectData = JSON.parse(data);
     return projectData || null;
 }
 
@@ -45,16 +32,28 @@ export default async function CategoryProjectPage({ params }: { params: { catego
     }
 
     return (
-        <main>
-            <section>
-                <h1 style={{ fontSize: '2em' }}>{projectData.name}</h1> {/* Inline style applied here */}
-                <br />
-                <img src={projectData.image} alt={projectData.name} />
-                <div>
-                <br />
-                    <p>{projectData.description}</p>
-                </div>
-            </section>
+        <main className="p-4">
+            <Card className="max-w-3xl mx-auto shadow-lg">
+                <CardHeader className="text-2xl font-bold p-4 border-b">
+                    {projectData.name}
+                </CardHeader>
+                <CardContent className="p-4">
+                    <p className="mb-4">{projectData.description}</p>
+                    <div className="space-y-4">
+                        {projectData.sections.map((section, index) => (
+                            <div key={index} className="p-2 border rounded-md shadow-md">
+                                {section.type === 'image' && <img src={section.content} alt="Project Image" className="w-full h-auto" />}
+                                {section.type === 'video' && <video src={section.content} controls className="w-full h-auto" />}
+                                {section.type === 'audio' && <audio src={section.content} controls className="w-full" />}
+                                {section.type === 'text' && <p>{section.content}</p>}
+                            </div>
+                        ))}
+                    </div>
+                </CardContent>
+                <CardFooter className="p-4 border-t">
+                    Footer Content Here
+                </CardFooter>
+            </Card>
         </main>
     );
 }
