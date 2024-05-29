@@ -72,7 +72,7 @@ export default async function Page({ params }: { params: { categoryId: number } 
                                                 className="aspect-w-16 aspect-h-9 w-full object-cover object-center transition-all group-hover:scale-105"
                                                 src={project.image}
                                             />
-                                            <div className="mt-4 space-y-2">
+                                            <div className="mt-4 space-y-2 p-6">
                                                 <h3 className="text-xl font-semibold">{project.name}</h3>
                                                 <p className="text-gray-500 dark:text-gray-400">{project.description}</p>
                                             </div>
