@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CardContent, Card } from "@/components/ui/card";
 import RandomCategory from "@/components/randomCategory";
 import { promises as fs } from "fs";
+import Image from "next/image";
 
 interface Data {
   categories: {
@@ -24,7 +25,7 @@ export default async function Component() {
   return (
     <main className="flex flex-col">
       <section className="relative h-[95vh] w-full overflow-hidden">
-        <img
+        <Image
           alt="Hero Image"
           className="absolute inset-0 h-full w-full object-cover object-center"
           height={1080}
@@ -71,7 +72,7 @@ export default async function Component() {
                     className="group h-full w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-lg"
                   >
                     <CardContent>
-                      <img
+                      <Image
                         alt={category.title}
                         className="aspect-w-16 aspect-h-9 w-full object-cover object-center transition-all group-hover:scale-105"
                         height={360}
