@@ -1,112 +1,106 @@
 {
     "categories": {
         "reklamefilm": {
-            "id": 1,
+            "id": 100,
             "title": "Reklamefilm",
             "description": "Reklamefilm er en film som har som hensikt å markedsføre et produkt eller en tjeneste. Reklamefilmer kan være alt fra korte, enkle animasjoner til store, påkostede produksjoner.",
             "image": "/data/images/reklamefilm.jpg"
         },
-        "fiksjonsfilm": {
-            "id": 2,
-            "title": "Fiksjonsfilm",
+        "fiksjons- og dokumentarfilm": {
+            "id": 110,
+            "title": "Fiksjons- og dokumentarfilm",
             "description": "Fiksjonsfilm er en film som er oppdiktet, og som ikke er basert på virkelige hendelser. Fiksjonsfilmer kan være alt fra korte, enkle fortellinger til store, komplekse produksjoner.",
             "image": "/data/images/fiksjonsfilm.jpg"
         },
         "musikkvideo": {
-            "id": 3,
+            "id": 120,
             "title": "Musikkvideo",
             "description": "Musikkvideo er en film som er laget for å illustrere en sang eller et musikkstykke. Musikkvideoer kan være alt fra enkle, statiske opptak til store, påkostede produksjoner.",
             "image": "/data/images/musikkvideo.jpg"
         },
-        "musikkproduksjon": {
-            "id": 4,
-            "title": "Musikkproduksjon",
-            "description": "Musikkproduksjon er prosessen med å lage musikk. Dette kan være alt fra å skrive en sang til å spille inn og mikse en plate.",
-            "image": "/data/images/musikkproduksjon.jpg"
-        },
-        "radiospot": {
-            "id": 5,
-            "title": "Radiospot",
-            "description": "Radiospot er en kort, reklamefilm som sendes på radio. Radiospotter kan være alt fra enkle, korte meldinger til store, påkostede produksjoner.",
-            "image": "/data/images/radiospot.jpg"
+        "animasjon": {
+            "id": 130,
+            "title": "Animasjon",
+            "description": "Animasjon er en form for filmproduksjon som er laget ved å sette sammen en rekke bilder. Animasjon kan være alt fra enkle, statiske bilder til store, komplekse produksjoner.",
+            "image": "/data/images/animasjon.jpg"
         },
         "kunstfoto": {
-            "id": 6,
+            "id": 200,
             "title": "Kunstfoto",
             "description": "Kunstfoto er en form for fotografi som er laget for å være kunstnerisk. Kunstfoto kan være alt fra enkle, dokumentariske bilder til store, komplekse produksjoner.",
             "image": "/data/images/kunstfoto.jpg"
         },
         "dokumentarfoto": {
-            "id": 7,
+            "id": 210,
             "title": "Dokumentarfoto",
             "description": "Dokumentarfoto er en form for fotografi som er laget for å dokumentere virkeligheten. Dokumentarfoto kan være alt fra enkle, dokumentariske bilder til store, komplekse produksjoner.",
             "image": "/data/images/dokumentarfoto.jpg"
         },
         "portrettfoto": {
-            "id": 8,
+            "id": 220,
             "title": "Portrettfoto",
             "description": "Portrettfoto er en form for fotografi som er laget for å vise et menneske eller en gruppe mennesker. Portrettfoto kan være alt fra enkle, dokumentariske bilder til store, komplekse produksjoner.",
             "image": "/data/images/portrettfoto.jpg"
         },
+        "radiospot": {
+            "id": 300,
+            "title": "Radiospot",
+            "description": "Radiospot er en kort, reklamefilm som sendes på radio. Radiospotter kan være alt fra enkle, korte meldinger til store, påkostede produksjoner.",
+            "image": "/data/images/radiospot.jpg"
+        },
+        "hørespill": {
+            "id": 310,
+            "title": "Hørespill",
+            "description": "Hørespill er en form for lyddrama som kan inneholde dialog, musikk og lydeffekter.",
+            "image": "/data/images/hoerspill.jpg"
+        },
         "journalistikk": {
-            "id": 9,
+            "id": 400,
             "title": "Journalistikk",
             "description": "Journalistikk er en form for medieproduksjon som er laget for å informere og underholde. Journalistikk kan være alt fra enkle, korte nyhetsmeldinger til store, komplekse produksjoner.",
             "image": "/data/images/journalistikk.jpg"
         },
         "reklamedesign": {
-            "id": 10,
+            "id": 410,
             "title": "Reklamedesign",
             "description": "Reklamedesign er en form for design som er laget for å markedsføre et produkt eller en tjeneste. Reklamedesign kan være alt fra enkle, statiske annonser til store, komplekse produksjoner.",
             "image": "/data/images/reklamedesign.jpg"
         },
-        "animasjon": {
-            "id": 11,
-            "title": "Animasjon",
-            "description": "Animasjon er en form for filmproduksjon som er laget ved å sette sammen en rekke bilder. Animasjon kan være alt fra enkle, statiske bilder til store, komplekse produksjoner.",
-            "image": "/data/images/animasjon.jpg"
-        },
-        "tegneserie": {
-            "id": 12,
-            "title": "Tegneserie",
-            "description": "Tegneserie er en form for filmproduksjon som er laget ved å tegne en rekke bilder. Tegneserier kan være alt fra enkle, statiske tegninger til store, komplekse produksjoner.",
-            "image": "/data/images/tegneserie.jpg"
-        },
-        "3d-design": {
-            "id": 13,
-            "title": "3D-design",
-            "description": "3D-design er en form for design som er laget ved å bruke datamaskiner til å lage tredimensjonale bilder. 3D-design kan være alt fra enkle, statiske modeller til store, komplekse produksjoner.",
-            "image": "/data/images/3d-design.jpg"
+        "film- og spillplakat": {
+            "id": 420,
+            "title": "Film- og spillplakat",
+            "description": "Film- og spillplakat er en form for grafisk design som er laget for å promotere filmer og spill.",
+            "image": "/data/images/filmgamesposter.jpg"
         },
         "illustrasjon-og-magasin": {
-            "id": 14,
+            "id": 430,
             "title": "Illustrasjon og magasin",
             "description": "Illustrasjon og magasin er en form for design som er laget for å illustrere en historie eller et tema. Illustrasjon og magasin kan være alt fra enkle, statiske tegninger til store, komplekse produksjoner.",
             "image": "/data/images/illustrasjon-og-magasin.jpg"
         },
-        "visuell-identitet": {
-            "id": 15,
-            "title": "Visuell identitet",
-            "description": "Visuell identitet er en form for design som er laget for å representere en bedrift eller en organisasjon. Visuell identitet kan være alt fra enkle, statiske logoer til store, komplekse produksjoner.",
-            "image": "/data/images/visuell-identitet.jpg"
+        "bokomslag": {
+            "id": 440,
+            "title": "Bokomslag",
+            "description": "Bokomslag er en form for grafisk design som er laget for å illustrere forsiden av en bok.",
+            "image": "/data/images/bokomslag.jpg"
         },
         "spillutvikling": {
-            "id": 16,
+            "id": 450,
             "title": "Spillutvikling",
             "description": "Spillutvikling er prosessen med å lage dataspill. Dette kan være alt fra å skrive en historie til å programmere et spill.",
             "image": "/data/images/spillutvikling.jpg"
         },
-        "interaktiv-historie": {
-            "id": 17,
-            "title": "Interaktiv historie",
-            "description": "Interaktiv historie er en form for medieproduksjon som lar publikum delta i historien. Interaktiv historie kan være alt fra enkle, statiske fortellinger til store, komplekse produksjoner.",
-            "image": "/data/images/interaktiv-historie.jpg"
+        "tegneserie": {
+            "id": 500,
+            "title": "Tegneserie",
+            "description": "Tegneserie er en form for filmproduksjon som er laget ved å tegne en rekke bilder. Tegneserier kan være alt fra enkle, statiske tegninger til store, komplekse produksjoner.",
+            "image": "/data/images/tegneserie.jpg"
         },
-        "webutvikling": {
-            "id": 18,
-            "title": "Webutvikling",
-            "description": "Webutvikling er prosessen med å lage nettsider. Dette kan være alt fra å designe en nettside til å programmere en nettside.",
-            "image": "/data/images/webutvikling.jpg"
+        "visuell identitet": {
+            "id": 510,
+            "title": "Visuell identitet",
+            "description": "Visuell identitet er en form for design som er laget for å representere en bedrift eller en organisasjon. Visuell identitet kan være alt fra enkle, statiske logoer til store, komplekse produksjoner.",
+            "image": "/data/images/visuell-identitet.jpg"
         }
     }
 }
