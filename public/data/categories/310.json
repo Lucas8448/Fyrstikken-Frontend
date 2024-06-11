@@ -1,0 +1,29 @@
+{
+    "title": "Hørespill",
+    "projects": [
+        {
+            "id": 312,
+            "name": "Mafia",
+            "description": "Iben Hertzberg Kristensen, Hektor Faldbakken-Sørhaug og Ingeborg Daniloff - 2MK+3MK",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 313,
+            "name": "Avhøret",
+            "description": "Johanna Nøvik Becke, Ruth Debsai Kidane, Abdoulie Liam Nyan og Martin Vedø-Hansen - 2MK+3MK",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 314,
+            "name": "Skogen",
+            "description": "Lara Prohic, Althea May Ranchez Joson, Gracjan Piotr Duda og Anton Lundtveit Flugsrud - 2MK+3MK",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 315,
+            "name": "Lost Tape",
+            "description": "Ole Jonathan Kvasnes - 3MKA",
+            "image": "https://placehold.co/600x400"
+        }
+    ]
+}
