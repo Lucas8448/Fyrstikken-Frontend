@@ -4,8 +4,8 @@
     "description": "A new life after death. In this thrilling game, you will be running from the afterlife in a way you never thought possible.",
     "sections": [
         {
-            "type": "audio",
-            "content": "data/images/Example Track.mp3"
+            "type": "video",
+            "content": "/data/videos/flower.webm"
         }
     ]
 }
