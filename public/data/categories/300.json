@@ -1,0 +1,29 @@
+{
+    "title": "Radiospot",
+    "projects": [
+        {
+            "id": 301,
+            "name": "XXL",
+            "description": "Abdoulie Liam Nyan - 2MK",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 302,
+            "name": "Rimfrost",
+            "description": "Jakub - 2MPA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 303,
+            "name": "Coca Cola",
+            "description": "Johanna Nøvik Becke, Nicolai Dahler, Ruth Debsai Kidane og Althea May Ranchez Joson - 2MK+3MK",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 304,
+            "name": "M",
+            "description": "Kitty Bjørnsrud-Gabrielsen - 3MKB",
+            "image": "https://placehold.co/600x400"
+        }
+    ]
+}
