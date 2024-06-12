@@ -52,13 +52,13 @@
             "id": 310,
             "title": "Hørespill",
             "description": "Hørespill er en form for lyddrama som kan inneholde dialog, musikk og lydeffekter.",
-            "image": "/data/images/hoerspill.jpg"
+            "image": "/data/images/hoerspill.jpeg"
         },
         "journalistikk": {
             "id": 400,
             "title": "Journalistikk",
             "description": "Journalistikk er en form for medieproduksjon som er laget for å informere og underholde. Journalistikk kan være alt fra enkle, korte nyhetsmeldinger til store, komplekse produksjoner.",
-            "image": "/data/images/journalistikk.jpeg"
+            "image": "/data/images/journalistikk.jpg"
         },
         "reklamedesign": {
             "id": 410,
