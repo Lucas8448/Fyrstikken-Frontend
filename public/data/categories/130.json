@@ -2,25 +2,25 @@
     "title": "Animasjonfilm",
     "projects": [
         {
-            "id": 131,
+            "id": 133,
             "name": "Julesending Intro",
             "description": "Daniel 2IMPA",
             "image": "https://placehold.co/600x400"
         },
         {
-            "id": 132,
+            "id": 134,
             "name": "Rimfrost Reklame",
             "description": "Mathias 2IMPB",
             "image": "https://placehold.co/600x400"
         },
         {
-            "id": 133,
-            "name": "Fritt Ord",
+            "id": 131,
+            "name": "Fritt_Ord",
             "description": "Mina Pran Kristensen 2MKA",
             "image": "https://placehold.co/600x400"
         },
         {
-            "id": 134,
+            "id": 132,
             "name": "Spring cleaning",
             "description": "Ole Jonathan Kvasnes 3MKA",
             "image": "https://placehold.co/600x400"

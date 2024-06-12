@@ -1,19 +1,39 @@
 {
     "id": 201,
     "name": "Psykisk Helse",
-    "description": "Laget av Ylva-Li Farstad Sevendal 3MKA",
+    "description": "Laget av Lars Garcia Bentzen 2STC",
     "sections": [
         {
             "type": "image",
-            "content": "/data/project_assets/200/Ylva-Li_Farstad_Sevendal_3MKA_1.jpg"
+            "content": "/data/project_assets/200/Lars_Garcia_Bentzen_2STC_1.jpg"
         },
         {
             "type": "image",
-            "content": "/data/project_assets/200/Ylva-Li_Farstad_Sevendal_3MKA_2.jpg"
+            "content": "/data/project_assets/200/Lars_Garcia_Bentzen_2STC_2.jpg"
         },
         {
             "type": "image",
-            "content": "/data/project_assets/200/Ylva-Li_Farstad_Sevendal_3MKA_3.jpg"
+            "content": "/data/project_assets/200/Lars_Garcia_Bentzen_2STC_3.jpg"
+        },
+        {
+            "type": "image",
+            "content": "/data/project_assets/200/Lars_Garcia_Bentzen_2STC_4.jpg"
+        },
+        {
+            "type": "image",
+            "content": "/data/project_assets/200/Lars_Garcia_Bentzen_2STC_5.jpg"
+        },
+        {
+            "type": "image",
+            "content": "/data/project_assets/200/Lars_Garcia_Bentzen_2STC_6.jpg"
+        },
+        {
+            "type": "image",
+            "content": "/data/project_assets/200/Lars_Garcia_Bentzen_2STC_7.jpg"
+        },
+        {
+            "type": "image",
+            "content": "/data/project_assets/200/Lars_Garcia_Bentzen_2STC_8.jpg"
         }
     ]
 }

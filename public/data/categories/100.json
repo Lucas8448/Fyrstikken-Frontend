@@ -2,13 +2,13 @@
     "title": "Reklamefilm",
     "projects": [
         {
-            "id": 101,
-            "name": "Psykose Reklame",
+            "id": 102,
+            "name": "Psykose",
             "description": "Amalie Moe Taugbøl 2MKA",
             "image": "https://placehold.co/600x400"
         },
         {
-            "id": 102,
+            "id": 101,
             "name": "Rimfrost",
             "description": "Berat 2MPA",
             "image": "https://placehold.co/600x400"
@@ -21,7 +21,7 @@
         },
         {
             "id": 104,
-            "name": "Retroreklame Coca Cola",
+            "name": "Coca Cola",
             "description": "Leon Sæther 1MKA",
             "image": "https://placehold.co/600x400"
         }
