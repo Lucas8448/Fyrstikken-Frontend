@@ -1,0 +1,29 @@
+{
+    "title": "Portrettfoto",
+    "projects": [
+        {
+            "id": 221,
+            "name": "Mamma",
+            "description": "Johanna Nøvik Becke 3MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 222,
+            "name": "Itdentitet_muslim",
+            "description": "Nicole Kate de Jesus Duldulao 3STD",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 223,
+            "name": "UtenTitel",
+            "description": "Sofie Wang 3MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 224,
+            "name": "UtenTitel",
+            "description": "Ylva-Li Farstad Sevendal 3MKA",
+            "image": "https://placehold.co/600x400"
+        }
+    ]
+}

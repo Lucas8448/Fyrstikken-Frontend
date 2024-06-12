@@ -1,0 +1,29 @@
+{
+    "title": "DokumentarFoto",
+    "projects": [
+        {
+            "id": 211,
+            "name": "Tap av Identitet",
+            "description": "Johanna Nøvik Becke 3MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 212,
+            "name": "Generasjonskløfter",
+            "description": "Lars Garcia Bentzen 2STC",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 213,
+            "name": "Ung og muslim",
+            "description": "Nicole Duldalao",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 214,
+            "name": "Dokumentar",
+            "description": "Joel 2MPB",
+            "image": "https://placehold.co/600x400"
+        }
+    ]
+}
