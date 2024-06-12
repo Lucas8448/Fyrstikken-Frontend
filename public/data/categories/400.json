@@ -1,0 +1,29 @@
+{
+    "title": "Journalistikk",
+    "projects": [
+        {
+            "id": 401,
+            "name": "Tegner seg ut av 9 til 4",
+            "description": "Hektor Faldbakken-Sørhaug - 2MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 402,
+            "name": "Der kinomaskinistens kunst lever",
+            "description": "Markus Løchen Ova - 1MKB",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 403,
+            "name": "17. mai: Oslo Edition",
+            "description": "Evelina Marie Berg Roald - 1MKB",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 404,
+            "name": "Min hobby – wrestling",
+            "description": "Kristoffer Kolbjørnsen og Masa Markovic - 3MKB",
+            "image": "https://placehold.co/600x400"
+        }
+    ]
+}
