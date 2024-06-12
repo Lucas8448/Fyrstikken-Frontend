@@ -4,13 +4,13 @@
         {
             "id": 211,
             "name": "Tap av Identitet",
-            "description": "Johanna Nøvik Becke 3MKA",
+            "description": "Johanna Nøvik Becke - 3MKA",
             "image": "https://placehold.co/600x400"
         },
         {
             "id": 212,
             "name": "Generasjonskløfter",
-            "description": "Lars Garcia Bentzen 2STC",
+            "description": "Lars Garcia Bentzen - 2STC",
             "image": "https://placehold.co/600x400"
         },
         {
@@ -22,7 +22,7 @@
         {
             "id": 214,
             "name": "Intervju",
-            "description": "Joel 2MPB",
+            "description": "Joele - 2MPB",
             "image": "https://placehold.co/600x400"
         }
     ]
