@@ -4,8 +4,8 @@
     "description": "Kjetil Holm Reite - 1IMA",
     "sections": [
         {
-            "type": "video",
-            "content": "https://youtu.be/sZiy8DQH5Nk"
+            "type": "iframe",
+            "content": "https://www.youtube.com/embed/sZiy8DQH5Nk"
         }
     ]
 }
