@@ -1,11 +1,11 @@
 {
     "id": 223,
-    "name": "UtenTitel",
+    "name": "UtenTittel",
     "description": "Laget av Sofie Wang 3MKA",
     "sections": [
         {
             "type": "image",
-            "content": "/data/project_assets/220/Sofie_Wang_3MKA_1.tif"
+            "content": "/data/project_assets/220/Sofie_Wang_3MKA_1.png"
         }
     ]
 }

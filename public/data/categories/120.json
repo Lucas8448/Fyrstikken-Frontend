@@ -4,25 +4,25 @@
         {
             "id": 123,
             "name": "Petals on the moon",
-            "description": "Alisha Hussain 3MKA",
+            "description": "Alisha Hussain - 3MKA",
             "image": "https://placehold.co/600x400"
         },
         {
             "id": 121,
             "name": "Dead to you",
-            "description": "Althea Joson 2MKB",
+            "description": "Althea Joson - 2MKB",
             "image": "https://placehold.co/600x400"
         },
         {
             "id": 122,
             "name": "Oslo",
-            "description": "Ella Wasserfall 1IMC",
+            "description": "Ella Wasserfall - 1IMC",
             "image": "https://placehold.co/600x400"
         },
         {
             "id": 125,
             "name": "Lost and Found",
-            "description": "Sally Ratajewska 2MKA",
+            "description": "Sally Ratajewska - 2MKA",
             "image": "https://placehold.co/600x400"
         }
     ]
