@@ -4,8 +4,8 @@
     "description": "Laget av Ole Jonathan Kvasnes 3MKA",
     "sections": [
         {
-            "type": "video",
-            "content": "/data/project_assets/210/"
-        }
+            "type": "iframe",
+            "content": "https://youtu.be/DtVxRsxfEos"
+            }
     ]
 }

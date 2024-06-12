@@ -4,8 +4,8 @@
     "description": "Laget av Luis og Nicholas 2IMPB",
     "sections": [
         {
-            "type": "video",
-            "content": "/data/project_assets/110/"
+            "type": "iframe",
+            "content": "https://youtu.be/0iPinyK_8b0"
         }
     ]
 }

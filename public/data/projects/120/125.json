@@ -4,8 +4,8 @@
     "description": "Laget av Sally Ratajewska 2MKA",
     "sections": [
         {
-            "type": "video",
-            "content": "/data/project_assets/120/"
-        }
+            "type": "iframe",
+            "content": "https://youtu.be/ygWRCCtkYw0"
+            }
     ]
 }

@@ -4,8 +4,8 @@
     "description": "Laget av Mathias Bram 2MKB",
     "sections": [
         {
-            "type": "video",
-            "content": "/data/project_assets/110/"
+            "type": "iframe",
+            "content": "https://youtu.be/rx3VWyW1KCE"
         }
     ]
 }

@@ -4,8 +4,8 @@
     "description": "Laget av Kristoffer Nicolai og Anton 3MKB",
     "sections": [
         {
-            "type": "video",
-            "content": "/data/project_assets/110/"
+            "type": "iframe",
+            "content": "https://youtu.be/8HeQ_KRJo6Y"
         }
     ]
 }

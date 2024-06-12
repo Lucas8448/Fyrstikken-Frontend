@@ -4,8 +4,8 @@
     "description": "Laget av Ella Wasserfall 1IMC",
     "sections": [
         {
-            "type": "video",
-            "content": "/data/project_assets/120/"
-        }
+            "type": "iframe",
+            "content": "https://youtu.be/yXPE6Yccwoc"
+            }
     ]
 }
