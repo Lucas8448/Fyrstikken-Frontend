@@ -1,0 +1,19 @@
+{
+    "id": 412,
+    "name": "Fantaemballasje",
+    "description": "Malin Aagård Hansen i 3MKA",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/project_assets/410/Malin_Aagård_Hansen_3MKA_Fantaemballasje/Emballasje_Emma_Alexandra_Østby_2mka_ZestyQuench.png"
+        },
+        {
+            "type": "image",
+            "content": "/data/project_assets/410/Malin_Aagård_Hansen_3MKA_Fantaemballasje/Emballasje_Malin_aagård_Hansen_3mka_Fanta_Grape.png"
+        },
+        {
+            "type": "image",
+            "content": "/data/project_assets/410/Malin_Aagård_Hansen_3MKA_Fantaemballasje/Emballasje_Malin_Aagård_Hansen_3mka_Fanta_Orange.png"
+        }
+    ]
+}
