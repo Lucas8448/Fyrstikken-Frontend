@@ -4,8 +4,8 @@
     "description": "Laget av Mina Pran Kristensen 2MKA",
     "sections": [
         {
-            "type": "video",
-            "content": "/data/project_assets/210/"
-        }
+            "type": "iframe",
+            "content": "https://youtu.be/WIicf3lEY2Q"
+            }
     ]
 }

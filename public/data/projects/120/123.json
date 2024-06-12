@@ -4,8 +4,8 @@
     "description": "Laget av Alisha Hussain 3MKA",
     "sections": [
         {
-            "type": "video",
-            "content": "/data/project_assets/120/"
-        }
+            "type": "iframe",
+            "content": "https://youtu.be/uk6tFEHBvGU"
+            }
     ]
 }

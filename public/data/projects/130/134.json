@@ -4,8 +4,8 @@
     "description": "Laget av Mathias 2IMPB",
     "sections": [
         {
-            "type": "video",
-            "content": "/data/project_assets/210/"
-        }
+            "type": "iframe",
+            "content": "https://youtube.com/shorts/riLL0-gEJJY?feature=share"
+            }
     ]
 }

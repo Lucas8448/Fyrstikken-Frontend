@@ -4,8 +4,8 @@
     "description": "Laget av Berat 2MPA",
     "sections": [
         {
-            "type": "video",
-            "content": "/data/project_assets/100/"
-        }
+            "type": "iframe",
+            "content": "https://youtu.be/gdUhWJ53rjQ"
+            }
     ]
 }

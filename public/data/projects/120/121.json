@@ -4,8 +4,8 @@
     "description": "Laget av Althea Joson 2MKB",
     "sections": [
         {
-            "type": "video",
-            "content": "/data/project_assets/120/"
-        }
+            "type": "iframe",
+            "content": "https://youtu.be/pkDbxB2xRyc"
+            }
     ]
 }

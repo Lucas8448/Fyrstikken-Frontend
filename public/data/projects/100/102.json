@@ -4,8 +4,8 @@
     "description": "Laget av Amalie Moe Taugbøl 2MKA",
     "sections": [
         {
-            "type": "video",
-            "content": "/data/project_assets/100/"
-        }
+            "type": "iframe",
+            "content": "https://youtu.be/Wb7jF9kUEvQ"
+            }
     ]
 }

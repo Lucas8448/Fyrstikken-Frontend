@@ -4,8 +4,8 @@
     "description": "Laget av Ahaoma Destiny Okeke 2MKA",
     "sections": [
         {
-            "type": "video",
-            "content": "/data/project_assets/110/"
+        "type": "iframe",
+        "content": "https://youtu.be/kHnjkes8TTQ"
         }
     ]
 }

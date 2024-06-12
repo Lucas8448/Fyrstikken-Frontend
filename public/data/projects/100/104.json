@@ -4,8 +4,8 @@
     "description": "Laget av Leon Sæther 1MKA",
     "sections": [
         {
-            "type": "video",
-            "content": "/data/project_assets/100/"
-        }
+            "type": "iframe",
+            "content": "https://youtu.be/0jvhidCWyhs"
+            }
     ]
 }
