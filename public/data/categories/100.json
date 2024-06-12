@@ -3,26 +3,26 @@
     "projects": [
         {
             "id": 101,
-            "name": "",
-            "description": "",
+            "name": "Psykose Reklame",
+            "description": "Amalie Moe Taugbøl 2MKA",
             "image": "https://placehold.co/600x400"
         },
         {
             "id": 102,
-            "name": "",
-            "description": "",
+            "name": "Rimfrost",
+            "description": "Berat 2MPA",
             "image": "https://placehold.co/600x400"
         },
         {
             "id": 103,
-            "name": "",
-            "description": "",
+            "name": "Infinitum",
+            "description": "Elias Reitan Arntzen 1MKB",
             "image": "https://placehold.co/600x400"
         },
         {
             "id": 104,
-            "name": "",
-            "description": "",
+            "name": "Retroreklame Coca Cola",
+            "description": "Leon Sæther 1MKA",
             "image": "https://placehold.co/600x400"
         }
     ]

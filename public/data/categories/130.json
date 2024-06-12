@@ -3,26 +3,26 @@
     "projects": [
         {
             "id": 131,
-            "name": "",
-            "description": "",
+            "name": "Julesending Intro",
+            "description": "Daniel 2IMPA",
             "image": "https://placehold.co/600x400"
         },
         {
             "id": 132,
-            "name": "",
-            "description": "",
+            "name": "Rimfrost Reklame",
+            "description": "Mathias 2IMPB",
             "image": "https://placehold.co/600x400"
         },
         {
             "id": 133,
-            "name": "",
-            "description": "",
+            "name": "Fritt Ord",
+            "description": "Mina Pran Kristensen 2MKA",
             "image": "https://placehold.co/600x400"
         },
         {
             "id": 134,
-            "name": "",
-            "description": "",
+            "name": "Spring cleaning",
+            "description": "Ole Jonathan Kvasnes 3MKA",
             "image": "https://placehold.co/600x400"
         }
     ]

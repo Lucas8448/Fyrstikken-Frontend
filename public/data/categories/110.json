@@ -3,26 +3,26 @@
     "projects": [
         {
             "id": 111,
-            "name": "",
-            "description": "",
+            "name": "Hårstil",
+            "description": "Ahaoma Destiny Okeke 2MKA",
             "image": "https://placehold.co/600x400"
         },
         {
             "id": 112,
-            "name": "",
-            "description": "",
+            "name": "Moxnes kortfilm",
+            "description": "Kristoffer Nicolai og Anton 3MKB",
             "image": "https://placehold.co/600x400"
         },
         {
             "id": 113,
-            "name": "",
-            "description": "",
+            "name": "En siste jobb",
+            "description": "Luis og Nicholas 2IMPB",
             "image": "https://placehold.co/600x400"
         },
         {
             "id": 114,
-            "name": "",
-            "description": "",
+            "name": "Wolf in Sheeps Clothing",
+            "description": "Mathias Bram 2MKB",
             "image": "https://placehold.co/600x400"
         }
     ]
