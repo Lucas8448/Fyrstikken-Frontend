@@ -1,0 +1,29 @@
+{
+    "title": "Reklamedesign",
+    "projects": [
+        {
+            "id": 411,
+            "name": "Utdanning.no",
+            "description": "Sofie Wang - 3MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 412,
+            "name": "Fantaemballasje",
+            "description": "Malin Aagård Hansen - 3MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 413,
+            "name": "Loud",
+            "description": "Alisha Hussain - 3MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 414,
+            "name": "Vinterreklame",
+            "description": "Mina Pran Kristensen - 2MKA",
+            "image": "https://placehold.co/600x400"
+        }
+    ]
+}
