@@ -52,7 +52,7 @@
             "id": 310,
             "title": "Hørespill",
             "description": "Hørespill er en form for lyddrama som kan inneholde dialog, musikk og lydeffekter.",
-            "image": "/data/images/hoerspill.jpg"
+            "image": "/data/images/hoerspill.jpeg"
         },
         "journalistikk": {
             "id": 400,
@@ -70,7 +70,7 @@
             "id": 420,
             "title": "Film- og spillplakat",
             "description": "Film- og spillplakat er en form for grafisk design som er laget for å promotere filmer og spill.",
-            "image": "/data/images/filmgamesposter.jpg"
+            "image": "/data/images/filmplakat.jpg"
         },
         "illustrasjon-og-magasin": {
             "id": 430,
@@ -82,7 +82,7 @@
             "id": 440,
             "title": "Bokomslag",
             "description": "Bokomslag er en form for grafisk design som er laget for å illustrere forsiden av en bok.",
-            "image": "/data/images/bokomslag.jpg"
+            "image": "/data/images/bokomslag.jpeg"
         },
         "spillutvikling": {
             "id": 450,

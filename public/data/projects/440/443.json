@@ -1,0 +1,11 @@
+{
+    "id": 443,
+    "name": "The song of Achilles",
+    "description": "Lana Bugarski - 3MKB",
+    "sections": [
+        {
+            "type": "image",
+            "content": "\\data\\project_assets\\440\\Bokomslag_Lana_Bugarski_3mkb.png"
+        }
+    ]
+}

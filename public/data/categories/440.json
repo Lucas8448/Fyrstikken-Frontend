@@ -1,0 +1,29 @@
+{
+    "title": "Bokomslag",
+    "projects": [
+        {
+            "id": 441,
+            "name": "Fleabeg: the scriptures",
+            "description": "Alisha Hussain - 3MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 442,
+            "name": "The devil in the white city",
+            "description": "Kristoffer Kolbjørnsen - 3MKB",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 443,
+            "name": "The song of Achilles",
+            "description": "Lana Bugarski - 3MKB",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 444,
+            "name": "Howls moving castle",
+            "description": "Malin Aagard Hansen - 3MKA",
+            "image": "https://placehold.co/600x400"
+        }
+    ]
+}

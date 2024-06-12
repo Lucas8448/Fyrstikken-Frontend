@@ -1,0 +1,29 @@
+{
+    "title": "Tegneserie",
+    "projects": [
+        {
+            "id": 501,
+            "name": "Dream",
+            "description": "Masa Markovic - 3MKB",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 502,
+            "name": "Du er ikke alene",
+            "description": "Mina Pran Kristensen - 2MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 503,
+            "name": "Fritt ord",
+            "description": "Amalie Moe Taugbøl - 2MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 504,
+            "name": "Base A-2572",
+            "description": "Ylva-Li Farstad Sevendal - 3MKA",
+            "image": "https://placehold.co/600x400"
+        }
+    ]
+}
