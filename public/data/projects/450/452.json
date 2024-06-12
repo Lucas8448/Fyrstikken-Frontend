@@ -4,8 +4,8 @@
     "description": "Diego, Nicholas, Jan Filip, Christian - 2IM",
     "sections": [
         {
-            "type": "video",
-            "content": "https://youtu.be/zMZ-tGKCGwU"
+            "type": "iframe",
+            "content": "https://www.youtube.com/embed/zMZ-tGKCGwU"
         }
     ]
 }

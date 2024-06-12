@@ -4,8 +4,8 @@
     "description": "Aksel, Max, Renate, Nicklas, Aron, Mathias - 2IM",
     "sections": [
         {
-            "type": "video",
-            "content": "https://youtu.be/a4mifqrkwVI"
+            "type": "iframe",
+            "content": "https://www.youtube.com/embed/a4mifqrkwVI"
         }
     ]
 }
