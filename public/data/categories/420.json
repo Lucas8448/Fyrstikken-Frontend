@@ -1,0 +1,29 @@
+{
+    "title": "Film- og spillplakat",
+    "projects": [
+        {
+            "id": 421,
+            "name": "Come and see",
+            "description": "Adalsteinn Jonsson Sandal - 1MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 422,
+            "name": "Max Manus",
+            "description": "Sander Riiser-Grønsberg - 1MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 423,
+            "name": "Straight Outta Gamlebyen",
+            "description": "Iver Feiring Sandvik  - 1MKB",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 424,
+            "name": "ZeroG",
+            "description": "Aksel, Max, Renate, Nicklas, Aron, Mathias - 2IM",
+            "image": "https://placehold.co/600x400"
+        }
+    ]
+}

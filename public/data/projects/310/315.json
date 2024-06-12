@@ -1,0 +1,11 @@
+{
+    "id": 315,
+    "name": "Lost Tape",
+    "description": "Ole Jonathan Kvasnes i 3MKA",
+    "sections": [
+        {
+            "type": "audio",
+            "content": "/data/project_assets/310/Ole Jonathan Kvasnes, 3MKA, Lost Tape (hørespill).mp3"
+        }
+    ]
+}

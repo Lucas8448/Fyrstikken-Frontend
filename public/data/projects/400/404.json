@@ -1,0 +1,11 @@
+{
+    "id": 404,
+    "name": "Min hobby – wrestling",
+    "description": "Kristoffer Kolbjørnsen og Masa Markovic i 3MKB",
+    "sections": [
+        {
+            "type": "video",
+            "content": "/data/project_assets/400/Kristoffer og Masa – 3MKB – TV Reportasje om wrestling.mp4"
+        }
+    ]
+}
