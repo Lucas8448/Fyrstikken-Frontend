@@ -1,0 +1,29 @@
+{
+    "title": "Visuell Identitet",
+    "projects": [
+        {
+            "id": 511,
+            "name": "Olympen Grafisk profil",
+            "description": "Aksel Lundby - 2IMPB",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 512,
+            "name": "Olympen Grafisk profil",
+            "description": "Daniel Thulsted Børdalen - 2IMPA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 513,
+            "name": "Stressdown Grafisk profil",
+            "description": "Mina Pran Kristensen - 2MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 514,
+            "name": "Olympen Grafisk Profil",
+            "description": "Maria A. B. Todilla - 2IMPB",
+            "image": "https://placehold.co/600x400"
+        }
+    ]
+}

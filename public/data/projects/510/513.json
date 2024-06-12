@@ -1,0 +1,11 @@
+{
+    "id": 513,
+    "name": "Stressdown Grafisk profil",
+    "description": "Mina Pran Kristensen - 2MKA",
+    "sections": [
+        {
+            "type": "image",
+            "content": "\\data\\project_assets\\510\\Mina_Pran_Kristensen_2MKA_Stressdown-1.png"
+        }
+    ]
+}
