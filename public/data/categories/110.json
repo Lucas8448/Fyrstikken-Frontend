@@ -1,0 +1,29 @@
+{
+    "title": "Fiksjon og Dokumentarfilm",
+    "projects": [
+        {
+            "id": 111,
+            "name": "",
+            "description": "",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 112,
+            "name": "",
+            "description": "",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 113,
+            "name": "",
+            "description": "",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 114,
+            "name": "",
+            "description": "",
+            "image": "https://placehold.co/600x400"
+        }
+    ]
+}

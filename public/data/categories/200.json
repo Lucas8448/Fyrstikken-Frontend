@@ -1,0 +1,29 @@
+{
+    "title": "Kunstfoto",
+    "projects": [
+        {
+            "id": 201,
+            "name": "Psykisk Helse",
+            "description": "Ylva-Li Farstad Sevendal MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 202,
+            "name": "Lidenskap",
+            "description": "Sofie Wang 3MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 203,
+            "name": "Kjønnsidentitet",
+            "description": "Maya Arrojo Gurung 3MKB",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 204,
+            "name": "Psykisk Helse",
+            "description": "Lars Garcia Bentzen 2STC",
+            "image": "https://placehold.co/600x400"
+        }
+    ]
+}
