@@ -1,11 +1,11 @@
 {
     "id": 133,
-    "name": "",
-    "description": "Laget av",
+    "name": "Julesending Intro",
+    "description": "Laget av Daniel 2IMPA",
     "sections": [
         {
             "type": "video",
-            "content": "/data/project_assets/210/"
+            "content": "/data/project_assets/130/"
         }
     ]
 }

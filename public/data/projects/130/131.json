@@ -1,11 +1,11 @@
 {
     "id": 131,
-    "name": "",
-    "description": "Laget av",
+    "name": "Fritt Ord",
+    "description": "Laget av Mina Pran Kristensen 2MKA",
     "sections": [
         {
             "type": "video",
-            "content": "/data/project_assets/130/"
+            "content": "/data/project_assets/210/"
         }
     ]
 }
