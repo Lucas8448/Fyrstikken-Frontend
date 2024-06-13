@@ -5,7 +5,7 @@
     "sections": [
         {
             "type": "iframe",
-            "content": "https://youtube.com/shorts/riLL0-gEJJY?feature=share"
-            }
+            "content": "https://www.youtube.com/embed/riLL0-gEJJY"
+        }
     ]
 }
