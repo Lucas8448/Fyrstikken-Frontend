@@ -1,0 +1,29 @@
+{
+    "title": "Ukategorieserte bidrag",
+    "projects": [
+        {
+            "id": 431,
+            "name": "Illustrasjon",
+            "description": "Aron Widar Johannessen - 2IMPA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 432,
+            "name": "Gitarist i verdensrommet",
+            "description": "Ole Jonathan Kvasnes - 3MKA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 433,
+            "name": "Silhuettby",
+            "description": "Renate Bjerke Sørensen - 2IMPA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 434,
+            "name": "Stars of NYC",
+            "description": "Elsa Torbo - 3MKA",
+            "image": "https://placehold.co/600x400"
+        }
+    ]
+}

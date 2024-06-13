@@ -1,0 +1,11 @@
+{
+    "id": 434,
+    "name": "Stars of NYC",
+    "description": "Elsa Torbo - 3MKA",
+    "sections": [
+        {
+            "type": "image",
+            "content": "\\data\\project_assets\\430\\Elsa_Torbo_3mka_Magasin_StarsNYC.jpg"
+        }
+    ]
+}
