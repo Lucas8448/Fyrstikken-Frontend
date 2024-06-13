@@ -1,0 +1,11 @@
+{
+    "id": 602,
+    "name": "Byvandringer",
+    "description": "Jonas, Ayaz, Mahamed, Even, og Mourad - IMD",
+    "sections": [
+        {
+            "type": "image",
+            "content": "\\data\\project_assets\\600\\IMD_Byvandringer_01.jpg"
+        }
+    ]
+}

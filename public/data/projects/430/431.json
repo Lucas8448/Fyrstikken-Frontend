@@ -1,0 +1,11 @@
+{
+    "id": 431,
+    "name": "Illustrasjon",
+    "description": "Aron Widar Johannessen - 2IMPA",
+    "sections": [
+        {
+            "type": "image",
+            "content": "\\data\\project_assets\\430\\Aron_2MPA_Illustrasjon.png"
+        }
+    ]
+}

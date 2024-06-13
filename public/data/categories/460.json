@@ -1,0 +1,29 @@
+{
+    "title": "Ukategorieserte bidrag",
+    "projects": [
+        {
+            "id": 461,
+            "name": "Porche",
+            "description": "Adrian Zander - 2IMA",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 462,
+            "name": "Rimfrost Flyer",
+            "description": "Aksel Lundby - 2IMPB",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 463,
+            "name": "Maria A. B. Todilla",
+            "description": "Popeye Magasin - 2IMPB",
+            "image": "https://placehold.co/600x400"
+        },
+        {
+            "id": 464,
+            "name": "Dula Magasin",
+            "description": "Petra Jacobsen - 2IMPB",
+            "image": "https://placehold.co/600x400"
+        }
+    ]
+}
