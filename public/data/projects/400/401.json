@@ -4,6 +4,11 @@
     "description": "Hektor Faldbakken-Sørhaug i 2MKA",
     "sections": [
         {
+            "type": "image",
+            "content": "/data/project_assets/400/Hektor_2MKA.jpg",
+            "hidden": true
+        },
+        {
             "type": "iframe",
             "content": "https://sway.cloud.microsoft/pBWNgqtDugvH6OAm?ref=Link&loc=play"
         }

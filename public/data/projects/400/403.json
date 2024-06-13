@@ -4,6 +4,11 @@
     "description": "Evelina Marie Berg Roald i 1MKB",
     "sections": [
         {
+            "type": "image",
+            "content": "/data/project_assets/400/Evelina-1MKB-Fotoreportasje.jpg",
+            "hidden": true
+        },
+        {
             "type": "iframe",
             "content": "https://sway.cloud.microsoft/tAcHP8wSn7qnkXuE?ref=Link&loc=play"
         }

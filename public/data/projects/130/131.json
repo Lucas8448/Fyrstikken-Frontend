@@ -4,8 +4,13 @@
     "description": "Laget av Mina Pran Kristensen 2MKA",
     "sections": [
         {
+            "type": "image",
+            "content": "/data/project_assets/130/Mina_2MKA_FrittOrd.jpg",
+            "hidden": true
+        },
+        {
             "type": "iframe",
             "content": "https://youtu.be/WIicf3lEY2Q"
-            }
+        }
     ]
 }

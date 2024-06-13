@@ -4,8 +4,13 @@
     "description": "Laget av Ella Wasserfall 1IMC",
     "sections": [
         {
+            "type": "image",
+            "content": "/data/project_assets/120/Ella_1IMC_Oslo.jpg",
+            "hidden": true
+        },
+        {
             "type": "iframe",
             "content": "https://youtu.be/yXPE6Yccwoc"
-            }
+        }
     ]
 }

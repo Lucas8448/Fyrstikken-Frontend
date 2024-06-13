@@ -4,6 +4,11 @@
     "description": "Laget av Luis og Nicholas 2IMPB",
     "sections": [
         {
+            "type": "image",
+            "content": "/data/project_assets/110/LuisOgNicolai_2IMPB_EnSisteJobb.jpg",
+            "hidden": true
+        },
+        {
             "type": "iframe",
             "content": "https://youtu.be/0iPinyK_8b0"
         }

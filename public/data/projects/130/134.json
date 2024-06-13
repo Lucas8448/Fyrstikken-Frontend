@@ -4,8 +4,13 @@
     "description": "Laget av Mathias 2IMPB",
     "sections": [
         {
+            "type": "image",
+            "content": "/data/project_assets/130/Mathias_2IMPB_RimfrostReklame.jpg",
+            "hidden": true
+        },
+        {
             "type": "iframe",
-            "content": "https://youtube.com/shorts/riLL0-gEJJY?feature=share"
-            }
+            "content": "https://youtube.com/shorts/riLL0-gEJJY"
+        }
     ]
 }

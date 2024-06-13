@@ -4,8 +4,13 @@
     "description": "Laget av Daniel 2IMPA",
     "sections": [
         {
+            "type": "image",
+            "content": "/data/project_assets/130/Daniel_1IMPB_Juleintro.jpg",
+            "hidden": true
+        },
+        {
             "type": "iframe",
             "content": "https://youtu.be/VrJdYVgfVU8"
-            }
+        }
     ]
 }
