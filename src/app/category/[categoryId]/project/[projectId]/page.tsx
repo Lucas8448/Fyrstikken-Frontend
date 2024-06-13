@@ -8,6 +8,7 @@ import Image from 'next/image';
 interface ProjectSection {
     type: 'image' | 'video' | 'audio' | 'text' | 'iframe';
     content: string;
+    hidden?: boolean;
 }
 
 interface ProjectData {
@@ -53,15 +54,20 @@ export default async function CategoryProjectPage({ params }: { params: { catego
                     </CardHeader>
                     <CardContent className="p-6 space-y-6">
                         <div className="space-y-6">
-                            {projectData.sections.map((section, index) => (
-                                <div key={index} className="p-4 border rounded-md shadow-md bg-gray-50">
-                                    {section.type === 'image' && <img src={section.content} alt="Project Image" className="w-full h-auto rounded-md" />}
-                                    {section.type === 'video' && <video controls autoPlay loop className="w-full h-auto rounded-md"><source src={section.content} /></video>}
-                                    {section.type === 'audio' && <audio src={section.content} controls className="w-full rounded-md" />}
-                                    {section.type === 'iframe' && <iframe src={section.content} className="w-full h-96 rounded-md" />}
-                                    {section.type === 'text' && <p className="text-gray-700">{section.content}</p>}
-                                </div>
-                            ))}
+                            {projectData.sections.map((section, index) => {
+                                if (section.hidden == false) {
+                                    return (
+                                        <div key={index} className="p-4 border rounded-md shadow-md bg-gray-50">
+                                            {section.type === 'image' && <img src={section.content} alt="Project Image" className="w-full h-auto rounded-md" />}
+                                            {section.type === 'video' && <video controls autoPlay loop className="w-full h-auto rounded-md"><source src={section.content} /></video>}
+                                            {section.type === 'audio' && <audio src={section.content} controls className="w-full rounded-md" />}
+                                            {section.type === 'iframe' && <iframe src={section.content} className="w-full h-96 rounded-md" />}
+                                            {section.type === 'text' && <p className="text-gray-700">{section.content}</p>}
+                                        </div>
+                                    );
+                                }
+                                return null;
+                            })}
                         </div>
                     </CardContent>
                     <CardFooter className="p-6 border-t border-gray-200 bg-gray-50 text-center">
