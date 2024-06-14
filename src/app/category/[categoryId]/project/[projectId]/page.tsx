@@ -60,16 +60,22 @@ export default async function CategoryProjectPage({ params }: { params: { catego
                                     return <div key={index}></div>;
                                 }
                                 if (section.type === 'image') {
+                                    const isValidUrl = section.content && section.content.startsWith('http');
+                                    const imageUrl = isValidUrl ? section.content : '/path/to/default-image.png';
+
+                                    const imageSrc = await dynamicBlurDataUrl(imageUrl);
+
                                     return (
                                         <div key={index}>
                                             <Image
-                                                alt={`Section ${index}`}
+                                                alt="Project Image"
                                                 className="rounded-lg"
-                                                src={section.content}
-                                                width={1280}
-                                                height={720}
-                                                placeholder="blur"
-                                                blurDataURL={await dynamicBlurDataUrl(section.content)}
+                                                height={1080}
+                                                src={imageSrc}
+                                                style={{
+                                                    aspectRatio: '16 / 9',
+                                                }}
+                                                width={1920}
                                             />
                                         </div>
                                     );
