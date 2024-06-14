@@ -4,6 +4,11 @@
     "description": "Laget av Kristoffer Nicolai og Anton 3MKB",
     "sections": [
         {
+            "type": "image",
+            "content": "/data/project_assets/110/KristofferOgAnton_3MKB_Moxnes.jpg",
+            "hidden": true
+        },
+        {
             "type": "iframe",
             "content": "https://youtu.be/8HeQ_KRJo6Y"
         }

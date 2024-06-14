@@ -1,8 +1,13 @@
 {
     "id": 404,
-    "name": "Min hobby – wrestling",
+    "name": "Min hobby - wrestling",
     "description": "Kristoffer Kolbjørnsen og Masa Markovic i 3MKB",
     "sections": [
+        {
+            "type": "image",
+            "content": "/data/project_assets/400/KeistofferOgMesa_3MKB_Wrestling.jpg",
+            "hidden": true
+        },
         {
             "type": "iframe",
             "content": "https://www.youtube.com/embed/mqUO4efQyns"

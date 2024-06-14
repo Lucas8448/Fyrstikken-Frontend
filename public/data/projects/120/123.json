@@ -4,8 +4,13 @@
     "description": "Laget av Alisha Hussain 3MKA",
     "sections": [
         {
+            "type": "image",
+            "content": "/data/project_assets/120/Alisha_3MKA_Petals.jpg",
+            "hidden": true
+        },
+        {
             "type": "iframe",
             "content": "https://youtu.be/uk6tFEHBvGU"
-            }
+        }
     ]
 }

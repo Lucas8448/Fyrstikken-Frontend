@@ -4,6 +4,11 @@
     "description": "Markus Løchen Ova i 1MKB",
     "sections": [
         {
+            "type": "image",
+            "content": "/data/project_assets/400/Markus1MKB-KinomaskinistGregPope.jpg",
+            "hidden": true
+        },
+        {
             "type": "iframe",
             "content": "https://sway.cloud.microsoft/qtcTQxMx25hULKhS?ref=Link&loc=play"
         }

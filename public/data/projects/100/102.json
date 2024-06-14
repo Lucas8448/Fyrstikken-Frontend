@@ -4,6 +4,11 @@
     "description": "Laget av Amalie Moe Taugbøl 2MKA",
     "sections": [
         {
+            "type": "image",
+            "content": "/data/project_assets/100/Amalie_2MKA_Psykose.jpg",
+            "hidden": true
+        },
+        {
             "type": "iframe",
             "content": "https://www.youtube.com/embed/Wb7jF9kUEvQ"
         }

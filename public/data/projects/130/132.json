@@ -4,6 +4,11 @@
     "description": "Laget av Ole Jonathan Kvasnes 3MKA",
     "sections": [
         {
+            "type": "image",
+            "content": "/data/project_assets/130/OJ_3MKA_SpringCleaning.jpg",
+            "hidden": true
+        },
+        {
             "type": "iframe",
             "content": "https://www.youtube.com/embed/DtVxRsxfEos"
             }

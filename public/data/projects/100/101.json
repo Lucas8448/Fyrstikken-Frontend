@@ -4,6 +4,11 @@
     "description": "Laget av Berat 2MPA",
     "sections": [
         {
+            "type": "image",
+            "content": "/data/project_assets/100/Berat_2MPA_Rimfrost.jpg",
+            "hidden": true
+        },
+        {
             "type": "iframe",
             "content": "https://www.youtube.com/embed/gdUhWJ53rjQ"
         }

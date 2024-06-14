@@ -4,8 +4,13 @@
     "description": "Laget av Althea Joson 2MKB",
     "sections": [
         {
+            "type": "image",
+            "content": "/data/project_assets/120/Althea_2MKB_Dead.jpg",
+            "hidden": true
+        },
+        {
             "type": "iframe",
             "content": "https://youtu.be/pkDbxB2xRyc"
-            }
+        }
     ]
 }
