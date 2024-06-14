@@ -66,9 +66,6 @@ export default async function CategoryProjectPage({ params }: { params: { catego
                                                 className="rounded-lg"
                                                 height={1080}
                                                 src={section.content}
-                                                style={{
-                                                    aspectRatio: '16 / 9',
-                                                }}
                                                 width={1920}
                                             />
                                         </div>
