@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { dynamicBlurDataUrl } from '@/app/dynamicBlurDataUrl'
 
 interface ProjectSection {
-    type: 'image' | 'video' | 'audio' | 'text' | 'iframe';
+    type: 'image' | 'video' | 'audio' | 'text' | 'iframe' | 'link';
     content: string;
     hidden?: boolean;
 }
@@ -114,6 +114,13 @@ export default async function CategoryProjectPage({ params }: { params: { catego
                                                     aspectRatio: '16 / 9',
                                                 }}
                                             />
+                                        </div>
+                                    );
+                                }
+                                if (section.type === 'link') {
+                                    return (
+                                        <div key={index}>
+                                            <a className="text-blue-500 hover:underline" href={section.content}>Se her</a>
                                         </div>
                                     );
                                 }
