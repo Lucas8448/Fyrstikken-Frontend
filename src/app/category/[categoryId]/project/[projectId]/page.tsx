@@ -4,9 +4,10 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/card';
 import Image from 'next/image';
+import { dynamicBlurDataUrl } from '@/app/dynamicBlurDataUrl'
 
 interface ProjectSection {
-    type: 'image' | 'video' | 'audio' | 'text' | 'iframe';
+    type: 'image' | 'video' | 'audio' | 'text' | 'iframe' | 'link';
     content: string;
     hidden?: boolean;
 }
@@ -54,7 +55,7 @@ export default async function CategoryProjectPage({ params }: { params: { catego
                     </CardHeader>
                     <CardContent className="p-6 space-y-6">
                         <div className="space-y-6">
-                            {projectData.sections.map((section, index) => {
+                            {projectData.sections.map(async (section, index) => {
                                 if (section.hidden) {
                                     return <div key={index}></div>;
                                 }
@@ -67,6 +68,8 @@ export default async function CategoryProjectPage({ params }: { params: { catego
                                                 src={section.content}
                                                 width={1280}
                                                 height={720}
+                                                placeholder="blur"
+                                                blurDataURL={await dynamicBlurDataUrl(section.content)}
                                             />
                                         </div>
                                     );
@@ -111,6 +114,13 @@ export default async function CategoryProjectPage({ params }: { params: { catego
                                                     aspectRatio: '16 / 9',
                                                 }}
                                             />
+                                        </div>
+                                    );
+                                }
+                                if (section.type === 'link') {
+                                    return (
+                                        <div key={index}>
+                                            <a className="text-blue-500 hover:underline" href={section.content}>Se her</a>
                                         </div>
                                     );
                                 }
