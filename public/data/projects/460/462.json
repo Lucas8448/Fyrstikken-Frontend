@@ -5,11 +5,11 @@
     "sections": [
         {
             "type": "image",
-            "content": "\\data\\project_assets\\460\\Aksel-2IMPB_RimfrostFlyer-1.webp"
+            "content": "/data/project_assets/460/Aksel-2IMPB_RimfrostFlyer-1.webp"
         },
         {
             "type": "image",
-            "content": "\\data\\project_assets\\460\\Aksel-2IMPB_RimfrostFlyer-2.webp"
+            "content": "/data/project_assets/460/Aksel-2IMPB_RimfrostFlyer-2.webp"
         }
     ]
 }

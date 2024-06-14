@@ -5,15 +5,15 @@
     "sections": [
         {
             "type": "image",
-            "content": "\\data\\project_assets\\500\\Amalie-2MKA_Fritt_ord-1.png"
+            "content": "/data/project_assets/500/Amalie-2MKA_Fritt_ord-1.png"
         },
         {
             "type": "image",
-            "content": "\\data\\project_assets\\500\\Amalie-2MKA_Fritt_ord-2.png"
+            "content": "/data/project_assets/500/Amalie-2MKA_Fritt_ord-2.png"
         },
         {
             "type": "image",
-            "content": "\\data\\project_assets\\500\\Amalie-2MKA_Fritt_ord-3.png"
+            "content": "/data/project_assets/500/Amalie-2MKA_Fritt_ord-3.png"
         }
     ]
 }

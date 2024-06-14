@@ -5,23 +5,23 @@
     "sections": [
         {
             "type": "image",
-            "content": "\\data\\project_assets\\600\\IMD_Byvandringer_01.jpg"
+            "content": "/data/project_assets/600/IMD_Byvandringer_01.jpg"
         },
         {
             "type": "image",
-            "content": "\\data\\project_assets\\600\\IMD_Byvandringer_02.jpg"
+            "content": "/data/project_assets/600/IMD_Byvandringer_02.jpg"
         },
         {
             "type": "image",
-            "content": "\\data\\project_assets\\600\\IMD_Byvandringer_03.jpg"
+            "content": "/data/project_assets/600/IMD_Byvandringer_03.jpg"
         },
         {
             "type": "image",
-            "content": "\\data\\project_assets\\600\\IMD_Byvandringer_04.jpg"
+            "content": "/data/project_assets/600/IMD_Byvandringer_04.jpg"
         },
         {
             "type": "image",
-            "content": "\\data\\project_assets\\600\\IMD_Byvandringer_05.jpg"
+            "content": "/data/project_assets/600/IMD_Byvandringer_05.jpg"
         }
     ]
 }

@@ -55,14 +55,62 @@ export default async function CategoryProjectPage({ params }: { params: { catego
                     <CardContent className="p-6 space-y-6">
                         <div className="space-y-6">
                             {projectData.sections.map((section, index) => {
-                                if (section.hidden == false) {
+                                if (section.hidden) {
+                                    return <div key={index}></div>;
+                                }
+                                if (section.type === 'image') {
                                     return (
-                                        <div key={index} className="p-4 border rounded-md shadow-md bg-gray-50">
-                                            {section.type === 'image' && <img src={section.content} alt="Project Image" className="w-full h-auto rounded-md" />}
-                                            {section.type === 'video' && <video controls autoPlay loop className="w-full h-auto rounded-md"><source src={section.content} /></video>}
-                                            {section.type === 'audio' && <audio src={section.content} controls className="w-full rounded-md" />}
-                                            {section.type === 'iframe' && <iframe src={section.content} className="w-full h-96 rounded-md" />}
-                                            {section.type === 'text' && <p className="text-gray-700">{section.content}</p>}
+                                        <div key={index}>
+                                            <Image
+                                                alt={`Section ${index}`}
+                                                className="rounded-lg"
+                                                src={section.content}
+                                                width={1280}
+                                                height={720}
+                                            />
+                                        </div>
+                                    );
+                                }
+                                if (section.type === 'video') {
+                                    return (
+                                        <div key={index}>
+                                            <video
+                                                className="rounded-lg"
+                                                controls
+                                                src={section.content}
+                                            />
+                                        </div>
+                                    );
+                                }
+                                if (section.type === 'audio') {
+                                    return (
+                                        <div key={index}>
+                                            <audio
+                                                className="rounded-lg"
+                                                controls
+                                                src={section.content}
+                                            />
+                                        </div>
+                                    );
+                                }
+                                if (section.type === 'text') {
+                                    return (
+                                        <div key={index}>
+                                            <p>{section.content}</p>
+                                        </div>
+                                    );
+                                }
+                                if (section.type === 'iframe') {
+                                    return (
+                                        <div key={index}>
+                                            <iframe
+                                                className="rounded-lg"
+                                                src={section.content}
+                                                style={{
+                                                    width: '100%',
+                                                    aspectRatio: '16 / 9',
+                                                }}
+                                            />
                                         </div>
                                     );
                                 }

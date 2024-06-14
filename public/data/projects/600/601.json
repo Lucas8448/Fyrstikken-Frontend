@@ -5,7 +5,7 @@
     "sections": [
         {
             "type": "audio",
-            "content": "\\data\\project_assets\\600\\Martin_3MKA_Thoughts.mp3"
+            "content": "/data/project_assets/600/Martin_3MKA_Thoughts.mp3"
         }
     ]
 }
