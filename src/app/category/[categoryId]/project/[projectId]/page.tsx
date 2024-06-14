@@ -4,7 +4,6 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/card';
 import Image from 'next/image';
-import { dynamicBlurDataUrl } from '@/app/dynamicBlurDataUrl'
 
 interface ProjectSection {
     type: 'image' | 'video' | 'audio' | 'text' | 'iframe' | 'link';
@@ -60,18 +59,13 @@ export default async function CategoryProjectPage({ params }: { params: { catego
                                     return <div key={index}></div>;
                                 }
                                 if (section.type === 'image') {
-                                    const isValidUrl = section.content && section.content.startsWith('http');
-                                    const imageUrl = isValidUrl ? section.content : '/path/to/default-image.png';
-
-                                    const imageSrc = await dynamicBlurDataUrl(imageUrl);
-
                                     return (
                                         <div key={index}>
                                             <Image
                                                 alt="Project Image"
                                                 className="rounded-lg"
                                                 height={1080}
-                                                src={imageSrc}
+                                                src={section.content}
                                                 style={{
                                                     aspectRatio: '16 / 9',
                                                 }}
