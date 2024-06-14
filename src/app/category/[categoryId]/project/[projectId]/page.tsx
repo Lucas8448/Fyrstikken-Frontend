@@ -67,6 +67,7 @@ export default async function CategoryProjectPage({ params }: { params: { catego
                                                 src={section.content}
                                                 width={1280}
                                                 height={720}
+                                                placeholder="blur"
                                             />
                                         </div>
                                     );
