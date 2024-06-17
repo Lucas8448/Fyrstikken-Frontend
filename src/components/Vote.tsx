@@ -36,12 +36,13 @@ export default function Vote({ id }: VoteProps) {
         setError('');
         setSuccess('');
         try {
-            const response = await fetch('/api/access', {
+            // Adjusted to make a POST request to http://localhost:3000/api/access
+            const response = await fetch('http://localhost:3000/api/access', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email }),
+                body: JSON.stringify({ email }), // Assuming 'email' is the data you want to send
             });
             const data = await response.json();
             setLoadingSendMail(false);
@@ -61,7 +62,7 @@ export default function Vote({ id }: VoteProps) {
         setError('');
         setSuccess('');
         try {
-            const response = await fetch('/api/access', {
+            const response = await fetch('http://localhost:3000/api/access', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
