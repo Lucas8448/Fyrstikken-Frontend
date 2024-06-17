@@ -36,7 +36,7 @@ export default function Vote({ id }: VoteProps) {
         setError('');
         setSuccess('');
         try {
-            const response = await fetch('/api/proxy/access', {
+            const response = await fetch('/api/access', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ export default function Vote({ id }: VoteProps) {
         setError('');
         setSuccess('');
         try {
-            const response = await fetch('/api/proxy/access', {
+            const response = await fetch('/api/access', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ export default function Vote({ id }: VoteProps) {
 
     const handleVote = async (token: string) => {
         try {
-            const response = await fetch('/api/proxy/vote', {
+            const response = await fetch('/api/vote', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
