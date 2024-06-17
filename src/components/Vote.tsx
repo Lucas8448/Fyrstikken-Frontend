@@ -116,7 +116,7 @@ export default function Vote({ id }: VoteProps) {
                         fullWidth
                         label="Skole E-post"
                         value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        onChange={(e: any) => setEmail(e.target.value.toLowerCase())}
                         margin="normal"
                     />
                     <Button onClick={handleSendEmail} disabled={loadingSendMail}>
@@ -128,11 +128,11 @@ export default function Vote({ id }: VoteProps) {
                                 fullWidth
                                 label="Kode fra mail"
                                 value={code}
-                                onChange={(e) => setCode(e.target.value)}
+                                onChange={(e: any) => setCode(e.target.value)}
                                 margin="normal"
                             />
                             <Button onClick={handleVerifyCode} disabled={loadingCode}>
-                                {loadingCode ? <CircularProgress size={24} /> : 'Submit Vote'}
+                                {loadingCode ? <CircularProgress size={24} /> : 'Send inn stemme'}
                             </Button>
                         </>
                     )}
