@@ -36,8 +36,7 @@ export default function Vote({ id }: VoteProps) {
         setError('');
         setSuccess('');
         try {
-            // Adjusted to make a POST request to http://localhost:3000/api/access
-            const response = await fetch('http://localhost:3000/api/access', {
+            const response = await fetch('/api/access', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -62,7 +61,7 @@ export default function Vote({ id }: VoteProps) {
         setError('');
         setSuccess('');
         try {
-            const response = await fetch('http://localhost:3000/api/access', {
+            const response = await fetch('/api/access', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
