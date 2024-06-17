@@ -36,13 +36,10 @@ export default function Vote({ id }: VoteProps) {
         setError('');
         setSuccess('');
         try {
-            const response = await fetch('http://48.217.160.194:5000/access', {
+            const response = await fetch('/api/proxy/access', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*',
-                    'Access-Control-Allow-Methods': 'POST',
-                    'Access-Control-Allow-Headers': 'Content-Type',
                 },
                 body: JSON.stringify({ email }),
             });
@@ -64,13 +61,10 @@ export default function Vote({ id }: VoteProps) {
         setError('');
         setSuccess('');
         try {
-            const response = await fetch('http://48.217.160.194:5000/access', {
+            const response = await fetch('/api/proxy/access', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*',
-                    'Access-Control-Allow-Methods': 'POST',
-                    'Access-Control-Allow-Headers': 'Content-Type',
                 },
                 body: JSON.stringify({ email, code }),
             });
@@ -90,13 +84,10 @@ export default function Vote({ id }: VoteProps) {
 
     const handleVote = async (token: string) => {
         try {
-            const response = await fetch('http://48.217.160.194:5000/vote', {
+            const response = await fetch('/api/proxy/vote', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*',
-                    'Access-Control-Allow-Methods': 'POST',
-                    'Access-Control-Allow-Headers': 'Content-Type',
                 },
                 body: JSON.stringify({ token, contestant_id: id }),
             });
