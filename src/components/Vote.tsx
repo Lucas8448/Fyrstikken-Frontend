@@ -41,7 +41,7 @@ export default function Vote({ id }: VoteProps) {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email }),
+                body: JSON.stringify({ email }), // Assuming 'email' is the data you want to send
             });
             const data = await response.json();
             setLoadingSendMail(false);
