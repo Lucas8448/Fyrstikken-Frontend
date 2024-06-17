@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from 'react';
 import { Button, Modal, Box, Typography, TextField, CircularProgress, Alert } from '@mui/material';
 
@@ -48,7 +46,7 @@ export default function Vote({ id }: VoteProps) {
             if (response.ok) {
                 setSuccess('Verifikasjons kode sendt til din E-post');
             } else {
-                setError(data.message || 'Vi fikk ikke sendt deg koden din.');
+                setError(await response.text() || 'Vi fikk ikke sendt deg koden din.');
             }
         } catch (err) {
             setLoadingSendMail(false);
@@ -74,7 +72,7 @@ export default function Vote({ id }: VoteProps) {
                 await handleVote(token);
             } else {
                 setLoadingCode(false);
-                setError(data.message || 'Noe gikk galt, prøv igjen');
+                setError(await response.text() || 'Noe gikk galt, prøv igjen');
             }
         } catch (err) {
             setLoadingCode(false);
@@ -96,7 +94,7 @@ export default function Vote({ id }: VoteProps) {
             if (response.ok) {
                 setSuccess('Stemme innsendt');
             } else {
-                setError(data.message || 'Noe gikk galt, prøv igjen');
+                setError(await response.text() || 'Noe gikk galt, prøv igjen');
             }
         } catch (err) {
             setLoadingCode(false);

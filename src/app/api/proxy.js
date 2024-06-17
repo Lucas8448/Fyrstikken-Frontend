@@ -18,6 +18,7 @@ export default async function handler(req, res) {
         const data = await apiResponse.json();
         res.status(apiResponse.status).json(data);
     } catch (error) {
-        res.status(500).json({ error: 'Internal Server Error' });
+        console.error(error); // Log the error for debugging purposes
+        res.status(500).json({ error: 'Internal Server Error', details: error.message }); // Send back more detailed error information
     }
 }
