@@ -15,13 +15,13 @@
         },
         {
             "id": 223,
-            "name": "UtenTitel",
+            "name": "Lidenskap",
             "description": "Sofie Wang - 3MKA",
             "image": "https://placehold.co/600x400"
         },
         {
             "id": 224,
-            "name": "UtenTitel",
+            "name": "Psykisk helse",
             "description": "Ylva-Li Farstad Sevendal - 3MKA",
             "image": "https://placehold.co/600x400"
         }
