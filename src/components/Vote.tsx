@@ -94,7 +94,7 @@ export default function Vote({ id }: VoteProps) {
             const data = await response.json();
             setLoadingCode(false);
             if (response.ok) {
-                setSuccess('Stemme innsendt');
+                setSuccess('Stemme innsendt. Merk at du har nå brukt opp stemmen din.');
             } else {
                 setError(await response.text() || 'Noe gikk galt, prøv igjen');
             }
