@@ -16,6 +16,7 @@ interface ProjectData {
     name: string;
     description: string;
     sections: ProjectSection[];
+    winner?: boolean;
 }
 
 async function loader({ params }: { params: { categoryId: string, projectId: string } }): Promise<ProjectData | null> {
@@ -51,7 +52,10 @@ export default async function CategoryProjectPage({ params }: { params: { catego
                 <Card className="max-w-4xl w-full mx-auto shadow-lg bg-white overflow-hidden rounded-lg">
                     <CardHeader className="text-2xl font-bold p-6 border-b border-gray-200 bg-gray-50">
                         <div className='flow-root'>
-                            <p className='float-left'>{projectData.name}</p>
+                            <p className='float-left'>
+                                {projectData.winner ? <span className="badge">Vinner - </span> : ''}
+                                {projectData.name}
+                            </p>
                         </div>
                     </CardHeader>
                     <CardContent className="p-6 space-y-6">

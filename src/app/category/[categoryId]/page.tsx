@@ -75,7 +75,7 @@ export default async function Page({ params }: { params: { categoryId: number } 
                         {projects.map((project) => (
                             <Link href={`/category/${params.categoryId}/project/${project.id}`} key={`${params.categoryId}-${project.id}`}>
                                 <div className="text-primary-500">
-                                    <Card className="group h-full w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-lg">
+                                    <Card className={`group h-full w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-lg ${project.winner ? 'border-4 border-gold' : ''}`}>
                                         <CardContent>
                                             {project.sections.length > 0 && (
                                                 <div>
