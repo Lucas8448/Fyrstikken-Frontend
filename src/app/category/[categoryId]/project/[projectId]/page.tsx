@@ -4,7 +4,6 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/card';
 import Image from 'next/image';
-import Vote from '@/components/Vote'
 
 interface ProjectSection {
     type: 'image' | 'video' | 'audio' | 'text' | 'iframe' | 'link';
@@ -53,7 +52,6 @@ export default async function CategoryProjectPage({ params }: { params: { catego
                     <CardHeader className="text-2xl font-bold p-6 border-b border-gray-200 bg-gray-50">
                         <div className='flow-root'>
                             <p className='float-left'>{projectData.name}</p>
-                            <Vote id={projectData.id} />
                         </div>
                     </CardHeader>
                     <CardContent className="p-6 space-y-6">
