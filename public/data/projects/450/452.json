@@ -12,5 +12,6 @@
             "type": "iframe",
             "content": "https://www.youtube.com/embed/zMZ-tGKCGwU"
         }
-    ]
+    ],
+    "winner": true
 }
