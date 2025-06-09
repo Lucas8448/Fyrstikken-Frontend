@@ -23,6 +23,12 @@ export default function Navbar() {
         >
           Kategorier
         </Link>
+        <Link
+          className="text-sm font-medium hover:underline underline-offset-4"
+          href="/year"
+        >
+          År
+        </Link>
       </nav>
     </div>
   );

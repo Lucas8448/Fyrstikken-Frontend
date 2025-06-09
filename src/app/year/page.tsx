@@ -17,7 +17,7 @@ interface Data {
 
 export default async function Component() {
   const file = await fs.readFile(
-    process.cwd() + "/public/data/2024/categories.json",
+    process.cwd() + "/public/data/years.json",
     "utf8"
   );
   const data: Data = JSON.parse(file);
@@ -64,30 +64,30 @@ export default async function Component() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {Object.values(data.categories)
               .sort(() => Math.random() - 0.5)
-              .map((category) => (
+              .map((year) => (
                 <Link
                   className="text-primary-500"
-                  href={`/category/${category.id}`}
-                  key={category.id}
+                  href={`/year/${year.id}`}
+                  key={year.id}
                 >
                   <Card
-                    key={category.title}
+                    key={year.title}
                     className="group h-full w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-lg"
                   >
                     <CardContent>
                       <Image
-                        alt={category.title}
+                        alt={year.title}
                         className="aspect-w-16 aspect-h-9 w-full object-cover object-center transition-all group-hover:scale-105"
                         height={360}
-                        src={category.image}
+                        src={year.image}
                         width={640}
                       />
                       <div className="mt-4 space-y-2 p-6">
                         <h3 className="text-xl font-semibold">
-                          {category.title}
+                          {year.title}
                         </h3>
                         <p className="text-gray-500 dark:text-gray-400">
-                          {category.description}
+                          {year.description}
                         </p>
                       </div>
                     </CardContent>
