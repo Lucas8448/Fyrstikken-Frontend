@@ -14,7 +14,7 @@ interface Data {
     }[];
 }
 
-async function loader({ params }: { params: { categoryId: number } }) {
+async function loader({ params }: { params: { yearId: string; categoryId: number } }) {
     const categoryId = params.categoryId;
     const filePath = path.join(
         process.cwd(),
@@ -36,11 +36,11 @@ function shuffleArray(array: any[]) {
     }
 }
 
-export default async function Page({ params }: { params: { categoryId: number } }) {
+export default async function Page({ params }: { params: { yearId: string; categoryId: number } }) {
     const data: Data = await loader({ params });
     shuffleArray(data.projects);
     const filePaths = data.projects.map((project) =>
-        path.join(process.cwd(), "public", "data", '2024', "projects", `${params.categoryId}`, `${project.id}.json`)
+        path.join(process.cwd(), "public", "data", `${params.yearId}`, "projects", `${params.categoryId}`, `${project.id}.json`)
     );
 
     const projects = await Promise.all(
@@ -74,7 +74,7 @@ export default async function Page({ params }: { params: { categoryId: number } 
                 <div className="container">
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                         {projects.map((project) => (
-                            <Link href={`/category/${params.categoryId}/project/${project.id}`} key={`${params.categoryId}-${project.id}`}>
+                            <Link href={`/year/${params.yearId}/category/${params.categoryId}/project/${project.id}`} key={`${params.categoryId}-${project.id}`}>
                                 <div className="text-primary-500">
                                     <Card className={`group h-full w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-lg ${project.winner ? 'border-4 border-gold' : ''}`}>
                                         <CardContent>

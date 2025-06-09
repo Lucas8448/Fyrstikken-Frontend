@@ -67,7 +67,7 @@ export default async function Component() {
               .map((category) => (
                 <Link
                   className="text-primary-500"
-                  href={`/category/${category.id}`}
+                  href={`/year/${year.id}/category/${category.id}`}
                   key={category.id}
                 >
                   <Card
