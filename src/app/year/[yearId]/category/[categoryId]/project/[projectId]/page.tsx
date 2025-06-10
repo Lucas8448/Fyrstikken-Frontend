@@ -19,12 +19,12 @@ interface ProjectData {
     winner?: boolean;
 }
 
-async function loader({ params }: { params: { categoryId: string, projectId: string } }): Promise<ProjectData | null> {
-    const { categoryId, projectId } = params;
+async function loader({ params }: { params: { yearId: string; categoryId: string, projectId: string } }): Promise<ProjectData | null> {
+    const { yearId ,categoryId, projectId } = params;
     const filePath = path.join(process.cwd(),
     'public',
     'data',
-    '2024',
+    `${yearId}`,
     'projects',
     `${categoryId}`,
     `${projectId}.json`);
@@ -33,7 +33,7 @@ async function loader({ params }: { params: { categoryId: string, projectId: str
     return projectData || null;
 }
 
-export default async function CategoryProjectPage({ params }: { params: { categoryId: string, projectId: string } }) {
+export default async function CategoryProjectPage({ params }: { params: { yearId: string; categoryId: string, projectId: string } }) {
     const projectData = await loader({ params });
 
     if (!projectData) {

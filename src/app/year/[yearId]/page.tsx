@@ -5,6 +5,7 @@ import { CardContent, Card } from "@/components/ui/card";
 import RandomCategory from "@/components/randomCategory";
 import { promises as fs } from "fs";
 import Image from "next/image";
+import path from "path";
 
 interface Data {
   categories: {
@@ -15,11 +16,9 @@ interface Data {
   }[];
 }
 
-export default async function Component() {
-  const file = await fs.readFile(
-    process.cwd() + "/public/data/2024/categories.json",
-    "utf8"
-  );
+export default async function Component({ params }: {params: { yearId: string}}) {
+  const filePath = path.join(process.cwd(), "public", "data", params.yearId, "categories.json");
+  const file = await fs.readFile(filePath, "utf8");
   const data: Data = JSON.parse(file);
 
   return (
@@ -67,7 +66,7 @@ export default async function Component() {
               .map((category) => (
                 <Link
                   className="text-primary-500"
-                  href={`/year/${year.id}/category/${category.id}`}
+                  href={`/year/${params.yearId}/category/${category.id}`}
                   key={category.id}
                 >
                   <Card
