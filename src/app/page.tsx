@@ -17,7 +17,7 @@ interface Data {
 
 export default async function Component() {
   const file = await fs.readFile(
-    process.cwd() + "/public/data/2024/categories.json",
+    process.cwd() + "/public/data/2025/categories.json",
     "utf8"
   );
   const data: Data = JSON.parse(file);

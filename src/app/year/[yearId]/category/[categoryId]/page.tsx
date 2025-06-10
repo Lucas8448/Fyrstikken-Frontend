@@ -20,7 +20,7 @@ async function loader({ params }: { params: { yearId: string; categoryId: number
         process.cwd(),
         "public",
         "data",
-        '2024',
+        params.yearId,
         "categories",
         `${categoryId}.json`
     );

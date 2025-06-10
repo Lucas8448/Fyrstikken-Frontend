@@ -1,0 +1,11 @@
+{
+    "id": 104,
+    "name": "test4",
+    "description": "Laget av test",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/2025/project_assets/100/200.png"
+        }
+    ]
+}

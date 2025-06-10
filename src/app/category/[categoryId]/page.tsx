@@ -20,7 +20,7 @@ async function loader({ params }: { params: { categoryId: number } }) {
         process.cwd(),
         "public",
         "data",
-        '2024',
+        '2025',
         "categories",
         `${categoryId}.json`
     );
@@ -40,7 +40,7 @@ export default async function Page({ params }: { params: { categoryId: number } 
     const data: Data = await loader({ params });
     shuffleArray(data.projects);
     const filePaths = data.projects.map((project) =>
-        path.join(process.cwd(), "public", "data", '2024', "projects", `${params.categoryId}`, `${project.id}.json`)
+        path.join(process.cwd(), "public", "data", '2025', "projects", `${params.categoryId}`, `${project.id}.json`)
     );
 
     const projects = await Promise.all(
