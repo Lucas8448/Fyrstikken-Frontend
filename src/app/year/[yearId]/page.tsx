@@ -17,7 +17,12 @@ interface Data {
 }
 
 export default async function Component({ params }: {params: { yearId: string}}) {
-  const filePath = path.join(process.cwd(), "public", "data", params.yearId, "categories.json");
+  const filePath = path.join(
+  process.cwd(),
+  "public",
+  "data",
+  params.yearId,
+  "categories.json");
   const file = await fs.readFile(filePath, "utf8");
   const data: Data = JSON.parse(file);
 
