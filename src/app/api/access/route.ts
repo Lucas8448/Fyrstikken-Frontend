@@ -64,6 +64,41 @@ async function handleCodeGeneration(email: string) {
   );
 }
 
+async function ensureUserExists(email: string) {
+  const { data: user, error: userError } = await getUserByEmail(email);
+
+  if (!userError && user) {
+    return { user, error: null };
+  }
+
+  // Try to add user if they're in allowed emails
+  const allowedEmails = process.env.ALLOWED_MAILS?.split(",") || [];
+  const isAllowed = allowedEmails.some(
+    (allowedEmail) => allowedEmail.trim().toLowerCase() === email.toLowerCase()
+  );
+
+  if (!isAllowed) {
+    return {
+      user: null,
+      error: `Email not in allowed list. Allowed: ${allowedEmails.join(", ")}`,
+    };
+  }
+
+  // Add user to database
+  const { supabase } = await import("@/lib/supabase");
+  const { error: insertError } = await supabase
+    .from("users")
+    .upsert({ email: email.toLowerCase().trim() }, { onConflict: "email" });
+
+  if (insertError) {
+    return { user: null, error: `Failed to add user: ${insertError.message}` };
+  }
+
+  // Retrieve the user again
+  const { data: newUser, error: newUserError } = await getUserByEmail(email);
+  return { user: newUser, error: newUserError?.message || null };
+}
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
@@ -73,10 +108,16 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Email is required" }, { status: 400 });
     }
 
-    const { data: user, error: userError } = await getUserByEmail(email);
+    const { user, error: userError } = await ensureUserExists(email);
 
     if (userError || !user) {
-      return NextResponse.json({ error: "Email not allowed" }, { status: 403 });
+      return NextResponse.json(
+        {
+          error: "Email not allowed",
+          debug: userError,
+        },
+        { status: 403 }
+      );
     }
 
     if (code) {
