@@ -24,7 +24,6 @@ export default async function Component() {
     "utf8"
   );
   const data: Data = JSON.parse(file);
-  const currentYear = "2025"; // Current year for routing
 
   return (
     <main className="flex flex-col">
