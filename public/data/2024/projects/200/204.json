@@ -1,0 +1,19 @@
+{
+    "id": 204,
+    "name": "Psykisk Helse",
+    "description": "Laget av Ylva-Li Farstad Sevendal 3MKA",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/200/Ylva-Li_Farstad_Sevendal_3MKA_1.jpg"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/200/Ylva-Li_Farstad_Sevendal_3MKA_2.jpg"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/200/Ylva-Li_Farstad_Sevendal_3MKA_3.jpg"
+        }
+    ]
+}

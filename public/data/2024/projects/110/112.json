@@ -1,0 +1,16 @@
+{
+    "id": 112,
+    "name": "Moxnes kortfilm",
+    "description": "Laget av Kristoffer Nicolai og Anton 3MKB",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/110/KristofferOgAnton_3MKB_Moxnes.jpg",
+            "hidden": true
+        },
+        {
+            "type": "iframe",
+            "content": "https://www.youtube.com/embed/8HeQ_KRJo6Y"
+        }
+    ]
+}

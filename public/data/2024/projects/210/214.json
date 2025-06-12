@@ -1,0 +1,11 @@
+{
+    "id": 214,
+    "name": "Intervju",
+    "description": "Laget av Joele 2MPB",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/210/Joel_2MPB_Dokumentar.jpg"
+        }
+    ]
+}

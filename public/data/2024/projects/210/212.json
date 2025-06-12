@@ -1,0 +1,39 @@
+{
+    "id": 212,
+    "name": "Generasjonskløfter",
+    "description": "Laget av Lars Garcia Bentzen 2STC",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/210/Lars_Garcia_Bentzen_2STC_1.jpg"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/210/Lars_Garcia_Bentzen_2STC_2.jpg"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/210/Lars_Garcia_Bentzen_2STC_3.jpg"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/210/Lars_Garcia_Bentzen_2STC_4.jpg"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/210/Lars_Garcia_Bentzen_2STC_5.jpg"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/210/Lars_Garcia_Bentzen_2STC_6.jpg"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/210/Lars_Garcia_Bentzen_2STC_7.jpg"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/210/Lars_Garcia_Bentzen_2STC_8.jpg"
+        }
+    ]
+}

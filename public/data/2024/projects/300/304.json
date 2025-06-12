@@ -1,0 +1,12 @@
+{
+    "id": 304,
+    "name": "M",
+    "description": "Kitty Bjørnsrud-Gabrielsen i 3MKB",
+    "sections": [
+        {
+            "type": "audio",
+            "content": "/data/2024/project_assets/300/Kitty_3MKB_M-reklame.mp3"
+        }
+    ],
+    "winner": true
+}

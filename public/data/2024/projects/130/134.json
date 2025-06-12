@@ -1,0 +1,16 @@
+{
+    "id": 134,
+    "name": "Rimfrost Reklame",
+    "description": "Laget av Mathias 2IMPB",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/130/Mathias_2IMPB_RimfrostReklame.jpg",
+            "hidden": true
+        },
+        {
+            "type": "iframe",
+            "content": "https://www.youtube.com/embed/riLL0-gEJJY"
+        }
+    ]
+}

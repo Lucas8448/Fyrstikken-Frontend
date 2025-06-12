@@ -1,0 +1,15 @@
+{
+    "id": 401,
+    "name": "Tegner seg ut av 9 til 4",
+    "description": "Hektor Faldbakken-Sørhaug i 2MKA",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/400/Hektor_2MKA.jpg"
+        },
+        {
+            "type": "link",
+            "content": "https://sway.cloud.microsoft/pBWNgqtDugvH6OAm?ref=Link&loc=play"
+        }
+    ]
+}

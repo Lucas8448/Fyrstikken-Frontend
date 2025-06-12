@@ -1,0 +1,16 @@
+{
+    "id": 454,
+    "name": "Zero-G Reversal",
+    "description": "Aksel, Max, Renate, Nicklas, Aron, Mathias - 2IM",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/450/MaxOgCo_2IM_ZeroG.jpg",
+            "hidden": true
+        },
+        {
+            "type": "iframe",
+            "content": "https://www.youtube.com/embed/a4mifqrkwVI"
+        }
+    ]
+}

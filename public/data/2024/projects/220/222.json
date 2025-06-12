@@ -1,0 +1,12 @@
+{
+    "id": 222,
+    "name": "Mamma",
+    "description": "Laget av Johanna Nøvik Becke 3MKA",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/220/Johanna_3MKA_Mamma.jpg"
+        }
+    ],
+    "winner": true
+}
