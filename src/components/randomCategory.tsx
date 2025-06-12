@@ -27,7 +27,7 @@ export default function RandomCategory({ year = "2025" }: Readonly<RandomCategor
   return (
     <div>
       <Button variant="secondary" onClick={navigateToRandomCategory}>
-        Gå til en tilfeldig
+        Tilfeldig kategori
       </Button>
     </div>
   );
