@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getVoteResults } from "@/lib/database";
+import { getVoteResults } from "@/lib/kv-database";
 
 export async function GET(req: NextRequest) {
   try {
@@ -12,7 +12,7 @@ export async function GET(req: NextRequest) {
       );
     }
 
-    return NextResponse.json(voteCounts || {}, { status: 200 });
+    return NextResponse.json(voteCounts ?? {}, { status: 200 });
   } catch (error) {
     console.error("Results route error:", error);
     return NextResponse.json(

@@ -3,16 +3,16 @@ import {
   getUserByEmail,
   updateUserVerificationCode,
   createToken,
-} from "@/lib/database";
+} from "@/lib/kv-database";
 import { generateVerificationCode, sendVerificationEmail } from "@/lib/email";
 
 async function handleCodeVerification(email: string, code: string, user: any) {
   const currentTime = Math.floor(Date.now() / 1000);
 
   if (
-    user.verification_code !== code.toString() ||
-    !user.code_expiry ||
-    currentTime >= user.code_expiry
+    user.verificationCode !== code.toString() ||
+    !user.codeExpiry ||
+    currentTime >= user.codeExpiry
   ) {
     return NextResponse.json(
       { error: "Invalid or expired code" },
@@ -65,38 +65,8 @@ async function handleCodeGeneration(email: string) {
 }
 
 async function ensureUserExists(email: string) {
-  const { data: user, error: userError } = await getUserByEmail(email);
-
-  if (!userError && user) {
-    return { user, error: null };
-  }
-
-  // Try to add user if they're in allowed emails
-  const allowedEmails = process.env.ALLOWED_MAILS?.split(",") || [];
-  const isAllowed = allowedEmails.some(
-    (allowedEmail) => allowedEmail.trim().toLowerCase() === email.toLowerCase()
-  );
-
-  if (!isAllowed) {
-    return {
-      user: null,
-      error: `Email not in allowed list. Allowed: ${allowedEmails.join(", ")}`,
-    };
-  }
-
-  // Add user to database
-  const { supabase } = await import("@/lib/supabase");
-  const { error: insertError } = await supabase
-    .from("users")
-    .upsert({ email: email.toLowerCase().trim() }, { onConflict: "email" });
-
-  if (insertError) {
-    return { user: null, error: `Failed to add user: ${insertError.message}` };
-  }
-
-  // Retrieve the user again
-  const { data: newUser, error: newUserError } = await getUserByEmail(email);
-  return { user: newUser, error: newUserError?.message || null };
+  const { data: user, error } = await getUserByEmail(email);
+  return { user, error: error?.message || null };
 }
 
 export async function POST(req: NextRequest) {

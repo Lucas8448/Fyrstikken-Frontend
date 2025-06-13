@@ -1,8 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
-import { verifyToken, getUserByEmail, updateUserVote } from "@/lib/database";
+import { verifyToken, getUserByEmail, updateUserVote } from "@/lib/kv-database";
+import { isVotingAllowed, getVotingPeriod } from "@/lib/utils";
 
 export async function POST(req: NextRequest) {
   try {
+    // Check if voting is allowed on the current date
+    if (!isVotingAllowed()) {
+      const votingPeriod = getVotingPeriod();
+      const message = votingPeriod
+        ? `Voting is only allowed between ${votingPeriod.startDate} and ${votingPeriod.endDate}`
+        : "Voting is not currently allowed";
+
+      return NextResponse.json({ error: message }, { status: 403 });
+    }
+
     const body = await req.json();
     const { token, contestant_id } = body;
 
@@ -31,7 +42,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "User not found" }, { status: 404 });
     }
 
-    if (user.contestant_voted !== null && user.contestant_voted !== undefined) {
+    if (user.contestantVoted !== null && user.contestantVoted !== undefined) {
       return NextResponse.json(
         { error: "User has already voted" },
         { status: 400 }
@@ -41,7 +52,7 @@ export async function POST(req: NextRequest) {
     // Record the vote
     const { error: voteError } = await updateUserVote(
       email,
-      parseInt(contestant_id)
+      contestant_id.toString()
     );
 
     if (voteError) {

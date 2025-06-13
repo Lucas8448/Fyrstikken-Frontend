@@ -1,4 +1,4 @@
-import { initializeDatabase } from "@/lib/database";
+import { initializeDatabase } from "@/lib/kv-database";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {

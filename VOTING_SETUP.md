@@ -1,23 +1,31 @@
 # Voting System Setup
 
-This Next.js application has been converted to use Supabase as the database backend instead of the original Flask + SQLite setup.
+This Next.js application uses **Redis** as the database backend for a simple and reliable voting system.
 
 ## Setup Instructions
 
-### 1. Supabase Setup
+### 1. Redis Setup
 
-1. Create a new project on [Supabase](https://supabase.com)
-2. Go to Settings > API and copy your project URL and anon key
-3. Go to SQL Editor and run the migration script from `supabase-migration.sql`
+**Option A: Redis Cloud (Recommended)**
+
+1. Go to [Redis Cloud](https://redis.com/try-free/)
+2. Create a free account
+3. Create a new database
+4. Copy the Redis URL (format: `redis://default:password@host:port`)
+
+**Option B: Other Redis Providers**
+
+- Upstash Redis
+- Railway Redis
+- Local Redis
 
 ### 2. Environment Variables
 
 1. Copy `.env.example` to `.env.local`
-2. Fill in your Supabase credentials:
+2. Fill in your Redis URL:
 
    ```
-   NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   REDIS_URL=redis://default:password@host:port
    ```
 
 3. Configure email settings:
@@ -33,18 +41,6 @@ This Next.js application has been converted to use Supabase as the database back
    ```
    ALLOWED_MAILS=user1@example.com,user2@example.com,user3@example.com
    ```
-
-### 3. Install Dependencies
-
-```bash
-npm install
-```
-
-### 4. Run the Application
-
-```bash
-npm run dev
-```
 
 ## API Endpoints
 
@@ -65,36 +61,59 @@ npm run dev
 - **Purpose**: Get voting results
 - **Returns**: Object with contestant IDs as keys and vote counts as values
 
-## Database Schema
+## Data Structure (Vercel KV)
 
-### Users Table
+### User Data
 
-- `id` (SERIAL PRIMARY KEY)
-- `email` (TEXT UNIQUE NOT NULL)
-- `verification_code` (TEXT)
-- `code_expiry` (BIGINT)
-- `contestant_voted` (INTEGER)
-- `created_at` (TIMESTAMP)
+Stored as `user:{email}`:
 
-### Tokens Table
+```json
+{
+  "email": "user@example.com",
+  "verificationCode": "123456",
+  "codeExpiry": 1234567890,
+  "contestantVoted": "project123",
+  "createdAt": 1234567890
+}
+```
 
-- `token` (TEXT PRIMARY KEY)
-- `email` (TEXT NOT NULL)
-- `created_at` (TIMESTAMP)
+### Token Data
+
+Stored as `token:{token}`:
+
+```json
+{
+  "email": "user@example.com",
+  "createdAt": 1234567890
+}
+```
+
+### Vote Counts
+
+Stored as `vote_counts` (hash):
+
+```json
+{
+  "project123": 5,
+  "project456": 3,
+  "project789": 8
+}
+```
 
 ## Security Features
 
 - Email verification with time-limited codes (10 minutes)
-- Token-based authentication
+- Token-based authentication with automatic expiry (24 hours)
 - One vote per user restriction
 - Allowed email list restriction
-- Row Level Security (RLS) in Supabase
+- Redis-based storage with automatic cleanup
 
-## Migration from Flask
+## Benefits of Upstash Redis
 
-The original Flask application has been converted to:
-
-- Next.js API routes instead of Flask routes
-- Supabase PostgreSQL instead of SQLite
-- Node.js nodemailer instead of Python smtplib
-- TypeScript for better type safety
+- ✅ **Free Tier**: 10,000 requests/day free
+- ✅ **Lightning Fast**: Redis-based storage
+- ✅ **Global Edge**: Fast from anywhere
+- ✅ **Simple Setup**: Just copy 2 environment variables
+- ✅ **Built-in Expiry**: Tokens auto-expire
+- ✅ **No SQL Required**: Simple key-value operations
+- ✅ **Serverless**: Pay only for what you use
