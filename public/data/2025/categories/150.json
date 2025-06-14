@@ -1,0 +1,53 @@
+{
+  "title": "Fotografi",
+  "projects": [
+    {
+      "id": 151,
+      "name": "Project Alpha",
+      "description": "Student A - Class X",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 152,
+      "name": "Project Beta",
+      "description": "Student B - Class Y",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 153,
+      "name": "Project Gamma",
+      "description": "Student C - Class Z",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 154,
+      "name": "Project Delta",
+      "description": "Student D - Class X",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 155,
+      "name": "Project Epsilon",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 156,
+      "name": "Project Zeta",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 157,
+      "name": "Project Eta",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 158,
+      "name": "Project Theta",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+    "categories": {
+        "fotografi": {
+            "id": 100,
+            "title": "Fotografi",
+            "description": "Fotografi",
+            "image": "/data/2025/images/200.webp"
+        },
+        "film": {
+            "id": 110,
+            "title": "Film",
+            "description": "Film",
+            "image": "/data/2025/images/200.webp"
+        },
+        "lyddesign": {
+            "id": 120,
+            "title": "Lyddesign",
+            "description": "Lyddesign",
+            "image": "/data/2025/images/200.webp"
+        },
+        "grafiskdesign": {
+            "id": 130,
+            "title": "Grafisk design",
+            "description": "Grafisk design",
+            "image": "/data/2025/images/200.webp"
+        },
+        "kunst": {
+            "id": 140,
+            "title": "Kunst",
+            "description": "Kunst",
+            "image": "/data/2025/images/200.webp"
+        },
+        "weboginteraktivitet": {
+            "id": 150,
+            "title": "Web og Interaktivitet",
+            "description": "Web og Interaktivitet",
+            "image": "/data/2025/images/200.webp"
+        },
+        "spillutvikling": {
+            "id": 160,
+            "title": "Spillutvikling",
+            "description": "Spillutvikling",
+            "image": "/data/2025/images/200.webp"
+        },
+        "animasjon": {
+            "id": 170,
+            "title": "Animasjon",
+            "description": "Animasjon",
+            "image": "/data/2025/images/200.webp"
+        },
+        "journalistikk": {
+            "id": 180,
+            "title": "Journalistikk",
+            "description": "Journalistikk",
+            "image": "/data/2025/images/200.webp"
+        },
+        "reklame": {
+            "id": 190,
+            "title": "Reklame",
+            "description": "Reklame",
+            "image": "/data/2025/images/200.webp"
+        }
+    }
+}
