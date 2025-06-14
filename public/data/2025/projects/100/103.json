@@ -1,7 +1,7 @@
 {
     "id": 103,
-    "name": "test3",
-    "description": "Laget av test",
+    "name": "produktnavn",
+    "description": "Laget av [elevnavn] [klassenavn]",
     "sections": [
         {
             "type": "image",
