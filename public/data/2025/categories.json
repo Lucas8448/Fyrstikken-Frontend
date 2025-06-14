@@ -4,7 +4,7 @@
             "id": 100,
             "title": "Fotografi",
             "description": "Fotografi",
-            "image": "/data/2025/images/200.webp"
+            "image": "/data/2025/images/100.jpg" 
         },
         "film": {
             "id": 110,
