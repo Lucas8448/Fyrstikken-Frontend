@@ -1,11 +1,16 @@
 {
     "id": 131,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "Grafisk profil for TRY",
+    "description": "Laget av Johannes Bjerkmann 2MPB",
     "sections": [
         {
             "type": "image",
-            "content": "/data/2025/project_assets/100/200.png"
+            "content": "/data/2025/project_assets/130_grafisk/131_Johannes_Bjerkmann_2MPB_grafisk_profil_for_TRY_Page_1.jpg",
+            "hidden": true
+        },
+        {
+            "type": "link",
+            "content": "/data/2025/project_assets/130_grafisk/131_Johannes_Bjerkmann_2MPB_grafisk_profil_for_TRY.pdf"
         }
     ]
 }

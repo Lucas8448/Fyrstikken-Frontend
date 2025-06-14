@@ -1,11 +1,11 @@
 {
-  "title": "Fotografi",
+  "title": "Grafisk design",
   "projects": [
     {
       "id": 131,
-      "name": "Project Alpha",
-      "description": "Student A - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "Grafisk profil for TRY",
+      "description": "Laget av Johannes Bjerkmann 2MPB",
+      "image": "/data/2025/project_assets/130_grafisk/131_Johannes_Bjerkmann_2MPB_grafisk_profil_for_TRY_Page_1.jpg"
     },
     {
       "id": 132,
