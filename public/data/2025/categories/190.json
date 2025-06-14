@@ -1,0 +1,53 @@
+{
+  "title": "Reklame",
+  "projects": [
+    {
+      "id": 191,
+      "name": "Project Alpha",
+      "description": "Student A - Class X",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 192,
+      "name": "Project Beta",
+      "description": "Student B - Class Y",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 193,
+      "name": "Project Gamma",
+      "description": "Student C - Class Z",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 194,
+      "name": "Project Delta",
+      "description": "Student D - Class X",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 195,
+      "name": "Project Epsilon",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 196,
+      "name": "Project Zeta",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 197,
+      "name": "Project Eta",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 198,
+      "name": "Project Theta",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
+    }
+  ]
+}

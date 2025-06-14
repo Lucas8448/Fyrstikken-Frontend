@@ -30,6 +30,24 @@
       "name": "Project Epsilon",
       "description": "Student E - Class Y",
       "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 106,
+      "name": "Project Zeta",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 107,
+      "name": "Project Eta",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 108,
+      "name": "Project Theta",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
     }
   ]
 }

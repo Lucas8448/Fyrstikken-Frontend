@@ -4,58 +4,58 @@
             "id": 100,
             "title": "Fotografi",
             "description": "Fotografi",
-            "image": "/data/2025/images/200.webp"
+            "image": "/data/2025/images/100.jpg" 
         },
         "film": {
-            "id": 150,
+            "id": 110,
             "title": "Film",
             "description": "Film",
             "image": "/data/2025/images/200.webp"
         },
         "lyddesign": {
-            "id": 200,
+            "id": 120,
             "title": "Lyddesign",
             "description": "Lyddesign",
             "image": "/data/2025/images/200.webp"
         },
         "grafiskdesign": {
-            "id": 250,
+            "id": 130,
             "title": "Grafisk design",
             "description": "Grafisk design",
             "image": "/data/2025/images/200.webp"
         },
         "kunst": {
-            "id": 300,
+            "id": 140,
             "title": "Kunst",
             "description": "Kunst",
             "image": "/data/2025/images/200.webp"
         },
         "weboginteraktivitet": {
-            "id": 350,
+            "id": 150,
             "title": "Web og Interaktivitet",
             "description": "Web og Interaktivitet",
             "image": "/data/2025/images/200.webp"
         },
         "spillutvikling": {
-            "id": 400,
+            "id": 160,
             "title": "Spillutvikling",
             "description": "Spillutvikling",
             "image": "/data/2025/images/200.webp"
         },
         "animasjon": {
-            "id": 450,
+            "id": 170,
             "title": "Animasjon",
             "description": "Animasjon",
             "image": "/data/2025/images/200.webp"
         },
         "journalistikk": {
-            "id": 500,
+            "id": 180,
             "title": "Journalistikk",
             "description": "Journalistikk",
             "image": "/data/2025/images/200.webp"
         },
         "reklame": {
-            "id": 550,
+            "id": 190,
             "title": "Reklame",
             "description": "Reklame",
             "image": "/data/2025/images/200.webp"

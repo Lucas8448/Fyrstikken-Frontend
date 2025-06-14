@@ -1,0 +1,16 @@
+{
+    "id": 172,
+    "name": "produktnavn",
+    "description": "Laget av [elevnavn] [klassenavn]",
+    "sections": [
+        {
+            "type": "image",
+            "content": "",
+            "hidden": true
+        },
+        {
+            "type": "iframe",
+            "content": ""
+        }
+    ]
+}

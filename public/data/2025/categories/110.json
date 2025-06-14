@@ -1,0 +1,53 @@
+{
+  "title": "Film",
+  "projects": [
+    {
+      "id": 111,
+      "name": "Project Alpha",
+      "description": "Student A - Class X",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 112,
+      "name": "Project Beta",
+      "description": "Student B - Class Y",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 113,
+      "name": "Project Gamma",
+      "description": "Student C - Class Z",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 114,
+      "name": "Project Delta",
+      "description": "Student D - Class X",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 115,
+      "name": "Project Epsilon",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 116,
+      "name": "Project Zeta",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 117,
+      "name": "Project Eta",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
+    },
+    {
+      "id": 118,
+      "name": "Project Theta",
+      "description": "Student E - Class Y",
+      "image": "/data/2025/images/200.webp"
+    }
+  ]
+}

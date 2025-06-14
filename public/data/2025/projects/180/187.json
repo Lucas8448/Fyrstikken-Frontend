@@ -1,0 +1,15 @@
+{
+    "id": 187,
+    "name": "produktnavn",
+    "description": "Laget av [elevnavn] [klassenavn]",
+    "sections": [
+        {
+            "type": "image",
+            "content": ""
+        },
+        {
+            "type": "link",
+            "content": ""
+        }
+    ]
+}

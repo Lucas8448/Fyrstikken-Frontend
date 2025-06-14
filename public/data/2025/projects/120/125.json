@@ -1,0 +1,11 @@
+{
+    "id": 125,
+    "name": "produktnavn",
+    "description": "Laget av [elevnavn] [klassenavn]",
+    "sections": [
+        {
+            "type": "audio",
+            "content": ""
+        }
+    ]
+}

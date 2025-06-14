@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { CardContent, Card } from "@/components/ui/card";
 import RandomCategory from "@/components/randomCategory";
+import RandomProject from "@/components/randomProject";
 import { promises as fs } from "fs";
 import Image from "next/image";
 
@@ -58,6 +59,7 @@ export default async function Component() {
               <Button variant="default">Utforsk kategorier</Button>
             </Link>
             <RandomCategory year={currentYear} />
+            <RandomProject year={currentYear} />
           </div>
         </div>
       </section>

@@ -12,18 +12,22 @@ interface RandomCategoryProps {
   readonly year?: string;
 }
 
-export default function RandomCategory({ year = "2025" }: RandomCategoryProps) {
-  const router = useRouter();
-  const navigateToRandomCategory = () => {
-    const randomIndex = Math.floor(Math.random() * categoryArray.length);
-    const randomCategory = categoryArray[randomIndex];
-    router.push(`/year/${year}/category/${randomCategory}`);
-  };
+interface RandomCategoryProps {
+    readonly year?: string;
+}
+
+export default function RandomCategory({ year = "2025" }: Readonly<RandomCategoryProps>) {
+    const router = useRouter();
+    const navigateToRandomCategory = () => {
+        const randomIndex = Math.floor(Math.random() * categoryArray.length);
+        const randomCategory = categoryArray[randomIndex];
+        router.push(`/year/${year}/category/${randomCategory}`);
+    };
 
   return (
     <div>
       <Button variant="secondary" onClick={navigateToRandomCategory}>
-        Gå til en tilfeldig
+        Tilfeldig kategori
       </Button>
     </div>
   );
