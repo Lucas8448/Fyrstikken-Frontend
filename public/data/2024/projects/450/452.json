@@ -1,0 +1,17 @@
+{
+    "id": 452,
+    "name": "Haunting Horizons",
+    "description": "Diego, Nicholas, Jan Filip, Christian, Lavrans - 2IM",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/450/DiegoOgCo_2IM_HauntingHouse.jpg",
+            "hidden": true
+        },
+        {
+            "type": "iframe",
+            "content": "https://www.youtube.com/embed/zMZ-tGKCGwU"
+        }
+    ],
+    "winner": true
+}

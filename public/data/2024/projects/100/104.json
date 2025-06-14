@@ -1,0 +1,16 @@
+{
+    "id": 104,
+    "name": "Retroreklame Coca Cola",
+    "description": "Laget av Leon Sæther 1MKA",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/100/Leon_1MKA_CocaCola.jpg",
+            "hidden": true
+        },
+        {
+            "type": "iframe",
+            "content": "https://www.youtube.com/embed/0jvhidCWyhs"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": 111,
+    "name": "Hårstil",
+    "description": "Laget av Ahaoma Destiny Okeke 2MKA",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/110/Destiny_2MKA_Haastil.jpg",
+            "hidden": true
+        },
+        {
+            "type": "iframe",
+            "content": "https://www.youtube.com/embed/kHnjkes8TTQ"
+        }
+    ],
+    "winner": true
+}

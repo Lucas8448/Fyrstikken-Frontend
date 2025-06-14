@@ -1,0 +1,11 @@
+{
+    "id": 301,
+    "name": "XXL",
+    "description": "Laget av Abdoulie Liam Nyan i 2MK",
+    "sections": [
+        {
+            "type": "audio",
+            "content": "/data/2024/project_assets/300/Abdoulie_2MK_XXL-reklame.mp3"
+        }
+    ]
+}

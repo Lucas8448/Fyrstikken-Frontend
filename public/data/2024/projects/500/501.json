@@ -1,0 +1,59 @@
+{
+    "id": 501,
+    "name": "Dream",
+    "description": "Masa Markovic - 3MKB",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/500/Masa_Markovic_3MKB_Hero-cartoon-01.png"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/500/Masa_Markovic_3MKB_Hero-cartoon-02.png"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/500/Masa_Markovic_3MKB_Hero-cartoon-03.png"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/500/Masa_Markovic_3MKB_Hero-cartoon-04.png"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/500/Masa_Markovic_3MKB_Hero-cartoon-05.png"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/500/Masa_Markovic_3MKB_Hero-cartoon-06.png"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/500/Masa_Markovic_3MKB_Hero-cartoon-07.png"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/500/Masa_Markovic_3MKB_Hero-cartoon-08.png"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/500/Masa_Markovic_3MKB_Hero-cartoon-09.png"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/500/Masa_Markovic_3MKB_Hero-cartoon-10.png"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/500/Masa_Markovic_3MKB_Hero-cartoon-11.png"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/500/Masa_Markovic_3MKB_Hero-cartoon-12.png"
+        },
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/500/Masa_Markovic_3MKB_Hero-cartoon-13.png"
+        }
+    ]
+}

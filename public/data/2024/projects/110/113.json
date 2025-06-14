@@ -1,0 +1,16 @@
+{
+    "id": 113,
+    "name": "Wolf in Sheeps Clothing",
+    "description": "Laget av Mathias Bram 2MKB",
+    "sections": [
+        {
+            "type": "image",
+            "content": "/data/2024/project_assets/110/Mathias_2MKB_Wolf.jpg",
+            "hidden": true
+        },
+        {
+            "type": "iframe",
+            "content": "https://www.youtube.com/embed/rx3VWyW1KCE"
+        }
+    ]
+}

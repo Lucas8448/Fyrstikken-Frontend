@@ -1,0 +1,11 @@
+{
+    "id": 601,
+    "name": "Thoughts",
+    "description": "Martin Vedø-Hansen - 3MKA",
+    "sections": [
+        {
+            "type": "audio",
+            "content": "/data/2024/project_assets/600/Martin_3MKA_Thoughts.mp3"
+        }
+    ]
+}
