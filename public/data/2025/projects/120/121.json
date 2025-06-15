@@ -1,11 +1,11 @@
 {
     "id": 121,
-    "name": "Arman",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "SuperMario",
+    "description": "Laget av Arman 1IMC",
     "sections": [
         {
             "type": "audio",
-            "content": ""
+            "content": "https://youtu.be/DPTmn3_yUTU"
         }
     ]
 }

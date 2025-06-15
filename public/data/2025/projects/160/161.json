@@ -1,16 +1,16 @@
 {
     "id": 161,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "AXO",
+    "description": "Laget av Ayaz, Daniel Axelson, Edvart, Hubert og Waiz 2IM",
     "sections": [
         {
             "type": "image",
-            "content": "",
+            "content": "/data/2025/project_assets/160_spillutvikling/161_Ayaz_Daniel-Axelson_Edvard_Hubert_Waiz_2IM_AXO.png",
             "hidden": true
         },
         {
             "type": "iframe",
-            "content": ""
+            "content": "https://youtu.be/2G7T-HAvs2w"
         }
     ]
 }

@@ -1,16 +1,16 @@
 {
     "id": 167,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "Space Invaders",
+    "description": "Laget av William 1IMB",
     "sections": [
         {
             "type": "image",
-            "content": "",
+            "content": "/data/2025/project_assets/160_spillutvikling/167_William_1IMB_Space-invaders.png",
             "hidden": true
         },
         {
             "type": "iframe",
-            "content": ""
+            "content": "https://youtu.be/TZIwfxfnX-A"
         }
     ]
 }

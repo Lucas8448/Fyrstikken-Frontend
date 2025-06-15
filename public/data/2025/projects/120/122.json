@@ -1,11 +1,11 @@
 {
     "id": 122,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "Spiderman",
+    "description": "Laget av Ask 1IMB",
     "sections": [
         {
             "type": "audio",
-            "content": ""
+            "content": "https://youtu.be/75OJElubQXA"
         }
     ]
 }

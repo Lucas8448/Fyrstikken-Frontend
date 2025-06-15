@@ -1,11 +1,11 @@
 {
     "id": 124,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "A dream made by Anthony",
+    "description": "Laget av Elias 2MKB",
     "sections": [
         {
             "type": "audio",
-            "content": ""
+            "content": "https://youtu.be/8aHFCWAD25Y"
         }
     ]
 }

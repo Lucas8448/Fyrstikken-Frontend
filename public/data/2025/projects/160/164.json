@@ -1,16 +1,16 @@
 {
     "id": 164,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "Fronks",
+    "description": "Laget av Kjetil, Erling, Kasper, Theo og Maron 2IM",
     "sections": [
         {
             "type": "image",
-            "content": "",
+            "content": "/data/2025/project_assets/160_spillutvikling/164_Kjetil_Erling_Kasper_Theo_Maron_2IM_Fronks.png",
             "hidden": true
         },
         {
             "type": "iframe",
-            "content": ""
+            "content": "https://youtu.be/75AnH3EbKMw"
         }
     ]
 }
