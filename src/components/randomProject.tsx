@@ -25,8 +25,7 @@ export default function RandomProject({ year = "2025" }: Readonly<RandomProjectP
   const [isLoading, setIsLoading] = useState(false);
 
   const categoryIds = [
-    100, 110, 120, 130, 200, 210, 220, 300, 310, 400, 410, 420, 430, 440, 450,
-    460, 500, 510, 600
+    100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200,
   ];
 
   const navigateToRandomProject = async () => {
