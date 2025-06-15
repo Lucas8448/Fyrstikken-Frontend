@@ -1,16 +1,16 @@
 {
-    "id": 172,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "id": 194,
+    "name": "Nike Reklame",
+    "description": "Laget av Kurbi David Terga Le 1MKA",
     "sections": [
         {
             "type": "image",
-            "content": "",
+            "content": "/data/2025/project_assets/190_reklame/194_Kurbi_David_Terga_Le_1mka_Reklame.png",
             "hidden": true
         },
         {
             "type": "iframe",
-            "content": ""
+            "content": "https://youtu.be/Vb11LqLHsdY"
         }
     ]
 }

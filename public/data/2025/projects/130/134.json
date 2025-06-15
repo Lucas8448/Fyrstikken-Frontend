@@ -1,11 +1,16 @@
 {
-    "id": 135,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "id": 134,
+    "name": "Emballasje",
+    "description": "Laget av Hedda 2MKA",
     "sections": [
         {
             "type": "image",
-            "content": "/data/2025/project_assets/100/200.png"
+            "content": "/data/2025/project_assets/130_grafisk/134_Hedda_2MKA_Emballasje_1.jpg",
+            "hidden": true
+        },
+        {
+            "type": "link",
+            "content": "/data/2025/project_assets/130_grafisk/134_Hedda_2MKA_Emballasje.pdf"
         }
     ]
 }

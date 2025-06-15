@@ -24,30 +24,6 @@
       "name": "Project Delta",
       "description": "Student D - Class X",
       "image": "/data/2025/images/200.webp"
-    },
-    {
-      "id": 175,
-      "name": "Project Epsilon",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
-    },
-    {
-      "id": 176,
-      "name": "Project Zeta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
-    },
-    {
-      "id": 177,
-      "name": "Project Eta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
-    },
-    {
-      "id": 178,
-      "name": "Project Theta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
     }
   ]
 }

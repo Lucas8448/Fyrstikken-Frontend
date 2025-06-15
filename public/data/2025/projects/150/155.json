@@ -1,16 +1,16 @@
 {
     "id": 155,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "Thea",
+    "description": "Laget av Theodor K Sætrang 1IMC",
     "sections": [
         {
             "type": "image",
-            "content": "",
+            "content": "/data/2025/project_assets/150_interaktivitet/155_Teodor-K-Sætrang_1IMC.png",
             "hidden": true
         },
         {
             "type": "iframe",
-            "content": ""
+            "content": "https://youtu.be/z5_ZuN7t3Uk"
         }
     ]
 }

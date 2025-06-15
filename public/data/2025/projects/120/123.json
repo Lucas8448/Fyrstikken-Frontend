@@ -1,11 +1,11 @@
 {
     "id": 123,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "Donald Duck",
+    "description": "Laget av Tora Luqman Mathias Sebastian Willy 3MK",
     "sections": [
         {
             "type": "audio",
-            "content": ""
+            "content": "/data/2025/project_assets/120_lyddesign/123_Tora-Luqman-Mathias-Sebastian-Willy_3MK_Donald-Duck.mp3"
         }
     ]
 }

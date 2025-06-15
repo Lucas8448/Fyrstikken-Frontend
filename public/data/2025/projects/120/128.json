@@ -1,11 +1,11 @@
 {
     "id": 128,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "Ring on it DEMO",
+    "description": "Laget av Willyama 2MK",
     "sections": [
         {
             "type": "audio",
-            "content": ""
+            "content": "/data/2025/project_assets/120_lyddesign/128_Willyama_2MK_Ring-on-it-DEMO.mp3"
         }
     ]
 }

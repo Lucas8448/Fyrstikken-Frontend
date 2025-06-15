@@ -1,16 +1,16 @@
 {
-    "id": 171,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "id": 193,
+    "name": "FRUS-reklame",
+    "description": "Laget av Jonas og Michal 2MKA",
     "sections": [
         {
             "type": "image",
-            "content": "",
+            "content": "/data/2025/project_assets/190_reklame/193_Jonas og Michal_FRUSreklame_2mkA.png",
             "hidden": true
         },
         {
             "type": "iframe",
-            "content": ""
+            "content": "https://youtu.be/N78SMnAkQEI"
         }
     ]
 }
