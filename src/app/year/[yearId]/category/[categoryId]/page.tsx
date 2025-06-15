@@ -39,23 +39,9 @@ function shuffleArray(array: any[]) {
 export default async function Page({ params }: { params: { yearId: string; categoryId: number } }) {
     const data: Data = await loader({ params });
     shuffleArray(data.projects);
-    const filePaths = data.projects.map((project) => path.join(
-    process.cwd(),
-    "public",
-    "data",
-    `${params.yearId}`,
-    "projects",
-    `${params.categoryId}`,
-    `${project.id}.json`)
-    );
 
-    const projects = await Promise.all(
-        filePaths.map(async (filePath) => {
-            const fileData = await fs.readFile(filePath, "utf8");
-            return JSON.parse(fileData);
-        })
-    );
-
+    // Only use the info from categories/{categoryId}.json for the overview page
+    // Do NOT load the full project files here
     return (
         <main className="flex flex-col">
             <section className="relative h-80 w-full overflow-hidden">
@@ -79,31 +65,13 @@ export default async function Page({ params }: { params: { yearId: string; categ
             <section className="bg-gray-100 py-12 dark:bg-gray-800 sm:py-16 md:py-20">
                 <div className="container">
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                        {projects.map((project) => (
+                        {data.projects.map((project) => (
                             <Link href={`/year/${params.yearId}/category/${params.categoryId}/project/${project.id}`} key={`${params.categoryId}-${project.id}`}>
                                 <div className="text-primary-500">
-                                    <Card className={`group h-full w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-lg ${project.winner ? 'border-4 border-gold' : ''}`}>
+                                    <Card className="group h-full w-full overflow-hidden rounded-lg shadow-md transition-all hover:shadow-lg">
                                         <CardContent>
-                                            {project.sections.length > 0 && (
-                                                <div>
-                                                    {project.sections[0].type === 'image' && (
-                                                        <img src={project.sections[0].content} alt="Project Image" className="w-full h-auto rounded-md" />
-                                                    )}
-                                                    {project.sections[0].type === 'video' && (
-                                                        <video controls autoPlay loop className="w-full h-auto rounded-md">
-                                                            <source src={project.sections[0].content} />
-                                                        </video>
-                                                    )}
-                                                    {project.sections[0].type === 'audio' && (
-                                                        <audio src={project.sections[0].content} controls className="w-full rounded-md" />
-                                                    )}
-                                                    {project.sections[0].type === 'iframe' && (
-                                                        <iframe src={project.sections[0].content} className="w-full h-96 rounded-md" />
-                                                    )}
-                                                    {project.sections[0].type === 'text' && (
-                                                        <p className="text-gray-700">{project.sections[0].content}</p>
-                                                    )}
-                                                </div>
+                                            {project.image && (
+                                                <img src={project.image} alt="Project Image" className="w-full h-auto rounded-md" />
                                             )}
                                             <div className="mt-4 space-y-2 p-6">
                                                 <h3 className="text-xl font-semibold">{project.name}</h3>

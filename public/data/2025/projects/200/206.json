@@ -4,6 +4,10 @@
   "description": "Laget av Lucas 1IMA",
   "sections": [
     {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/eCzKwgMsUAA"
+    },
+    {
       "type": "image",
       "content": "/data/2025/project_assets/200_aarets-nykommer/206_Lucas_1IMA_KineticRush-MrSlim.png"
     }

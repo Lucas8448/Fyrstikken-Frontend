@@ -1,11 +1,15 @@
 {
-    "id": 185,
-    "name": "Fra-sjokoladefabrikken-til-TikTok-suksess",
-    "description": "Laget av Finn, Almira, Dougal 1MK",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/180_journalistikk/185_Finn-Almira-Dougal_1MK_Fra-sjokoladefabrikken-til-TikTok-suksess.jpg"
-        }
-    ]
+  "id": 185,
+  "name": "Fra-sjokoladefabrikken-til-TikTok-suksess",
+  "description": "Laget av Finn, Almira, Dougal 1MK",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://new.express.adobe.com/webpage/xgNbH6yqjuUoD"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/180_journalistikk/185_Finn-Almira-Dougal_1MK_Fra-sjokoladefabrikken-til-TikTok-suksess.jpg"
+    }
+  ]
 }

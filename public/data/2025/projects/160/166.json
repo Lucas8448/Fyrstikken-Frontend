@@ -1,11 +1,15 @@
 {
-    "id": 166,
-    "name": "Echoes of Steel",
-    "description": "Laget av Oliver, Aksel, Annali, Mulan 2IM",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/160_spillutvikling/166_Oliver_Aksel_Annali_Mulan_2IM_Echoes_of_Steel.png"
-        }
-    ]
+  "id": 166,
+  "name": "Echoes of Steel",
+  "description": "Laget av Oliver, Aksel, Annali, Mulan 2IM",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/zmbjFAVE6Eo"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/160_spillutvikling/166_Oliver_Aksel_Annali_Mulan_2IM_Echoes_of_Steel.png"
+    }
+  ]
 }

@@ -1,11 +1,15 @@
 {
-    "id": 155,
-    "name": "Sætrang",
-    "description": "Laget av Teodor K Sætrang 1IMC",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/150_interaktivitet/155_Teodor-K-Sætrang_1IMC.png"
-        }
-    ]
+  "id": 155,
+  "name": "Sætrang",
+  "description": "Laget av Teodor K Sætrang 1IMC",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/z5_ZuN7t3Uk"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/150_interaktivitet/155_Teodor-K-Sætrang_1IMC.png"
+    }
+  ]
 }

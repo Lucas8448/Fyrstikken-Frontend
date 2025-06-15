@@ -1,11 +1,15 @@
 {
-    "id": 167,
-    "name": "Space-invaders",
-    "description": "Laget av William 1IMB",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/160_spillutvikling/167_William_1IMB_Space-invaders.png"
-        }
-    ]
+  "id": 167,
+  "name": "Space-invaders",
+  "description": "Laget av William 1IMB",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/TZIwfxfnX-A"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/160_spillutvikling/167_William_1IMB_Space-invaders.png"
+    }
+  ]
 }

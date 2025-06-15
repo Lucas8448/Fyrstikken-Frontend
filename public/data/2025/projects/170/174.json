@@ -1,11 +1,15 @@
 {
-    "id": 174,
-    "name": "Hedda-Gabler",
-    "description": "Laget av Mina Pran Kristensen 3MKA",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/170_animasjon/Mina-Pran-Kristensen_3MKA_Hedda-Gabler.png"
-        }
-    ]
+  "id": 174,
+  "name": "Hedda-Gabler",
+  "description": "Laget av Mina Pran Kristensen 3MKA",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/SEFIX7C6ars"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/170_animasjon/Mina-Pran-Kristensen_3MKA_Hedda-Gabler.png"
+    }
+  ]
 }

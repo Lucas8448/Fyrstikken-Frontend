@@ -1,11 +1,16 @@
 {
-    "id": 161,
-    "name": "AXO",
-    "description": "Laget av Ayaz, Daniel Axelson, Edvard, Hubert, Waiz 2IM",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/160_spillutvikling/161_Ayaz_Daniel-Axelson_Edvard_Hubert_Waiz_2IM_AXO.png"
-        }
-    ]
+  "id": 161,
+  "name": "AXO",
+  "description": "Laget av Ayaz, Daniel Axelson, Edvard, Hubert, Waiz 2IM",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/2G7T-HAvs2w"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/160_spillutvikling/161_Ayaz_Daniel-Axelson_Edvard_Hubert_Waiz_2IM_AXO.png",
+      "hidden": true
+    }
+  ]
 }

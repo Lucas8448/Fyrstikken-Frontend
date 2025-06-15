@@ -1,11 +1,16 @@
 {
-    "id": 164,
-    "name": "Fronks",
-    "description": "Laget av Kjetil, Erling, Kasper, Theo, Maron 2IM",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/160_spillutvikling/164_Kjetil_Erling_Kasper_Theo_Maron_2IM_Fronks.png"
-        }
-    ]
+  "id": 164,
+  "name": "Fronks",
+  "description": "Laget av Kjetil, Erling, Kasper, Theo, Maron 2IM",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/75AnH3EbKMw"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/160_spillutvikling/164_Kjetil_Erling_Kasper_Theo_Maron_2IM_Fronks.png",
+      "hidden": true
+    }
+  ]
 }

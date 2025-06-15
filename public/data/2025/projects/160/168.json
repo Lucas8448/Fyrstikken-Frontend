@@ -1,11 +1,15 @@
 {
-    "id": 168,
-    "name": "Space_invaders",
-    "description": "Laget av Jakob Ølmheim",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/160_spillutvikling/168_Jakob_Ølmheim-Space_invaders.png"
-        }
-    ]
+  "id": 168,
+  "name": "Space_invaders",
+  "description": "Laget av Jakob Ølmheim",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/6bxnQP4fEcU"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/160_spillutvikling/168_Jakob_Ølmheim-Space_invaders.png"
+    }
+  ]
 }
