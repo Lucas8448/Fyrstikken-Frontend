@@ -1,11 +1,11 @@
 {
-    "id": 108,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/100/200.png"
-        }
-    ]
+  "id": 108,
+  "name": "Etterlatt",
+  "description": "Laget av Joakim Ellingsen 2MPB",
+  "sections": [
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/100_fotografi/108_Joakim_Ellingsen_2MPB_Etterlatt.png"
+    }
+  ]
 }

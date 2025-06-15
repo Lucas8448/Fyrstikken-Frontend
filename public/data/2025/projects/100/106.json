@@ -1,11 +1,11 @@
 {
-    "id": 106,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/100/200.png"
-        }
-    ]
+  "id": 106,
+  "name": "En dag som aldri stilner",
+  "description": "Laget av Theodor S Borge 3MKA",
+  "sections": [
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/100_fotografi/106_Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner/Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner.jpg"
+    }
+  ]
 }

@@ -3,51 +3,51 @@
   "projects": [
     {
       "id": 181,
-      "name": "Project Alpha",
-      "description": "Student A - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "Convention-bringer-oss-sammen",
+      "description": "Laget av Alex, Olivia, Liv 1MK",
+      "image": "/data/2025/images/180/181.jpg"
     },
     {
       "id": 182,
-      "name": "Project Beta",
-      "description": "Student B - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Alle-farger",
+      "description": "Laget av Aurora, Aleksander og Ingvill 1MKB",
+      "image": "/data/2025/images/180/182.jpg"
     },
     {
       "id": 183,
-      "name": "Project Gamma",
-      "description": "Student C - Class Z",
-      "image": "/data/2025/images/200.webp"
+      "name": "Tba-Climate-Report",
+      "description": "Laget av Celina 3MK",
+      "image": "/data/2025/images/180/183.jpg"
     },
     {
       "id": 184,
-      "name": "Project Delta",
-      "description": "Student D - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "Intervju-med-Hilde-Waage",
+      "description": "Laget av Christine 2MK",
+      "image": "/data/2025/images/180/184.jpg"
     },
     {
       "id": 185,
-      "name": "Project Epsilon",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Fra-sjokoladefabrikken-til-TikTok-suksess",
+      "description": "Laget av Finn, Almira, Dougal 1MK",
+      "image": "/data/2025/images/180/185.jpg"
     },
     {
       "id": 186,
-      "name": "Project Zeta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Vindmoeller",
+      "description": "Laget av Matilde 3MK",
+      "image": "/data/2025/images/180/186.jpg"
     },
     {
       "id": 187,
-      "name": "Project Eta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Selvkjoerende-kollektivtransport",
+      "description": "Laget av Theodor 3MK",
+      "image": "/data/2025/images/180/187.jpg"
     },
     {
       "id": 188,
-      "name": "Project Theta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Portrettintervju",
+      "description": "Laget av Stine 2MK",
+      "image": "/data/2025/images/180/188.jpg"
     }
   ]
 }

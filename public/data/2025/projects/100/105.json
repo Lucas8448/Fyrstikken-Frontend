@@ -1,11 +1,11 @@
 {
-    "id": 105,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/100/200.png"
-        }
-    ]
+  "id": 105,
+  "name": "Reptilhjernen",
+  "description": "Laget av Pia Olea Kristoffersen 3MKA",
+  "sections": [
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/100_fotografi/105_Pia-Olea-Kristoffersen_3MKA_Reptilhjernen/Pia-Olea-Kristoffersen_3MKA_Reptilhjernen1.jpg"
+    }
+  ]
 }

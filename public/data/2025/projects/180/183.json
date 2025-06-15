@@ -1,15 +1,11 @@
 {
     "id": 183,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "Tba-Climate-Report",
+    "description": "Laget av Celina 3MK",
     "sections": [
         {
             "type": "image",
-            "content": ""
-        },
-        {
-            "type": "link",
-            "content": ""
+            "content": "/data/2025/project_assets/180_journalistikk/183_Celina_3MK_Tba-Climate-Report.png"
         }
     ]
 }

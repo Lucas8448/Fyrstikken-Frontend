@@ -1,15 +1,15 @@
 {
     "id": 186,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "Vindmoeller",
+    "description": "Laget av Matilde 3MK",
     "sections": [
         {
             "type": "image",
-            "content": ""
+            "content": "/data/2025/project_assets/180_journalistikk/186_Matilde_3MK_Vindmoeller.jpg"
         },
         {
             "type": "link",
-            "content": ""
+            "content": "/data/2025/project_assets/180_journalistikk/186_Matilde_3MK_Vindmoeller.pdf"
         }
     ]
 }

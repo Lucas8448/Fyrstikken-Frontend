@@ -1,11 +1,11 @@
 {
-    "id": 121,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "audio",
-            "content": ""
-        }
-    ]
+  "id": 121,
+  "name": "SuperMario lydlegging",
+  "description": "Laget av Arman 1IMC",
+  "sections": [
+    {
+      "type": "audio",
+      "content": "/data/2025/project_assets/120_lyddesign/121_Arman_1IMC_SuperMario-lydlegging_.png"
+    }
+  ]
 }

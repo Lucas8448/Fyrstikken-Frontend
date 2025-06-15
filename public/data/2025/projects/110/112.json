@@ -1,16 +1,16 @@
 {
-    "id": 112,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "image",
-            "content": "",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": ""
-        }
-    ]
+  "id": 112,
+  "name": "UROBOROS",
+  "description": "Laget av Benjamin og Sander 2MKA",
+  "sections": [
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/110_film/112_Benjamin-og-Sander_2MKA_UROBOROS.png",
+      "hidden": true
+    },
+    {
+      "type": "iframe",
+      "content": ""
+    }
+  ]
 }

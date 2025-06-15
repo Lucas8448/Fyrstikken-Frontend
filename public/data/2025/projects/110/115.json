@@ -1,16 +1,16 @@
 {
-    "id": 115,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "image",
-            "content": "",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": ""
-        }
-    ]
+  "id": 115,
+  "name": "Oppdrag Diddy",
+  "description": "Laget av Jonas og Michal 2MKA",
+  "sections": [
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/110_film/115_Jonas-og-Michal_2MKA_Oppdrag-Diddy.png",
+      "hidden": true
+    },
+    {
+      "type": "iframe",
+      "content": ""
+    }
+  ]
 }
