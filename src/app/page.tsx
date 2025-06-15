@@ -26,6 +26,35 @@ export default async function Component() {
   );
   const data: Data = JSON.parse(file);
 
+  // Convert categories object to array with correct typing
+  type Category = { id: number; title: string; description: string; image: string };
+  const categoriesArray: Category[] = Object.values((data as any).categories);
+  // For each category, load its projects and pick a random cover image
+  const categoryCards = await Promise.all(
+    categoriesArray.map(async (category: Category) => {
+      try {
+        const catFile = await fs.readFile(
+          process.cwd() + `/public/data/${currentYear}/categories/${category.id}.json`,
+          "utf8"
+        );
+        const catData = JSON.parse(catFile);
+        const projects = catData.projects ?? [];
+        const withImages = projects.filter((p: any) => p.image && p.image.length > 0);
+        let randomImage = category.image;
+        if (withImages.length > 0) {
+          const randomProject = withImages[Math.floor(Math.random() * withImages.length)];
+          randomImage = randomProject.image;
+        }
+        return { ...category, randomImage };
+      } catch {
+        return { ...category, randomImage: category.image };
+      }
+    })
+  );
+  // Pick a random cover image from all categories
+  const validCovers = categoryCards.filter((c: { randomImage: string }) => c.randomImage);
+  const mainCover = validCovers.length > 0 ? validCovers[Math.floor(Math.random() * validCovers.length)] : null;
+
   return (
     <main className="flex flex-col">
       <section className="relative h-[95vh] w-full overflow-hidden">
@@ -66,9 +95,7 @@ export default async function Component() {
       <section className="py-12 sm:py-16 md:py-20" id="categories">
         <div className="container">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {Object.values(data.categories)
-              .sort(() => Math.random() - 0.5)
-              .map((category) => (
+            {categoryCards.map((category) => (
                 <Link
                   className="text-primary-500"
                   href={`/year/${currentYear}/category/${category.id}`}
@@ -83,7 +110,7 @@ export default async function Component() {
                         alt={category.title}
                         className="aspect-w-16 aspect-h-9 w-full object-cover object-center transition-all group-hover:scale-105"
                         height={360}
-                        src={category.image}
+                        src={category.randomImage}
                         width={640}
                       />
                       <div className="mt-4 space-y-2 p-6">
