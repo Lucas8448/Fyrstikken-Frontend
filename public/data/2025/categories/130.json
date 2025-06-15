@@ -3,51 +3,51 @@
   "projects": [
     {
       "id": 131,
-      "name": "Grafisk profil for TRY",
-      "description": "Laget av Johannes Bjerkmann 2MPB",
-      "image": "/data/2025/project_assets/130_grafisk/131_Johannes_Bjerkmann_2MPB_grafisk_profil_for_TRY_Page_1.jpg"
+      "name": "produktnavn",
+      "description": "Laget av [elevnavn] [klassenavn]",
+      "image": "/data/2025/images/130/131.jpg"
     },
     {
       "id": 132,
-      "name": "Project Beta",
-      "description": "Student B - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Bobbly kampanje",
+      "description": "Laget av Thea 3MKB",
+      "image": "/data/2025/images/130/132.jpg"
     },
     {
       "id": 133,
-      "name": "Project Gamma",
-      "description": "Student C - Class Z",
-      "image": "/data/2025/images/200.webp"
+      "name": "Bokomslag",
+      "description": "Laget av Angelina 2MKB",
+      "image": "/data/2025/images/130/133.jpg"
     },
     {
       "id": 134,
-      "name": "Project Delta",
-      "description": "Student D - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "Emballasje",
+      "description": "Laget av Hedda 2MKA",
+      "image": "/data/2025/images/130/134.jpg"
     },
     {
       "id": 135,
-      "name": "Project Epsilon",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Superhelt",
+      "description": "Laget av Ida Langgaard 1MKB",
+      "image": "/data/2025/images/130/135.jpg"
     },
     {
       "id": 136,
-      "name": "Project Zeta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Little Prince Bokomslag",
+      "description": "Laget av Jasmina 3MKB",
+      "image": "/data/2025/images/130/136.jpg"
     },
     {
       "id": 137,
-      "name": "Project Eta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Life Superhelt",
+      "description": "Laget av Liv Relbo Knutsen 1MKB",
+      "image": "/data/2025/images/130/137.jpg"
     },
     {
       "id": 138,
-      "name": "Project Theta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Bokomslag",
+      "description": "Laget av Tora 2MKB",
+      "image": "/data/2025/images/130/138.jpg"
     }
   ]
 }

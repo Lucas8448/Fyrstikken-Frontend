@@ -1,11 +1,16 @@
 {
-    "id": 124,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "audio",
-            "content": ""
-        }
-    ]
+  "id": 124,
+  "name": "A dream made by Anthony",
+  "description": "Laget av Elias 2MKB",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/8aHFCWAD25Y"
+    },
+    {
+      "type": "audio",
+      "content": "/data/2025/project_assets/120_lyddesign/124_Elias-2MKB_A-dream-made-by-Anthony.png",
+      "hidden": true
+    }
+  ]
 }

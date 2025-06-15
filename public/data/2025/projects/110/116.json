@@ -1,16 +1,16 @@
 {
-    "id": 116,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "image",
-            "content": "",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": ""
-        }
-    ]
+  "id": 116,
+  "name": "BEDRAGER",
+  "description": "Laget av Michal Weglewski 2MKA",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/dfQxBzRcPJ8"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/110_film/116_Michal-Weglewski_2MKA_BEDRAGER.png",
+      "hidden": true
+    }
+  ]
 }

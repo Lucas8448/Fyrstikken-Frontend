@@ -1,16 +1,16 @@
 {
-    "id": 118,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "image",
-            "content": "",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": ""
-        }
-    ]
+  "id": 118,
+  "name": "Musikkvideo",
+  "description": "Laget av Theo Blom 2MPB",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/d1bT9qpUNu8"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/110_film/118_Theo-Blom_2MPB_Musikkvideo.png",
+      "hidden": true
+    }
+  ]
 }

@@ -1,53 +1,53 @@
 {
-  "title": "Reklame",
+  "title": "Årets Nykommer",
   "projects": [
     {
       "id": 201,
-      "name": "Project Alpha",
-      "description": "Student A - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "For-sale-baby-shoes",
+      "description": "Laget av Almira Shkreta 1MKB",
+      "image": "/data/2025/images/200/201.jpg"
     },
     {
       "id": 202,
-      "name": "Project Beta",
-      "description": "Student B - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Kortfilm",
+      "description": "Laget av Andreas Soegaard Tysland 1MKB",
+      "image": "/data/2025/images/200/202.jpg"
     },
     {
       "id": 203,
-      "name": "Project Gamma",
-      "description": "Student C - Class Z",
-      "image": "/data/2025/images/200.webp"
+      "name": "Mirror-musikkvideo",
+      "description": "Laget av Aurora og Zuzanna 1MKB",
+      "image": "/data/2025/images/200/203.jpg"
     },
     {
       "id": 204,
-      "name": "Project Delta",
-      "description": "Student D - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "Film",
+      "description": "Laget av Celina 1IMA",
+      "image": "/data/2025/images/200/204.jpg"
     },
     {
       "id": 205,
-      "name": "Project Epsilon",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Musikkvideo",
+      "description": "Laget av Kurbi, David 1mka",
+      "image": "/data/2025/images/200/205.jpg"
     },
     {
       "id": 206,
-      "name": "Project Zeta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "KineticRush-MrSlim",
+      "description": "Laget av Lucas 1IMA",
+      "image": "/data/2025/images/200/206.jpg"
     },
     {
       "id": 207,
-      "name": "Project Eta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Coop-Extra",
+      "description": "Laget av Lukas Olsen 1MKB",
+      "image": "/data/2025/images/200/207.jpg"
     },
     {
       "id": 208,
-      "name": "Project Theta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "YND-Musikkvideo",
+      "description": "Laget av Musab 1IMB",
+      "image": "/data/2025/images/200/208.jpg"
     }
   ]
 }

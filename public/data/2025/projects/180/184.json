@@ -1,15 +1,15 @@
 {
-    "id": 185,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "id": 184,
+    "name": "Intervju-med-Hilde-Waage",
+    "description": "Laget av Christine 2MK",
     "sections": [
         {
             "type": "image",
-            "content": ""
+            "content": "/data/2025/project_assets/180_journalistikk/184_Christine_2MK_Intervju-med-Hilde-Waage.webp"
         },
         {
             "type": "link",
-            "content": ""
+            "content": "/data/2025/project_assets/180_journalistikk/184_Christine_2MK_Intervju-med-Hilde-Waage.pdf"
         }
     ]
 }

@@ -1,16 +1,15 @@
 {
-    "id": 172,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "image",
-            "content": "",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": ""
-        }
-    ]
+  "id": 172,
+  "name": "min-foerste-mobiltelefon",
+  "description": "Laget av Jason Yin 1MKB",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/v0Lh6t-TZXw"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/170_animasjon/Jason-Yin_1MKB_min-foerste-mobiltelefon.png"
+    }
+  ]
 }

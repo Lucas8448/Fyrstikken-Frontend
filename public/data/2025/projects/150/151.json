@@ -1,16 +1,15 @@
 {
-    "id": 151,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "image",
-            "content": "",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": ""
-        }
-    ]
+  "id": 151,
+  "name": "Dietwaterwebsite",
+  "description": "Laget av Alfred IMC",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/b8ihLXklHO4"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/150_interaktivitet/151_Alfred_IMC_Dietwaterwebsite.png"
+    }
+  ]
 }

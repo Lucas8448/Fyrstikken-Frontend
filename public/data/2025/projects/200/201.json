@@ -1,0 +1,15 @@
+{
+  "id": 201,
+  "name": "For-sale-baby-shoes",
+  "description": "Laget av Almira Shkreta 1MKB",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/cZrHh6lMYfM"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/200_aarets-nykommer/201_Almira-Shkreta_1MKB_For-sale-baby-shoes.png"
+    }
+  ]
+}

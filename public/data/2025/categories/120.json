@@ -3,51 +3,51 @@
   "projects": [
     {
       "id": 121,
-      "name": "Project Alpha",
-      "description": "Student A - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "SuperMario lydlegging",
+      "description": "Laget av Arman 1IMC",
+      "image": "/data/2025/images/120/121.jpg"
     },
     {
       "id": 122,
-      "name": "Project Beta",
-      "description": "Student B - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Spiderman lydlegging",
+      "description": "Laget av Ask 1IMB",
+      "image": "/data/2025/images/120/122.jpg"
     },
     {
       "id": 123,
-      "name": "Project Gamma",
-      "description": "Student C - Class Z",
-      "image": "/data/2025/images/200.webp"
+      "name": "Donald Duck",
+      "description": "Laget av Tora, Luqman, Mathias, Sebastian, Willy 3MK",
+      "image": ""
     },
     {
       "id": 124,
-      "name": "Project Delta",
-      "description": "Student D - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "A dream made by Anthony",
+      "description": "Laget av Elias 2MKB",
+      "image": "/data/2025/images/120/124.jpg"
     },
     {
       "id": 125,
-      "name": "Project Epsilon",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Radioreklame Prisjakt",
+      "description": "Laget av Esten 2MK",
+      "image": ""
     },
     {
       "id": 126,
-      "name": "Project Zeta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "HORK EXP1",
+      "description": "Laget av Oliver 2IMPA",
+      "image": ""
     },
     {
       "id": 127,
-      "name": "Project Eta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Czardasfyrstinnen",
+      "description": "Laget av Pia og Miriam 3MKA",
+      "image": ""
     },
     {
       "id": 128,
-      "name": "Project Theta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Ring on it DEMO",
+      "description": "Laget av Willyama 2MK",
+      "image": ""
     }
   ]
 }

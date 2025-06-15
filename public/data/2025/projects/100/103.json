@@ -1,11 +1,11 @@
 {
-    "id": 103,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/100/200.png"
-        }
-    ]
+  "id": 103,
+  "name": "Golden Hour",
+  "description": "Laget av Ayat Jawad 2MKB",
+  "sections": [
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/100_fotografi/103_Ayat-Jawad_2MKB_Golden-Hour/Ayat-Jawad_2MKB_Golden-Hour1.jpg"
+    }
+  ]
 }

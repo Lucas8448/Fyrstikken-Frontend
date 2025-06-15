@@ -1,11 +1,11 @@
 {
-    "id": 125,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "audio",
-            "content": ""
-        }
-    ]
+  "id": 125,
+  "name": "Radioreklame Prisjakt",
+  "description": "Laget av Esten 2MK",
+  "sections": [
+    {
+      "type": "audio",
+      "content": "/data/2025/project_assets/120_lyddesign/125_Esten_2MK_Radioreklame-Prisjakt.mp3"
+    }
+  ]
 }

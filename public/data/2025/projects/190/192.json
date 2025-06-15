@@ -1,16 +1,15 @@
 {
-    "id": 171,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "image",
-            "content": "",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": ""
-        }
-    ]
+  "id": 192,
+  "name": "Oestfold_Maallag",
+  "description": "Laget av Torkild Martinsen 2MPA",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/_ey2V6EdDvU"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/190_reklame/192_Torkild-Martinsen_2MPA_Oestfold_Maallag.png"
+    }
+  ]
 }
