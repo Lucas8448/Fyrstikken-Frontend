@@ -59,6 +59,12 @@
             "title": "Reklame",
             "description": "Reklame",
             "image": "/data/2025/images/200.webp"
+        },
+        "aaretsnykommer": {
+            "id": 200,
+            "title": "Årets Nykommer",
+            "description": "Årets Nykommer",
+            "image": "/data/2025/images/200.webp"
         }
     }
 }
