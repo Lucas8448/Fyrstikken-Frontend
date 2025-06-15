@@ -85,13 +85,8 @@ export default async function Component() {
         />
         <div className="absolute inset-0 bg-gray-900/50" />
         <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-6 px-4 text-center text-gray-50 sm:px-6 md:px-8">
-          @
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
             Fyrstikken
-          </h1>
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-            Gratulerer til Infinitum av Elias Reitan Arntzen 1MKB som vinner av
-            publikumsprisen
           </h1>
           <p className="max-w-[600px] text-lg md:text-xl">
             Her kan du stemme for publikumsprisen, se forskjellige elev
