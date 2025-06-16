@@ -3,9 +3,6 @@
     "name": "Reven-og-treet",
     "description": "Laget av Hedda 2MKA",
     "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/140_kunst/144_Hedda_2MKA_Reven-og-treet.png"
-        }
+        { "type": "image", "content": "/data/2025/project_assets/140_kunst/144_Hedda_2MKA_Reven-og-treet.png" }
     ]
 }

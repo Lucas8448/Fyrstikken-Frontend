@@ -3,13 +3,7 @@
   "name": "Alle-farger",
   "description": "Laget av Aurora, Aleksander og Ingvill 1MKB",
   "sections": [
-    {
-      "type": "iframe",
-      "content": "https://new.express.adobe.com/webpage/OeIQ30wHJT6v1"
-    },
-    {
-      "type": "image",
-      "content": "/data/2025/project_assets/180_journalistikk/182_Aurora-Aleksander-og-Ingvill_1MKB_Alle-farger.png"
-    }
+    { "type": "iframe", "content": "https://new.express.adobe.com/webpage/OeIQ30wHJT6v1" },
+    { "type": "image", "content": "/data/2025/project_assets/180_journalistikk/182_Aurora-Aleksander-og-Ingvill_1MKB_Alle-farger.png" }
   ]
 }
