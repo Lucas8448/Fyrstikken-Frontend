@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import {
-  getUserByEmail,
   updateUserVerificationCode,
   createToken,
+  createUserIfAllowed,
 } from "@/lib/supabase-database";
 import { generateVerificationCode, sendVerificationEmail } from "@/lib/email";
 
@@ -15,20 +15,18 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Email is required" }, { status: 400 });
     }
 
-    // Get user from database - matches Python logic exactly
-    const { data: user, error: userError } = await getUserByEmail(email);
+    // Get user from database or create if allowed
+    const { data: user, error: userError } = await createUserIfAllowed(email);
 
     if (userError || !user) {
-      return NextResponse.json(
-        { error: "Email not allowed" },
-        { status: 403 }
-      );
+      console.error("User not found:", userError);
+      return NextResponse.json({ error: "Email not allowed" }, { status: 403 });
     }
 
     if (code) {
       // Verify the code - matches Python logic exactly
       const currentTime = Math.floor(Date.now() / 1000);
-      
+
       if (
         user.verification_code === code.toString() &&
         user.code_expiry &&

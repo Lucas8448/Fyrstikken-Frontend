@@ -1,5 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { verifyToken, getUserByEmail, updateUserVote } from "@/lib/supabase-database";
+import {
+  verifyToken,
+  getUserByEmail,
+  updateUserVote,
+} from "@/lib/supabase-database";
 import { isVotingAllowed, getVotingPeriod } from "@/lib/utils";
 
 export async function POST(req: NextRequest) {
