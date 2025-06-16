@@ -1,8 +1,45 @@
 import Redis from "ioredis";
 import { generateToken } from "./email";
 
-// Initialize Redis client
-const redis = new Redis(process.env.REDIS_URL!);
+// Create a Redis client factory optimized for slow 30MB database
+function createRedisClient(): Redis {
+  return new Redis(process.env.REDIS_URL!, {
+    // Longer timeouts for slow database
+    connectTimeout: 30000, // 30 seconds for slow connection
+    commandTimeout: 15000, // 15 seconds for slow commands
+    lazyConnect: true,
+
+    // No retries to avoid overwhelming slow database
+    maxRetriesPerRequest: 0,
+    enableReadyCheck: false,
+
+    // Minimal resource usage
+    enableAutoPipelining: false,
+    enableOfflineQueue: false,
+    keepAlive: 0,
+    family: 4,
+    db: 0,
+  });
+}
+
+// Helper function to execute Redis commands with automatic cleanup
+async function withRedis<T>(
+  operation: (client: Redis) => Promise<T>
+): Promise<T> {
+  const client = createRedisClient();
+  try {
+    // Connect and give slow database time to respond
+    await client.connect();
+    await new Promise((resolve) => setTimeout(resolve, 100)); // 100ms buffer
+    const result = await operation(client);
+    return result;
+  } finally {
+    // Always disconnect after operation
+    if (client.status !== "end") {
+      client.disconnect();
+    }
+  }
+}
 
 // Types
 interface User {
@@ -32,20 +69,22 @@ export async function getUserByEmail(email: string) {
       return { data: null, error: { message: "Email not allowed" } };
     }
 
-    const userJson = await redis.get(`user:${email.toLowerCase()}`);
+    return await withRedis(async (redis) => {
+      const userJson = await redis.get(`user:${email.toLowerCase()}`);
 
-    if (!userJson) {
-      // Create user if they're in allowed list
-      const newUser: User = {
-        email: email.toLowerCase(),
-        createdAt: Date.now(),
-      };
-      await redis.set(`user:${email.toLowerCase()}`, JSON.stringify(newUser));
-      return { data: newUser, error: null };
-    }
+      if (!userJson) {
+        // Create user if they're in allowed list
+        const newUser: User = {
+          email: email.toLowerCase(),
+          createdAt: Date.now(),
+        };
+        await redis.set(`user:${email.toLowerCase()}`, JSON.stringify(newUser));
+        return { data: newUser, error: null };
+      }
 
-    const user = JSON.parse(userJson) as User;
-    return { data: user, error: null };
+      const user = JSON.parse(userJson) as User;
+      return { data: user, error: null };
+    });
   } catch (error) {
     return { data: null, error: { message: (error as Error).message } };
   }
@@ -57,22 +96,24 @@ export async function updateUserVerificationCode(
   expiry: number
 ) {
   try {
-    const userKey = `user:${email.toLowerCase()}`;
-    const userJson = await redis.get(userKey);
+    return await withRedis(async (redis) => {
+      const userKey = `user:${email.toLowerCase()}`;
+      const userJson = await redis.get(userKey);
 
-    if (!userJson) {
-      return { data: null, error: { message: "User not found" } };
-    }
+      if (!userJson) {
+        return { data: null, error: { message: "User not found" } };
+      }
 
-    const user = JSON.parse(userJson) as User;
-    const updatedUser = {
-      ...user,
-      verificationCode: code.toString(),
-      codeExpiry: expiry,
-    };
+      const user = JSON.parse(userJson) as User;
+      const updatedUser = {
+        ...user,
+        verificationCode: code.toString(),
+        codeExpiry: expiry,
+      };
 
-    await redis.set(userKey, JSON.stringify(updatedUser));
-    return { data: updatedUser, error: null };
+      await redis.set(userKey, JSON.stringify(updatedUser));
+      return { data: updatedUser, error: null };
+    });
   } catch (error) {
     return { data: null, error: { message: (error as Error).message } };
   }
@@ -83,14 +124,16 @@ export async function createToken(
   email: string
 ): Promise<{ token?: string; error?: string }> {
   try {
-    const token = generateToken();
-    const tokenData = { email: email.toLowerCase(), createdAt: Date.now() };
-    await redis.set(`token:${token}`, JSON.stringify(tokenData));
+    return await withRedis(async (redis) => {
+      const token = generateToken();
+      const tokenData = { email: email.toLowerCase(), createdAt: Date.now() };
+      await redis.set(`token:${token}`, JSON.stringify(tokenData));
 
-    // Set expiry for token (24 hours)
-    await redis.expire(`token:${token}`, 24 * 60 * 60);
+      // Set expiry for token (24 hours)
+      await redis.expire(`token:${token}`, 24 * 60 * 60);
 
-    return { token };
+      return { token };
+    });
   } catch (error) {
     return { error: (error as Error).message };
   }
@@ -100,14 +143,16 @@ export async function verifyToken(
   token: string
 ): Promise<{ email?: string; error?: string }> {
   try {
-    const tokenJson = await redis.get(`token:${token}`);
+    return await withRedis(async (redis) => {
+      const tokenJson = await redis.get(`token:${token}`);
 
-    if (!tokenJson) {
-      return { error: "Invalid or expired token" };
-    }
+      if (!tokenJson) {
+        return { error: "Invalid or expired token" };
+      }
 
-    const tokenData = JSON.parse(tokenJson) as { email: string };
-    return { email: tokenData.email };
+      const tokenData = JSON.parse(tokenJson) as { email: string };
+      return { email: tokenData.email };
+    });
   } catch (error) {
     return { error: (error as Error).message };
   }
@@ -116,32 +161,34 @@ export async function verifyToken(
 // Voting
 export async function updateUserVote(email: string, contestantId: string) {
   try {
-    const userKey = `user:${email.toLowerCase()}`;
-    const userJson = await redis.get(userKey);
+    return await withRedis(async (redis) => {
+      const userKey = `user:${email.toLowerCase()}`;
+      const userJson = await redis.get(userKey);
 
-    if (!userJson) {
-      return { data: null, error: { message: "User not found" } };
-    }
+      if (!userJson) {
+        return { data: null, error: { message: "User not found" } };
+      }
 
-    const user = JSON.parse(userJson) as User;
+      const user = JSON.parse(userJson) as User;
 
-    // Check if user already voted
-    if (user.contestantVoted) {
-      // Remove previous vote
-      await redis.hincrby("vote_counts", user.contestantVoted, -1);
-    }
+      // Check if user already voted
+      if (user.contestantVoted) {
+        // Remove previous vote
+        await redis.hincrby("vote_counts", user.contestantVoted, -1);
+      }
 
-    // Update user's vote
-    const updatedUser = {
-      ...user,
-      contestantVoted: contestantId,
-    };
-    await redis.set(userKey, JSON.stringify(updatedUser));
+      // Update user's vote
+      const updatedUser = {
+        ...user,
+        contestantVoted: contestantId,
+      };
+      await redis.set(userKey, JSON.stringify(updatedUser));
 
-    // Increment vote count for new contestant
-    await redis.hincrby("vote_counts", contestantId, 1);
+      // Increment vote count for new contestant
+      await redis.hincrby("vote_counts", contestantId, 1);
 
-    return { data: updatedUser, error: null };
+      return { data: updatedUser, error: null };
+    });
   } catch (error) {
     return { data: null, error: { message: (error as Error).message } };
   }
@@ -149,13 +196,15 @@ export async function updateUserVote(email: string, contestantId: string) {
 
 export async function getVoteResults() {
   try {
-    const voteCountsRaw = await redis.hgetall("vote_counts");
-    // Convert string values to numbers
-    const voteCounts: VoteCounts = {};
-    for (const [key, value] of Object.entries(voteCountsRaw)) {
-      voteCounts[key] = parseInt(value);
-    }
-    return { data: voteCounts, error: null };
+    return await withRedis(async (redis) => {
+      const voteCountsRaw = await redis.hgetall("vote_counts");
+      // Convert string values to numbers
+      const voteCounts: VoteCounts = {};
+      for (const [key, value] of Object.entries(voteCountsRaw)) {
+        voteCounts[key] = parseInt(value);
+      }
+      return { data: voteCounts, error: null };
+    });
   } catch (error) {
     return { data: null, error: { message: (error as Error).message } };
   }
