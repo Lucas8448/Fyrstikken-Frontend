@@ -28,10 +28,17 @@ export async function sendVerificationEmail(
   const sender = process.env.EMAIL_SENDER;
   const password = process.env.EMAIL_PASSWORD;
 
+  console.log("Email configuration check:", {
+    hasSender: !!sender,
+    hasPassword: !!password,
+    sender: sender ? sender.substring(0, 3) + "***" : "undefined",
+  });
+
   if (!sender || !password) {
     return {
       success: false,
-      error: "Email credentials not configured",
+      error:
+        "Email credentials not configured - check EMAIL_SENDER and EMAIL_PASSWORD",
     };
   }
 
@@ -44,10 +51,14 @@ export async function sendVerificationEmail(
     );
     let htmlContent: string;
 
+    console.log("Reading email template from:", templatePath);
+
     try {
       htmlContent = fs.readFileSync(templatePath, "utf-8");
       htmlContent = htmlContent.replace("{code}", code.toString());
+      console.log("Email template loaded successfully");
     } catch (fileError) {
+      console.error("Error reading email template:", fileError);
       return {
         success: false,
         error: `Error reading email template: ${fileError}`,
@@ -61,8 +72,9 @@ export async function sendVerificationEmail(
       html: htmlContent,
     };
 
+    console.log("Attempting to send email to:", email);
     await transporter.sendMail(mailOptions);
-    console.log("Email sent successfully");
+    console.log("Email sent successfully to:", email);
     return { success: true };
   } catch (error) {
     console.error("Email sending error:", error);

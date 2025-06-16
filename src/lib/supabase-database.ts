@@ -237,3 +237,34 @@ export async function cleanupExpiredTokens() {
     return { success: false, error: (error as Error).message };
   }
 }
+
+// Create user if email is allowed
+export async function createUserIfAllowed(email: string) {
+  try {
+    // Check if email is allowed
+    if (!isEmailAllowed(email)) {
+      return { data: null, error: { message: "Email not allowed" } };
+    }
+
+    // Check if user already exists
+    const { data: existingUser } = await getUserByEmail(email);
+    if (existingUser) {
+      return { data: existingUser, error: null };
+    }
+
+    // Create new user
+    const { data: newUser, error: createError } = await getSupabaseClient()
+      .from("users")
+      .insert([{ email: email.toLowerCase() }])
+      .select()
+      .single();
+
+    if (createError) {
+      return { data: null, error: { message: createError.message } };
+    }
+
+    return { data: newUser, error: null };
+  } catch (error) {
+    return { data: null, error: { message: (error as Error).message } };
+  }
+}
