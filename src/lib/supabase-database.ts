@@ -1,15 +1,17 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from "@supabase/supabase-js";
 import { generateToken } from "./email";
 
 // Lazy Supabase client initialization
 function getSupabaseClient() {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  
+
   if (!supabaseUrl || !supabaseServiceKey) {
-    throw new Error('Missing Supabase environment variables: NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required');
+    throw new Error(
+      "Missing Supabase environment variables: NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required"
+    );
   }
-  
+
   return createClient(supabaseUrl, supabaseServiceKey);
 }
 
@@ -35,55 +37,32 @@ interface VoteCounts {
 
 // Helper function to check if email is allowed
 function isEmailAllowed(email: string): boolean {
-  const allowedDomains = [
-    "fyrstikken.no",
-    "gmail.com",
-    "hotmail.com",
-    "outlook.com",
-    "icloud.com",
-    "me.com",
-    "mac.com",
-    "yahoo.com",
-    "live.com",
-    "msn.com",
-    "protonmail.com",
-    "pm.me",
-  ];
+  const allowedEmails = process.env.ALLOWED_MAILS;
+  if (!allowedEmails) {
+    console.error("ALLOWED_MAILS environment variable not set");
+    return false;
+  }
 
-  const domain = email.split("@")[1]?.toLowerCase();
-  return allowedDomains.includes(domain);
+  const emailList = allowedEmails.split(",").map((e) => e.trim().toLowerCase());
+  return emailList.includes(email.toLowerCase());
 }
 
 // User management
 export async function getUserByEmail(email: string) {
   try {
-    if (!isEmailAllowed(email)) {
-      return { data: null, error: { message: "Email not allowed" } };
-    }
-
     const { data: existingUser, error: fetchError } = await getSupabaseClient()
-      .from('users')
-      .select('*')
-      .eq('email', email.toLowerCase())
+      .from("users")
+      .select("*")
+      .eq("email", email.toLowerCase())
       .single();
 
-    if (fetchError && fetchError.code !== 'PGRST116') { // PGRST116 means no rows found
+    if (fetchError && fetchError.code !== "PGRST116") {
+      // PGRST116 means no rows found
       return { data: null, error: { message: fetchError.message } };
     }
 
     if (!existingUser) {
-      // Create user if they're in allowed list
-      const { data: newUser, error: insertError } = await getSupabaseClient()
-        .from('users')
-        .insert([{ email: email.toLowerCase() }])
-        .select()
-        .single();
-
-      if (insertError) {
-        return { data: null, error: { message: insertError.message } };
-      }
-
-      return { data: newUser, error: null };
+      return { data: null, error: { message: "User not found" } };
     }
 
     return { data: existingUser, error: null };
@@ -99,12 +78,12 @@ export async function updateUserVerificationCode(
 ) {
   try {
     const { data, error } = await getSupabaseClient()
-      .from('users')
+      .from("users")
       .update({
         verification_code: code.toString(),
         code_expiry: expiry,
       })
-      .eq('email', email.toLowerCase())
+      .eq("email", email.toLowerCase())
       .select()
       .single();
 
@@ -124,9 +103,9 @@ export async function createToken(
 ): Promise<{ token?: string; error?: string }> {
   try {
     const token = generateToken();
-    
+
     const { error } = await getSupabaseClient()
-      .from('tokens')
+      .from("tokens")
       .insert([{ token, email: email.toLowerCase() }]);
 
     if (error) {
@@ -144,9 +123,9 @@ export async function verifyToken(
 ): Promise<{ email?: string; error?: string }> {
   try {
     const { data, error } = await getSupabaseClient()
-      .from('tokens')
-      .select('email, created_at')
-      .eq('token', token)
+      .from("tokens")
+      .select("email, created_at")
+      .eq("token", token)
       .single();
 
     if (error) {
@@ -156,11 +135,12 @@ export async function verifyToken(
     // Check if token is expired (24 hours)
     const tokenCreatedAt = new Date(data.created_at);
     const now = new Date();
-    const hoursDiff = (now.getTime() - tokenCreatedAt.getTime()) / (1000 * 60 * 60);
+    const hoursDiff =
+      (now.getTime() - tokenCreatedAt.getTime()) / (1000 * 60 * 60);
 
     if (hoursDiff > 24) {
       // Clean up expired token
-      await getSupabaseClient().from('tokens').delete().eq('token', token);
+      await getSupabaseClient().from("tokens").delete().eq("token", token);
       return { error: "Token expired" };
     }
 
@@ -175,9 +155,9 @@ export async function updateUserVote(email: string, contestantId: string) {
   try {
     // First, get the current user to check previous vote
     const { error: fetchError } = await getSupabaseClient()
-      .from('users')
-      .select('contestant_voted')
-      .eq('email', email.toLowerCase())
+      .from("users")
+      .select("contestant_voted")
+      .eq("email", email.toLowerCase())
       .single();
 
     if (fetchError) {
@@ -186,9 +166,9 @@ export async function updateUserVote(email: string, contestantId: string) {
 
     // Update user's vote
     const { data: updatedUser, error: updateError } = await getSupabaseClient()
-      .from('users')
+      .from("users")
       .update({ contestant_voted: contestantId })
-      .eq('email', email.toLowerCase())
+      .eq("email", email.toLowerCase())
       .select()
       .single();
 
@@ -205,9 +185,9 @@ export async function updateUserVote(email: string, contestantId: string) {
 export async function getVoteResults() {
   try {
     const { data: users, error } = await getSupabaseClient()
-      .from('users')
-      .select('contestant_voted')
-      .not('contestant_voted', 'is', null);
+      .from("users")
+      .select("contestant_voted")
+      .not("contestant_voted", "is", null);
 
     if (error) {
       return { data: null, error: { message: error.message } };
@@ -215,9 +195,10 @@ export async function getVoteResults() {
 
     // Count votes for each contestant
     const voteCounts: VoteCounts = {};
-    users.forEach(user => {
+    users.forEach((user) => {
       if (user.contestant_voted) {
-        voteCounts[user.contestant_voted] = (voteCounts[user.contestant_voted] || 0) + 1;
+        voteCounts[user.contestant_voted] =
+          (voteCounts[user.contestant_voted] || 0) + 1;
       }
     });
 
@@ -231,9 +212,9 @@ export async function getVoteResults() {
 export async function initializeDatabase() {
   try {
     // Check if tables exist by trying to select from them
-    await getSupabaseClient().from('users').select('id').limit(1);
-    await getSupabaseClient().from('tokens').select('token').limit(1);
-    
+    await getSupabaseClient().from("users").select("id").limit(1);
+    await getSupabaseClient().from("tokens").select("token").limit(1);
+
     return { success: true };
   } catch (error) {
     return { success: false, error: (error as Error).message };
@@ -247,9 +228,9 @@ export async function cleanupExpiredTokens() {
     twentyFourHoursAgo.setHours(twentyFourHoursAgo.getHours() - 24);
 
     await getSupabaseClient()
-      .from('tokens')
+      .from("tokens")
       .delete()
-      .lt('created_at', twentyFourHoursAgo.toISOString());
+      .lt("created_at", twentyFourHoursAgo.toISOString());
 
     return { success: true };
   } catch (error) {
