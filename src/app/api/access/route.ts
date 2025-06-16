@@ -3,16 +3,16 @@ import {
   getUserByEmail,
   updateUserVerificationCode,
   createToken,
-} from "@/lib/kv-database";
+} from "@/lib/supabase-database";
 import { generateVerificationCode, sendVerificationEmail } from "@/lib/email";
 
 async function handleCodeVerification(email: string, code: string, user: any) {
   const currentTime = Math.floor(Date.now() / 1000);
 
   if (
-    user.verificationCode !== code.toString() ||
-    !user.codeExpiry ||
-    currentTime >= user.codeExpiry
+    user.verification_code !== code.toString() ||
+    !user.code_expiry ||
+    currentTime >= user.code_expiry
   ) {
     return NextResponse.json(
       { error: "Invalid or expired code" },

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getVoteResults } from "@/lib/kv-database";
+import { getVoteResults } from "@/lib/supabase-database";
 
 export async function GET(req: NextRequest) {
   try {

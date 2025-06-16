@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { verifyToken, getUserByEmail, updateUserVote } from "@/lib/kv-database";
+import { verifyToken, getUserByEmail, updateUserVote } from "@/lib/supabase-database";
 import { isVotingAllowed, getVotingPeriod } from "@/lib/utils";
 
 export async function POST(req: NextRequest) {
@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "User not found" }, { status: 404 });
     }
 
-    if (user.contestantVoted !== null && user.contestantVoted !== undefined) {
+    if (user.contestant_voted !== null && user.contestant_voted !== undefined) {
       return NextResponse.json(
         { error: "User has already voted" },
         { status: 400 }
