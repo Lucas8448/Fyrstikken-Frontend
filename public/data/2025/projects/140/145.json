@@ -1,11 +1,8 @@
 {
     "id": 145,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "Lykke-til-videre",
+    "description": "Laget av Jin Zheng",
     "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/100/200.png"
-        }
+        { "type": "image", "content": "/data/2025/project_assets/140_kunst/145_Jin-Zheng_Lykke-til-videre.jpg" }
     ]
 }

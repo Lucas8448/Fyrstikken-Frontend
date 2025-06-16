@@ -3,51 +3,51 @@
   "projects": [
     {
       "id": 101,
-      "name": "Project Alpha",
-      "description": "Student A - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "Race",
+      "description": "Laget av Adele 1IMA",
+      "image": "/data/2025/images/100/101.jpg"
     },
     {
       "id": 102,
-      "name": "Project Beta",
-      "description": "Student B - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Skjeart i to",
+      "description": "Laget av Andrea Linningsvoll 3MKA",
+      "image": "/data/2025/images/100/102.jpg"
     },
     {
       "id": 103,
-      "name": "Project Gamma",
-      "description": "Student C - Class Z",
-      "image": "/data/2025/images/200.webp"
+      "name": "Golden Hour",
+      "description": "Laget av Ayat Jawad 2MKB",
+      "image": "/data/2025/images/100/103.jpg"
     },
     {
       "id": 104,
-      "name": "Project Delta",
-      "description": "Student D - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "Lidenskap",
+      "description": "Laget av Jin Zheng 2MKB",
+      "image": "/data/2025/images/100/104.jpg"
     },
     {
       "id": 105,
-      "name": "Project Epsilon",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Reptilhjernen",
+      "description": "Laget av Pia Olea Kristoffersen 3MKA",
+      "image": "/data/2025/images/100/105.jpg"
     },
     {
       "id": 106,
-      "name": "Project Zeta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "En dag som aldri stilner",
+      "description": "Laget av Theodor S Borge 3MKA",
+      "image": "/data/2025/images/100/106.jpg"
     },
     {
       "id": 107,
-      "name": "Project Eta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Ekstraordinært i Oslo sentrum",
+      "description": "Laget av Annali Lilledahl Kahn 2MPB",
+      "image": "/data/2025/images/100/107.jpg"
     },
     {
       "id": 108,
-      "name": "Project Theta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Etterlatt",
+      "description": "Laget av Joakim Ellingsen 2MPB",
+      "image": "/data/2025/images/100/108.jpg"
     }
   ]
 }

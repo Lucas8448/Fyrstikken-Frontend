@@ -1,16 +1,15 @@
 {
-    "id": 156,
-    "name": "House Flipper+ HUB",
-    "description": "Laget av Aayan 1IMB",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/150_interaktivitet/156_Aayan_1IMB_InteraktivNettside.png",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": "https://youtu.be/7yGewJw48l8 "
-        }
-    ]
+  "id": 156,
+  "name": "InteraktivNettside",
+  "description": "Laget av Aayan 1IMB",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/7yGewJw48l8"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/150_interaktivitet/156_Aayan_1IMB_InteraktivNettside.png"
+    }
+  ]
 }

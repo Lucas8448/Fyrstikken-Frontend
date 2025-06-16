@@ -1,16 +1,15 @@
 {
-    "id": 193,
-    "name": "FRUS-reklame",
-    "description": "Laget av Jonas og Michal 2MKA",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/190_reklame/193_Jonas og Michal_FRUSreklame_2mkA.png",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": "https://youtu.be/N78SMnAkQEI"
-        }
-    ]
+  "id": 193,
+  "name": "FRUSreklame",
+  "description": "Laget av Jonas og Michal 2mkA",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/N78SMnAkQEI"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/190_reklame/193_Jonas og Michal_FRUSreklame_2mkA.png"
+    }
+  ]
 }

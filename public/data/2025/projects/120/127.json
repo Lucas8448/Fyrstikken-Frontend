@@ -1,11 +1,11 @@
 {
-    "id": 127,
-    "name": "czardasfyrstinnen",
-    "description": "Laget av Pia og Miriam 3MKA",
-    "sections": [
-        {
-            "type": "audio",
-            "content": "/data/2025/project_assets/120_lyddesign/127_Pia-og-Miriam_3MKA-czardasfyrstinnen.mp3"
-        }
-    ]
+  "id": 127,
+  "name": "Czardasfyrstinnen",
+  "description": "Laget av Pia og Miriam 3MKA",
+  "sections": [
+    {
+      "type": "audio",
+      "content": "/data/2025/project_assets/120_lyddesign/127_Pia-og-Miriam_3MKA-czardasfyrstinnen.mp3"
+    }
+  ]
 }

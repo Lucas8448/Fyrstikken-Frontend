@@ -1,15 +1,11 @@
 {
     "id": 191,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "NAF",
+    "description": "Laget av Ella Wasserfall Johannessen 2MPB",
     "sections": [
         {
-            "type": "image",
-            "content": "/data/2025/project_assets/190_reklame/"
-        },
-        {
             "type": "link",
-            "content": ""
+            "content": "/data/2025/project_assets/190_reklame/191_Ella_Wasserfall_Johannessen_2MPB_NAF.pdf"
         }
     ]
 }

@@ -1,0 +1,15 @@
+{
+  "id": 204,
+  "name": "Film",
+  "description": "Laget av Celina 1IMA",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/5r7wzB5z_UU"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/200_aarets-nykommer/204_Celina_1IMA_Film.png"
+    }
+  ]
+}

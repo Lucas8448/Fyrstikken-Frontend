@@ -1,16 +1,16 @@
 {
-    "id": 114,
-    "name": "The Diner",
-    "description": "Laget av Ivan Zheliaskov 2MKA",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/110_film/114_Ivan-Zheliaskov_2MKA_TheDiner.png",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": "https://youtu.be/iC4ntsDJRFk"
-        }
-    ]
+  "id": 114,
+  "name": "TheDiner",
+  "description": "Laget av Ivan Zheliaskov 2MKA",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/iC4ntsDJRFk"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/110_film/114_Ivan-Zheliaskov_2MKA_TheDiner.png",
+      "hidden": true
+    }
+  ]
 }

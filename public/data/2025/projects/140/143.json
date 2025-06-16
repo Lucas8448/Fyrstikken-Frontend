@@ -1,11 +1,8 @@
 {
     "id": 143,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "Marokkanske-doerer",
+    "description": "Laget av Ayat Jawad 2MK",
     "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/100/200.png"
-        }
+        { "type": "image", "content": "/data/2025/project_assets/140_kunst/143_Ayat-Jawad_2MK_Marokkanske-doerer.jpg" }
     ]
 }

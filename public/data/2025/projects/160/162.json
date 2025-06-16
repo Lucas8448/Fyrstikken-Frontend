@@ -1,16 +1,16 @@
 {
-    "id": 162,
-    "name": "Block The Brits",
-    "description": "Laget av Eden 1IMA",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/160_spillutvikling/162_Eden_1IMA_Block-The-Brits.png",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": "https://youtu.be/JSZY0IoZ1FY"
-        }
-    ]
+  "id": 162,
+  "name": "Block-The-Brits",
+  "description": "Laget av Eden 1IMA",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/JSZY0IoZ1FY"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/160_spillutvikling/162_Eden_1IMA_Block-The-Brits.png",
+      "hidden": true
+    }
+  ]
 }

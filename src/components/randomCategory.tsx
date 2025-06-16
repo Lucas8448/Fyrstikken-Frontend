@@ -4,8 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
 const categoryArray = [
-  100, 110, 120, 130, 200, 210, 220, 300, 310, 400, 410, 420, 430, 440, 450,
-  500, 510,
+  100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200,
 ];
 
 interface RandomCategoryProps {

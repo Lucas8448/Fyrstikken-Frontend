@@ -1,16 +1,16 @@
 {
-    "id": 117,
-    "name": "Lojal",
-    "description": "Laget av Oliver 2IMPA",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/110_film/117_Oliver_2IMPA_LOJAL-Kortfilm.png",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": "https://youtu.be/2hS7RDQLrGM"
-        }
-    ]
+  "id": 117,
+  "name": "LOJAL Kortfilm",
+  "description": "Laget av Oliver 2IMPA",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/2hS7RDQLrGM"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/110_film/117_Oliver_2IMPA_LOJAL-Kortfilm.png",
+      "hidden": true
+    }
+  ]
 }

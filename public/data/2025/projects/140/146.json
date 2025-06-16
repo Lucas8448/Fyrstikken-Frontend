@@ -1,11 +1,10 @@
 {
     "id": 146,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "Varia",
+    "description": "Laget av Varia 1IMA",
     "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/100/200.png"
-        }
+        { "type": "image", "content": "/data/2025/project_assets/140_kunst/146_Varia_1IMA_0.png" },
+        { "type": "image", "content": "/data/2025/project_assets/140_kunst/146_Varia_1IMA_1.png" },
+        { "type": "image", "content": "/data/2025/project_assets/140_kunst/146_Varia_1IMA_2.jpeg" }
     ]
 }

@@ -3,51 +3,51 @@
   "projects": [
     {
       "id": 161,
-      "name": "Project Alpha",
-      "description": "Student A - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "AXO",
+      "description": "Laget av Ayaz, Daniel Axelson, Edvard, Hubert, Waiz 2IM",
+      "image": "/data/2025/images/160/161.jpg"
     },
     {
       "id": 162,
-      "name": "Project Beta",
-      "description": "Student B - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Block-The-Brits",
+      "description": "Laget av Eden 1IMA",
+      "image": "/data/2025/images/160/162.jpg"
     },
     {
       "id": 163,
-      "name": "Project Gamma",
-      "description": "Student C - Class Z",
-      "image": "/data/2025/images/200.webp"
+      "name": "Space-Invaders",
+      "description": "Laget av Jacob 1IMB",
+      "image": "/data/2025/images/160/163.jpg"
     },
     {
       "id": 164,
-      "name": "Project Delta",
-      "description": "Student D - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "Fronks",
+      "description": "Laget av Kjetil, Erling, Kasper, Theo, Maron 2IM",
+      "image": "/data/2025/images/160/164.jpg"
     },
     {
       "id": 165,
-      "name": "Project Epsilon",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "UnUnDead",
+      "description": "Laget av Mathias 1IMA",
+      "image": "/data/2025/images/160/165.jpg"
     },
     {
       "id": 166,
-      "name": "Project Zeta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Echoes of Steel",
+      "description": "Laget av Oliver, Aksel, Annali, Mulan 2IM",
+      "image": "/data/2025/images/160/166.jpg"
     },
     {
       "id": 167,
-      "name": "Project Eta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Space-invaders",
+      "description": "Laget av William 1IMB",
+      "image": "/data/2025/images/160/167.jpg"
     },
     {
       "id": 168,
-      "name": "Project Theta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Space_invaders",
+      "description": "Laget av Jakob Ølmheim",
+      "image": "/data/2025/images/160/168.jpg"
     }
   ]
 }

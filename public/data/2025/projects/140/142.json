@@ -1,11 +1,8 @@
 {
     "id": 142,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
+    "name": "Bird",
+    "description": "Laget av Annali 2MP",
     "sections": [
-        {
-            "type": "image",
-            "content": ""
-        }
+        { "type": "image", "content": "/data/2025/project_assets/140_kunst/142_Annali_2MP_Bird.png" }
     ]
 }

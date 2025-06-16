@@ -1,16 +1,15 @@
 {
-    "id": 132,
-    "name": "Bobbly kampanje",
-    "description": "Laget av Thea 3MKB",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/130_grafisk/132_Thea_3MKB_Bobbly-kampanje.jpg",
-            "hidden": true
-        },
-        {
-            "type": "link",
-            "content": "/data/2025/project_assets/130_grafisk/132_Thea_3MKB_Bobbly-kampanje.pdf"
-        }
-    ]
+  "id": 132,
+  "name": "Bobbly kampanje",
+  "description": "Laget av Thea 3MKB",
+  "sections": [
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/130_grafisk/132_Thea_3MKB_Bobbly-kampanje.jpg"
+    },
+    {
+      "type": "link",
+      "content": "/data/2025/project_assets/130_grafisk/132_Thea_3MKB_Bobbly-kampanje.pdf"
+    }
+  ]
 }

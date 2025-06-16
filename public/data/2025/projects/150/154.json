@@ -1,16 +1,15 @@
 {
-    "id": 154,
-    "name": "Under syndikatets skygge",
-    "description": "Laget av Redon Beqiri 1IMC",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/150_interaktivitet/154_Redon_Beqiri_1IMC.png",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": "https://youtu.be/-2BdYIMOPyg"
-        }
-    ]
+  "id": 154,
+  "name": "Beqiri",
+  "description": "Laget av Redon Beqiri 1IMC",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/-2BdYIMOPyg"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/150_interaktivitet/154_Redon_Beqiri_1IMC.png"
+    }
+  ]
 }

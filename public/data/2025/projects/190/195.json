@@ -1,16 +1,15 @@
 {
-    "id": 195,
-    "name": "Gelato reklamefilm",
-    "description": "Laget av Mathias Bram 3MKB",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/190_reklame/195_Mathias-Bram_3MKB_reklamefilm_Gelato.png",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": "https://youtu.be/yyJ4o-UKlRQ"
-        }
-    ]
+  "id": 195,
+  "name": "reklamefilm_Gelato",
+  "description": "Laget av Mathias Bram 3MKB",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/yyJ4o-UKlRQ"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/190_reklame/195_Mathias-Bram_3MKB_ reklamefilm_Gelato.png"
+    }
+  ]
 }

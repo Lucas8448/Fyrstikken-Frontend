@@ -1,11 +1,13 @@
 {
-    "id": 101,
-    "name": "produktnavn",
-    "description": "Laget av [elevnavn] [klassenavn]",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/100/200.png"
-        }
-    ]
+  "id": 101,
+  "name": "Race",
+  "description": "Laget av Adele 1IMA",
+  "sections": [
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/101_Adele_1IMA_Race/Adele_1IMA_Race1.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/101_Adele_1IMA_Race/Adele_1IMA_Race2.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/101_Adele_1IMA_Race/Adele_1IMA_Race3.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/101_Adele_1IMA_Race/Adele_1IMA_Race4.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/101_Adele_1IMA_Race/Adele_1IMA_Race5.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/101_Adele_1IMA_Race/Adele_1IMA_Race6.jpg" }
+  ]
 }

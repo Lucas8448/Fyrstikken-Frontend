@@ -1,0 +1,15 @@
+{
+  "id": 207,
+  "name": "Coop-Extra",
+  "description": "Laget av Lukas Olsen 1MKB",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/rSztNKi1XJE"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/200_aarets-nykommer/207_Lukas-Olsen_1MKB_Coop-Extra.png"
+    }
+  ]
+}

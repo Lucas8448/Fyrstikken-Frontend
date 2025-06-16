@@ -3,27 +3,27 @@
   "projects": [
     {
       "id": 171,
-      "name": "Project Alpha",
-      "description": "Student A - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "KineticRush",
+      "description": "Laget av Gabriel 1IMC",
+      "image": "/data/2025/images/170/171.jpg"
     },
     {
       "id": 172,
-      "name": "Project Beta",
-      "description": "Student B - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "min-foerste-mobiltelefon",
+      "description": "Laget av Jason Yin 1MKB",
+      "image": "/data/2025/images/170/172.jpg"
     },
     {
       "id": 173,
-      "name": "Project Gamma",
-      "description": "Student C - Class Z",
-      "image": "/data/2025/images/200.webp"
+      "name": "The-Resource-War",
+      "description": "Laget av Mathias 1IMA",
+      "image": "/data/2025/images/170/173.jpg"
     },
     {
       "id": 174,
-      "name": "Project Delta",
-      "description": "Student D - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "Hedda-Gabler",
+      "description": "Laget av Mina Pran Kristensen 3MKA",
+      "image": "/data/2025/images/170/174.jpg"
     }
   ]
 }

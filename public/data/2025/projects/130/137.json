@@ -1,11 +1,11 @@
 {
-    "id": 135,
-    "name": "Life Superhelt",
-    "description": "Laget av Liv Reblo Knutsen 1MKB",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/130_grafisk/137_Liv-Relbo-Knutsen_1MKB_Life-Superhelt.png"
-        }
-    ]
+  "id": 137,
+  "name": "Life Superhelt",
+  "description": "Laget av Liv Relbo Knutsen 1MKB",
+  "sections": [
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/130_grafisk/137_Liv-Relbo-Knutsen_1MKB_Life-Superhelt.png"
+    }
+  ]
 }

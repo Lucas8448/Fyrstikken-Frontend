@@ -1,11 +1,16 @@
 {
-    "id": 122,
-    "name": "Spiderman",
-    "description": "Laget av Ask 1IMB",
-    "sections": [
-        {
-            "type": "audio",
-            "content": "https://youtu.be/75OJElubQXA"
-        }
-    ]
+  "id": 122,
+  "name": "Spiderman lydlegging",
+  "description": "Laget av Ask 1IMB",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/75OJElubQXA"
+    },
+    {
+      "type": "audio",
+      "content": "/data/2025/project_assets/120_lyddesign/122_Ask_1IMB_Spiderman-lydlegging.png",
+      "hidden": true
+    }
+  ]
 }

@@ -1,16 +1,16 @@
 {
-    "id": 112,
-    "name": "Uroboros",
-    "description": "Laget av Benjamin og Sander 2MKA",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/110_film/112_Benjamin-og-Sander_2MKA_UROBOROS.png",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": "https://youtu.be/817SV4dqg6E"
-        }
-    ]
+  "id": 112,
+  "name": "UROBOROS",
+  "description": "Laget av Benjamin og Sander 2MKA",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/817SV4dqg6E"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/110_film/112_Benjamin-og-Sander_2MKA_UROBOROS.png",
+      "hidden": true
+    }
+  ]
 }

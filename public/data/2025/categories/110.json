@@ -3,51 +3,51 @@
   "projects": [
     {
       "id": 111,
-      "name": "Project Alpha",
-      "description": "Student A - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "Taeko Onuki",
+      "description": "Laget av Andreas Tysland 1MKB",
+      "image": "/data/2025/images/110/111.jpg"
     },
     {
       "id": 112,
-      "name": "Project Beta",
-      "description": "Student B - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "UROBOROS",
+      "description": "Laget av Benjamin og Sander 2MKA",
+      "image": "/data/2025/images/110/112.jpg"
     },
     {
       "id": 113,
-      "name": "Project Gamma",
-      "description": "Student C - Class Z",
-      "image": "/data/2025/images/200.webp"
+      "name": "AI",
+      "description": "Laget av Ida Langgaard 1MKB",
+      "image": "/data/2025/images/110/113.jpg"
     },
     {
       "id": 114,
-      "name": "Project Delta",
-      "description": "Student D - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "TheDiner",
+      "description": "Laget av Ivan Zheliaskov 2MKA",
+      "image": "/data/2025/images/110/114.jpg"
     },
     {
       "id": 115,
-      "name": "Project Epsilon",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Oppdrag Diddy",
+      "description": "Laget av Jonas og Michal 2MKA",
+      "image": "/data/2025/images/110/115.jpg"
     },
     {
       "id": 116,
-      "name": "Project Zeta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "BEDRAGER",
+      "description": "Laget av Michal Weglewski 2MKA",
+      "image": "/data/2025/images/110/116.jpg"
     },
     {
       "id": 117,
-      "name": "Project Eta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "LOJAL Kortfilm",
+      "description": "Laget av Oliver 2IMPA",
+      "image": "/data/2025/images/110/117.jpg"
     },
     {
       "id": 118,
-      "name": "Project Theta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Musikkvideo",
+      "description": "Laget av Theo Blom 2MPB",
+      "image": "/data/2025/images/110/118.jpg"
     }
   ]
 }

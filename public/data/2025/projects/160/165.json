@@ -1,16 +1,16 @@
 {
-    "id": 165,
-    "name": "UnUndead",
-    "description": "Laget av Mathias 1IMA",
-    "sections": [
-        {
-            "type": "image",
-            "content": "/data/2025/project_assets/160_spillutvikling/165_Mathias_1IMA_UnUnDead.png",
-            "hidden": true
-        },
-        {
-            "type": "iframe",
-            "content": "https://youtu.be/06TfxStABYk"
-        }
-    ]
+  "id": 165,
+  "name": "UnUnDead",
+  "description": "Laget av Mathias 1IMA",
+  "sections": [
+    {
+      "type": "iframe",
+      "content": "https://www.youtube.com/embed/06TfxStABYk"
+    },
+    {
+      "type": "image",
+      "content": "/data/2025/project_assets/160_spillutvikling/165_Mathias_1IMA_UnUnDead.png",
+      "hidden": true
+    }
+  ]
 }

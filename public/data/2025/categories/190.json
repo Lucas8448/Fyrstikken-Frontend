@@ -3,45 +3,45 @@
   "projects": [
     {
       "id": 191,
-      "name": "Project Alpha",
-      "description": "Student A - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "NAF",
+      "description": "Laget av Ella Wasserfall Johannessen 2MPB",
+      "image": "/data/2025/images/190/191.jpg"
     },
     {
       "id": 192,
-      "name": "Project Beta",
-      "description": "Student B - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Oestfold_Maallag",
+      "description": "Laget av Torkild Martinsen 2MPA",
+      "image": "/data/2025/images/190/192.jpg"
     },
     {
       "id": 193,
-      "name": "Project Gamma",
-      "description": "Student C - Class Z",
-      "image": "/data/2025/images/200.webp"
+      "name": "FRUSreklame",
+      "description": "Laget av Jonas og Michal 2mkA",
+      "image": "/data/2025/images/190/193.jpg"
     },
     {
       "id": 194,
-      "name": "Project Delta",
-      "description": "Student D - Class X",
-      "image": "/data/2025/images/200.webp"
+      "name": "Reklame",
+      "description": "Laget av Kurbi, David, Terga Le 1mka",
+      "image": "/data/2025/images/190/194.jpg"
     },
     {
       "id": 195,
-      "name": "Project Epsilon",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "reklamefilm_Gelato",
+      "description": "Laget av Mathias Bram 3MKB",
+      "image": "/data/2025/images/190/195.jpg"
     },
     {
       "id": 196,
-      "name": "Project Zeta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "reklame",
+      "description": "Laget av Theo Sørli Blom 2MPB",
+      "image": "/data/2025/images/190/196.jpg"
     },
     {
       "id": 197,
-      "name": "Project Eta",
-      "description": "Student E - Class Y",
-      "image": "/data/2025/images/200.webp"
+      "name": "Vilde-Halsvik-Lillealtern",
+      "description": "Laget av Vilde Halsvik Lillealtern 3MKA",
+      "image": "/data/2025/images/190/197.jpg"
     }
   ]
 }
