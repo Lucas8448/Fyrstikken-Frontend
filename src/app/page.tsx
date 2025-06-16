@@ -34,25 +34,27 @@ export default async function Component() {
     image: string;
   };
   const categoriesArray: Category[] = Object.values((data as any).categories);
-  // For each category, load its projects and pick a random cover image
+  // For each category, load its image directory and pick a random image as cover
   const categoryCards = await Promise.all(
     categoriesArray.map(async (category: Category) => {
       try {
-        const catFile = await fs.readFile(
-          process.cwd() +
-            `/public/data/${currentYear}/categories/${category.id}.json`,
-          "utf8"
-        );
-        const catData = JSON.parse(catFile);
-        const projects = catData.projects ?? [];
-        const withImages = projects.filter(
-          (p: any) => p.image && p.image.length > 0
-        );
+        // List all image files in the category's image directory
+        const imageDir =
+          process.cwd() + `/public/data/${currentYear}/images/${category.id}`;
+        let imageFiles: string[] = [];
+        try {
+          imageFiles = (await fs.readdir(imageDir)).filter((f: string) => {
+            const extMatch = /\.(jpg|jpeg|png|webp)$/i.exec(f);
+            return !!extMatch;
+          });
+        } catch {
+          imageFiles = [];
+        }
         let randomImage = category.image;
-        if (withImages.length > 0) {
-          const randomProject =
-            withImages[Math.floor(Math.random() * withImages.length)];
-          randomImage = randomProject.image;
+        if (imageFiles.length > 0) {
+          const randomFile =
+            imageFiles[Math.floor(Math.random() * imageFiles.length)];
+          randomImage = `/data/${currentYear}/images/${category.id}/${randomFile}`;
         }
         return { ...category, randomImage };
       } catch {
@@ -60,14 +62,6 @@ export default async function Component() {
       }
     })
   );
-  // Pick a random cover image from all categories
-  const validCovers = categoryCards.filter(
-    (c: { randomImage: string }) => c.randomImage
-  );
-  const mainCover =
-    validCovers.length > 0
-      ? validCovers[Math.floor(Math.random() * validCovers.length)]
-      : null;
 
   return (
     <main className="flex flex-col">
