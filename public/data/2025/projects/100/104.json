@@ -3,9 +3,20 @@
   "name": "Lidenskap",
   "description": "Laget av Jin Zheng 2MKB",
   "sections": [
-    {
-      "type": "image",
-      "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap1.jpg"
-    }
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap1.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap2.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap3.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap4.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap5.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap6.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap7.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap8.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap9.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap10.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap11.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap12.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap13.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap14.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/104_Jin-Zheng_2MKB_Lidenskap/Jin-Zheng_2MKB_Lidenskap15.jpg" }
   ]
 }

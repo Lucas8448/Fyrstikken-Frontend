@@ -3,9 +3,14 @@
   "name": "Golden Hour",
   "description": "Laget av Ayat Jawad 2MKB",
   "sections": [
-    {
-      "type": "image",
-      "content": "/data/2025/project_assets/100_fotografi/103_Ayat-Jawad_2MKB_Golden-Hour/Ayat-Jawad_2MKB_Golden-Hour1.jpg"
-    }
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/103_Ayat-Jawad_2MKB_Golden-Hour/Ayat-Jawad_2MKB_Golden-Hour1.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/103_Ayat-Jawad_2MKB_Golden-Hour/Ayat-Jawad_2MKB_Golden-Hour2.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/103_Ayat-Jawad_2MKB_Golden-Hour/Ayat-Jawad_2MKB_Golden-Hour3.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/103_Ayat-Jawad_2MKB_Golden-Hour/Ayat-Jawad_2MKB_Golden-Hour4.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/103_Ayat-Jawad_2MKB_Golden-Hour/Ayat-Jawad_2MKB_Golden-Hour5.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/103_Ayat-Jawad_2MKB_Golden-Hour/Ayat-Jawad_2MKB_Golden-Hour6.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/103_Ayat-Jawad_2MKB_Golden-Hour/Ayat-Jawad_2MKB_Golden-Hour7.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/103_Ayat-Jawad_2MKB_Golden-Hour/Ayat-Jawad_2MKB_Golden-Hour8.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/103_Ayat-Jawad_2MKB_Golden-Hour/Ayat-Jawad_2MKB_Golden-Hour9.jpg" }
   ]
 }

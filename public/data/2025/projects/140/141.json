@@ -3,9 +3,12 @@
   "name": "Gnist i mørket",
   "description": "Laget av Emma Alexandra Østby 3MKA",
   "sections": [
-    {
-      "type": "image",
-      "content": "/data/2025/project_assets/140_kunst/141_Emma-Alexandra-Oestby_3MKA_Gnist-i-moerket.jpg"
-    }
+    { "type": "image", "content": "/data/2025/project_assets/140_kunst/141_Emma-Alexandra-Oestby_3MKA_Gnist-i-moerket.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/140_kunst/141_Emma-Alexandra-Oestby_3MKA_Gnist-i-moerket1.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/140_kunst/141_Emma-Alexandra-Oestby_3MKA_Gnist-i-moerket2.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/140_kunst/141_Emma-Alexandra-Oestby_3MKA_Gnist-i-moerket3.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/140_kunst/141_Emma-Alexandra-Oestby_3MKA_Gnist-i-moerket4.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/140_kunst/141_Emma-Alexandra-Oestby_3MKA_Gnist-i-moerket5.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/140_kunst/141_Emma-Alexandra-Oestby_3MKA_Gnist-i-moerket6.jpg" }
   ]
 }

@@ -3,9 +3,16 @@
   "name": "En dag som aldri stilner",
   "description": "Laget av Theodor S Borge 3MKA",
   "sections": [
-    {
-      "type": "image",
-      "content": "/data/2025/project_assets/100_fotografi/106_Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner/Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner.jpg"
-    }
+    { "type": "link", "content": "/data/2025/project_assets/100_fotografi/106_Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner/01_Theodor_tekst_utdeling.pdf" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/106_Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner/Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/106_Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner/Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner1.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/106_Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner/Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner2.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/106_Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner/Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner3.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/106_Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner/Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner4.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/106_Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner/Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner5.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/106_Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner/Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner6.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/106_Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner/Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner7.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/106_Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner/Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner8.jpg" },
+    { "type": "image", "content": "/data/2025/project_assets/100_fotografi/106_Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner/Theodor-S-Borge_3MKA_En-dag-som-aldri-stilner9.jpg" }
   ]
 }
