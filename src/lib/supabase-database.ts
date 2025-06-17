@@ -47,6 +47,26 @@ function isEmailAllowed(email: string): boolean {
   return emailList.includes(email.toLowerCase());
 }
 
+// Error logging
+function logDbError(context: {
+  error: unknown;
+  functionName: string;
+  args?: any;
+  extra?: any;
+}) {
+  const { error, functionName, args, extra } = context;
+  const logObj = {
+    functionName,
+    error,
+    args,
+    extra,
+    time: new Date().toISOString(),
+  };
+  if (logObj.args?.email) logObj.args.email = logObj.args.email.toString().replace(/(.{3}).+(@.*)/, '$1***$2');
+  if (logObj.args?.token) logObj.args.token = '[REDACTED]';
+  console.error("[DB ERROR]", JSON.stringify(logObj, null, 2));
+}
+
 // User management
 export async function getUserByEmail(email: string) {
   try {
@@ -57,16 +77,18 @@ export async function getUserByEmail(email: string) {
       .single();
 
     if (fetchError && fetchError.code !== "PGRST116") {
-      // PGRST116 means no rows found
+      logDbError({ error: fetchError, functionName: "getUserByEmail", args: { email } });
       return { data: null, error: { message: fetchError.message } };
     }
 
     if (!existingUser) {
+      logDbError({ error: "User not found", functionName: "getUserByEmail", args: { email } });
       return { data: null, error: { message: "User not found" } };
     }
 
     return { data: existingUser, error: null };
   } catch (error) {
+    logDbError({ error, functionName: "getUserByEmail", args: { email } });
     return { data: null, error: { message: (error as Error).message } };
   }
 }
@@ -88,11 +110,13 @@ export async function updateUserVerificationCode(
       .single();
 
     if (error) {
+      logDbError({ error, functionName: "updateUserVerificationCode", args: { email, code: "[REDACTED]", expiry } });
       return { data: null, error: { message: error.message } };
     }
 
     return { data, error: null };
   } catch (error) {
+    logDbError({ error, functionName: "updateUserVerificationCode", args: { email, code: "[REDACTED]", expiry } });
     return { data: null, error: { message: (error as Error).message } };
   }
 }
@@ -109,11 +133,13 @@ export async function createToken(
       .insert([{ token, email: email.toLowerCase() }]);
 
     if (error) {
+      logDbError({ error, functionName: "createToken", args: { email, token: "[REDACTED]" } });
       return { error: error.message };
     }
 
     return { token };
   } catch (error) {
+    logDbError({ error, functionName: "createToken", args: { email } });
     return { error: (error as Error).message };
   }
 }
@@ -129,6 +155,7 @@ export async function verifyToken(
       .single();
 
     if (error) {
+      logDbError({ error, functionName: "verifyToken", args: { token: "[REDACTED]" } });
       return { error: "Invalid token" };
     }
 
@@ -141,11 +168,13 @@ export async function verifyToken(
     if (hoursDiff > 24) {
       // Clean up expired token
       await getSupabaseClient().from("tokens").delete().eq("token", token);
+      logDbError({ error: "Token expired", functionName: "verifyToken", args: { token: "[REDACTED]" } });
       return { error: "Token expired" };
     }
 
     return { email: data.email };
   } catch (error) {
+    logDbError({ error, functionName: "verifyToken", args: { token: "[REDACTED]" } });
     return { error: (error as Error).message };
   }
 }
@@ -161,6 +190,7 @@ export async function updateUserVote(email: string, contestantId: string) {
       .single();
 
     if (fetchError) {
+      logDbError({ error: fetchError, functionName: "updateUserVote", args: { email, contestantId } });
       return { data: null, error: { message: fetchError.message } };
     }
 
@@ -173,11 +203,13 @@ export async function updateUserVote(email: string, contestantId: string) {
       .single();
 
     if (updateError) {
+      logDbError({ error: updateError, functionName: "updateUserVote", args: { email, contestantId } });
       return { data: null, error: { message: updateError.message } };
     }
 
     return { data: updatedUser, error: null };
   } catch (error) {
+    logDbError({ error, functionName: "updateUserVote", args: { email, contestantId } });
     return { data: null, error: { message: (error as Error).message } };
   }
 }
@@ -190,6 +222,7 @@ export async function getVoteResults() {
       .not("contestant_voted", "is", null);
 
     if (error) {
+      logDbError({ error, functionName: "getVoteResults" });
       return { data: null, error: { message: error.message } };
     }
 
@@ -204,6 +237,7 @@ export async function getVoteResults() {
 
     return { data: voteCounts, error: null };
   } catch (error) {
+    logDbError({ error, functionName: "getVoteResults" });
     return { data: null, error: { message: (error as Error).message } };
   }
 }
@@ -217,6 +251,7 @@ export async function initializeDatabase() {
 
     return { success: true };
   } catch (error) {
+    logDbError({ error, functionName: "initializeDatabase" });
     return { success: false, error: (error as Error).message };
   }
 }
@@ -234,6 +269,7 @@ export async function cleanupExpiredTokens() {
 
     return { success: true };
   } catch (error) {
+    logDbError({ error, functionName: "cleanupExpiredTokens" });
     return { success: false, error: (error as Error).message };
   }
 }
@@ -243,6 +279,7 @@ export async function createUserIfAllowed(email: string) {
   try {
     // Check if email is allowed
     if (!isEmailAllowed(email)) {
+      logDbError({ error: "Email not allowed", functionName: "createUserIfAllowed", args: { email } });
       return { data: null, error: { message: "Email not allowed" } };
     }
 
@@ -258,13 +295,14 @@ export async function createUserIfAllowed(email: string) {
       .insert([{ email: email.toLowerCase() }])
       .select()
       .single();
-
     if (createError) {
+      logDbError({ error: createError, functionName: "createUserIfAllowed", args: { email } });
       return { data: null, error: { message: createError.message } };
     }
 
     return { data: newUser, error: null };
   } catch (error) {
+    logDbError({ error, functionName: "createUserIfAllowed", args: { email } });
     return { data: null, error: { message: (error as Error).message } };
   }
 }
