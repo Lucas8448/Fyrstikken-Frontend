@@ -5,12 +5,6 @@
             "title": "2025",
             "description": "Fyrstikken år 2025",
             "image": "/data/year-backgrounds/2024.webp"
-        },
-        "2024": {
-            "id": 2024,
-            "title": "2024",
-            "description": "Fyrstikken år 2024",
-            "image": "/data/year-backgrounds/2024.webp"
         }
     }
 }
