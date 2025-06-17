@@ -31,7 +31,7 @@ export default async function Component({ params }: {params: { yearId: string}})
   // Map of categoryId to available images
   const imageMap: Record<string, string[]> = {
     "100": ["101.jpg","102.jpg","103.jpg","104.jpg","105.jpg","106.jpg","107.jpg","108.jpg"],
-    "110": ["111.jpg","112.jpg","113.jpg","114.jpg","115.jpg","116.jpg","117.jpg","118.jpg"],
+    "110": ["111.jpg","112.jpg","113.jpg","114.jpg","115.jpg","116.jpg","118.jpg"],
     "120": ["120.png","121.jpg","122.jpg","124.jpg"],
     "130": ["131.jpg","132.jpg","133.jpg","134.jpg","135.jpg","136.jpg","137.jpg","138.jpg"],
     "140": ["141.jpg","142.jpg","143.jpg","144.jpg","145.jpg","146.jpg"],
