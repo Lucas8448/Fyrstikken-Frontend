@@ -3,6 +3,7 @@ import {
   verifyToken,
   getUserByEmail,
   updateUserVote,
+  createUserIfAllowed,
 } from "@/lib/supabase-database";
 import { isVotingAllowed, getVotingPeriod } from "@/lib/utils";
 
@@ -30,7 +31,8 @@ function logVoteError(context: {
     time: new Date().toISOString(),
   };
   if (logObj.body?.token) logObj.body.token = "[REDACTED]";
-  if (logObj.user?.verification_code) logObj.user.verification_code = "[REDACTED]";
+  if (logObj.user?.verification_code)
+    logObj.user.verification_code = "[REDACTED]";
   console.error("[VOTE API ERROR]", JSON.stringify(logObj, null, 2));
 }
 
@@ -51,12 +53,22 @@ export async function POST(req: NextRequest) {
     const { token, contestant_id } = body;
 
     if (!token) {
-      logVoteError({ error: "Token is missing", req, body, stage: "validate input" });
+      logVoteError({
+        error: "Token is missing",
+        req,
+        body,
+        stage: "validate input",
+      });
       return NextResponse.json({ error: "Token is missing" }, { status: 401 });
     }
 
     if (!contestant_id) {
-      logVoteError({ error: "Contestant ID is required", req, body, stage: "validate input" });
+      logVoteError({
+        error: "Contestant ID is required",
+        req,
+        body,
+        stage: "validate input",
+      });
       return NextResponse.json(
         { error: "Contestant ID is required" },
         { status: 400 }
@@ -66,21 +78,73 @@ export async function POST(req: NextRequest) {
     // Verify token and get email
     const { email, error: tokenError } = await verifyToken(token);
 
-    if (tokenError || !email) {
-      logVoteError({ error: tokenError || "Invalid token", req, body, token, stage: "verifyToken" });
+    if (tokenError ?? !email) {
+      logVoteError({
+        error: tokenError ?? "Invalid token",
+        req,
+        body,
+        token,
+        stage: "verifyToken",
+      });
       return NextResponse.json({ error: "Invalid token" }, { status: 401 });
     }
 
     // Get user to check if they have already voted
-    const { data: user, error: userError } = await getUserByEmail(email);
+    let { data: user, error: userError } = await getUserByEmail(email);
 
-    if (userError || !user) {
-      logVoteError({ error: userError || "User not found", req, body, userError, email, token, stage: "getUserByEmail" });
-      return NextResponse.json({ error: "User not found" }, { status: 404 });
+    if (userError) {
+      // Only log and return error if there was an actual error (not just user not found)
+      logVoteError({
+        error: userError,
+        req,
+        body,
+        userError,
+        email,
+        token,
+        stage: "getUserByEmail",
+      });
+      return NextResponse.json(
+        { error: "Database error when looking up user" },
+        { status: 500 }
+      );
+    }
+
+    if (!user) {
+      // If no user found but token was valid, try to create the user
+      logVoteError({
+        error: "User from valid token not found in database",
+        req,
+        body,
+        email,
+        token,
+        stage: "getUserByEmail",
+      });
+
+      // Try to create the user if they have a valid email domain
+      const { data: createdUser, error: createError } =
+        await createUserIfAllowed(email);
+
+      if (createError ?? !createdUser) {
+        return NextResponse.json(
+          { error: "Unable to create user account" },
+          { status: 403 }
+        );
+      }
+
+      // Use the newly created user
+      user = createdUser;
     }
 
     if (user.contestant_voted !== null && user.contestant_voted !== undefined) {
-      logVoteError({ error: "User has already voted", req, body, user, email, token, stage: "already voted" });
+      logVoteError({
+        error: "User has already voted",
+        req,
+        body,
+        user,
+        email,
+        token,
+        stage: "already voted",
+      });
       return NextResponse.json(
         { error: "User has already voted" },
         { status: 400 }
@@ -94,7 +158,15 @@ export async function POST(req: NextRequest) {
     );
 
     if (voteError) {
-      logVoteError({ error: voteError, req, body, user, email, token, stage: "updateUserVote" });
+      logVoteError({
+        error: voteError,
+        req,
+        body,
+        user,
+        email,
+        token,
+        stage: "updateUserVote",
+      });
       return NextResponse.json(
         { error: "Failed to record vote" },
         { status: 500 }
